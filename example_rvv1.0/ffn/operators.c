@@ -1,0 +1,103 @@
+/*
+ * Copyright (c) 2026 BOSC & ICT, CAS
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met: redistributions of source code must retain the above copyright
+ * notice, this list of conditions and the following disclaimer;
+ * redistributions in binary form must reproduce the above copyright
+ * notice, this list of conditions and the following disclaimer in the
+ * documentation and/or other materials provided with the distribution;
+ * neither the name of the copyright holders nor the names of its
+ * contributors may be used to endorse or promote products derived from
+ * this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+#include <stdint.h>
+#include "ztt_llm_case.h"
+#include "rvv_kernels.h"
+static float ztt_llm_output[ZTT_LLM_TILE_ELEMENTS] ZTT_LLM_ALIGNED;
+#if !defined(__riscv)
+static float
+ztt_llm_pow2_integer(int exponent)
+{
+    uint32_t bits;
+    if (exponent < -126)
+        bits = 0;
+    else if (exponent > 127)
+        bits = UINT32_C(0x7f800000);
+    else
+        bits = (uint32_t)(exponent + 127) << 23;
+    float value;
+    memcpy(&value, &bits, sizeof(value));
+    return value;
+}
+static void
+ztt_llm_host_matmul_tile(const float *a, const float *b, float *output)
+{
+    for (unsigned row = 0; row < ZTT_LLM_TILE; ++row)
+        for (unsigned col = 0; col < ZTT_LLM_TILE; ++col) {
+            float value = 0.0f;
+            for (unsigned depth = 0; depth < ZTT_LLM_TILE; ++depth)
+                value += a[row * ZTT_LLM_TILE + depth] *
+                         b[depth * ZTT_LLM_TILE + col];
+            output[row * ZTT_LLM_TILE + col] = value;
+        }
+}
+static void
+ztt_llm_host_gelu_tile(const float *input, float *output)
+{
+    for (unsigned i = 0; i < ZTT_LLM_TILE_ELEMENTS; ++i) {
+        const float exponent = 0.0f - input[i] * 2.0f;
+        const float denominator = 1.0f +
+            ztt_llm_pow2_integer((int)exponent);
+        output[i] = input[i] * (1.0f / denominator);
+    }
+}
+#endif
+
+uint64_t
+ztt_llm_run_case(struct ztt_llm_case_result *result)
+{
+    float input[ZTT_LLM_TILE_ELEMENTS] ZTT_LLM_ALIGNED;
+    float first_weight[ZTT_LLM_TILE_ELEMENTS] ZTT_LLM_ALIGNED;
+    float second_weight[ZTT_LLM_TILE_ELEMENTS] ZTT_LLM_ALIGNED;
+    float hidden[ZTT_LLM_TILE_ELEMENTS] ZTT_LLM_ALIGNED;
+    float activated[ZTT_LLM_TILE_ELEMENTS] ZTT_LLM_ALIGNED;
+    for (unsigned row = 0; row < ZTT_LLM_TILE; ++row)
+        for (unsigned col = 0; col < ZTT_LLM_TILE; ++col) {
+            const unsigned index = row * ZTT_LLM_TILE + col;
+            input[index] = row == col ? 1.0f : 0.0f;
+            first_weight[index] =
+                (float)((int)((row * 3 + col * 2) % 5) - 2);
+            second_weight[index] = row == col ? 1.0f : 0.0f;
+        }
+#if defined(__riscv)
+    rvv_gemm_f32(input, first_weight, hidden, ZTT_LLM_TILE, ZTT_LLM_TILE, ZTT_LLM_TILE, 0, 0);
+    rvv_gelu(hidden, activated, ZTT_LLM_TILE_ELEMENTS);
+    rvv_gemm_f32(activated, second_weight, ztt_llm_output, ZTT_LLM_TILE, ZTT_LLM_TILE, ZTT_LLM_TILE, 0, 0);
+    result->status = 0;
+#else
+    ztt_llm_host_matmul_tile(input, first_weight, hidden);
+    ztt_llm_host_gelu_tile(hidden, activated);
+    ztt_llm_host_matmul_tile(activated, second_weight, ztt_llm_output);
+    result->status = 0;
+#endif
+    result->output = ztt_llm_output;
+    result->element_count = ZTT_LLM_TILE_ELEMENTS;
+    result->element_bytes = sizeof(ztt_llm_output[0]);
+    return result->status;
+}
