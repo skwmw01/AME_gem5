@@ -6,4 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     clang-18 lld-18 llvm-18 zlib1g-dev libprotobuf-dev protobuf-compiler \
     libboost-all-dev libhdf5-dev libpng-dev ca-certificates \
     && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3-matplotlib fonts-noto-cjk \
+    && rm -rf /var/lib/apt/lists/*
 WORKDIR /work

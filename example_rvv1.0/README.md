@@ -1,5 +1,8 @@
 # RVV 1.0 算子示例
 
+与原 AME 实现的逐算子实测、加速/减速比、环境配置和复现步骤见
+[性能对比报告](report.md)；测量与报告脚本位于 `benchmark/`。
+
 本目录对应 `../example` 的 10 组算子，目标程序只使用标准
 `rv64gcv` 指令。向量计算由 `<riscv_vector.h>` intrinsics 显式实现，
 不需要 AME 编译器或 AME 指令。保留原示例的数据、Host C 参考实现和
