@@ -490,29 +490,114 @@ RVV 当前实现以正确复现原例为目标，尚未进行多行寄存器分�
 Dockerfile 使用发行版包仓库，重建时补丁版本可能变化；本文记录的是实际测量版本。
 宿主机速度只影响仿真完成时间，不参与性能倍率。`--jobs` 是宿主侧并行仿真数，不是 guest 核数。
 
-### 7.1 首次准备环境
+### 7.1 镜像构建、容器创建与启动
+
+镜像 `ame-gem5-rvv:local` 提供 Ubuntu 24.04、Clang/LLD 18 和编译/绘图依赖；
+容器是由镜像创建的运行环境。源码、gem5 和 AME 工具链通过宿主机目录挂载到容器，
+不会随镜像构建自动编译或安装。下面分别标明命令在宿主机还是容器内执行。
+
+**第一步：宿主机检查 Docker 并构建镜像。**
+
+```bash
+# 在宿主机执行；以下步骤假定 Docker 已安装，当前用户有访问权限。
+cd /data/mingwei/project/xiangshanwmw/AME_gem5
+docker version
+docker info
+
+# 首次使用或 Dockerfile 更新后构建；已有对应镜像时可以跳过。
+docker build -t ame-gem5-rvv:local \\
+  -f example_rvv1.0/Dockerfile example_rvv1.0
+docker image inspect ame-gem5-rvv:local --format '{{{{.Id}}}}'
+```
+
+`docker version` 应显示 Client 和 Server 信息。若提示无法连接 Docker daemon，
+使用 systemd 的宿主机可由有权限的用户执行 `sudo systemctl start docker`，再重新检查。
+若提示 socket 权限不足，需要使用已有 Docker 权限的账号，或按机器管理规定使用 `sudo docker ...`。
+
+**第二步：在宿主机创建并启动一个可重复使用的容器。**
 
 ```bash
 cd /data/mingwei/project/xiangshanwmw/AME_gem5
+docker create --name ame-gem5-rvv-dev \\
+  --user "$(id -u):$(id -g)" \\
+  -v "$PWD:/work" -w /work \\
+  ame-gem5-rvv:local sleep infinity
 
-docker build -t ame-gem5-rvv:local \\
-  -f example_rvv1.0/Dockerfile example_rvv1.0
-
-docker run --rm --user "$(id -u):$(id -g)" \\
-  -v "$PWD:/work" -w /work ame-gem5-rvv:local \\
-  scons build/RISCV/gem5.opt -j16 --ignore-style
-
-docker run --rm --user "$(id -u):$(id -g)" \\
-  -v "$PWD:/work" -w /work ame-gem5-rvv:local \\
-  python3 example_rvv1.0/benchmark/setup_toolchain.py --direct
+docker start ame-gem5-rvv-dev
+docker ps --filter name=ame-gem5-rvv-dev
+docker exec -it ame-gem5-rvv-dev bash
 ```
 
-已有 gem5 和工具链时可跳过相应编译/安装步骤。新增绘图依赖为 `python3-matplotlib` 和 `fonts-noto-cjk`，
-旧版镜像需要先重新执行上面的 `docker build`，之后从 7.2 开始。
-内存不足时将 SCons 的 `-j16` 调低。`--direct` 忽略代理环境变量；需要代理时移除此选项并配置容器网络。
+| 参数或命令 | 作用 |
+|---|---|
+| `ame-gem5-rvv:local` | 镜像名称 |
+| `--name ame-gem5-rvv-dev` | 容器名称，用于后续启动、进入和停止 |
+| `--user "$(id -u):$(id -g)"` | 用当前宿主用户的 UID/GID 运行，生成文件归该用户所有 |
+| `-v "$PWD:/work"` | 将宿主机仓库映射到容器 `/work`；两边读写的是同一份文件 |
+| `-w /work` | 将容器工作目录设为仓库根目录 |
+| `sleep infinity` | 让容器保持运行，等待通过 `docker exec` 执行命令 |
+| `docker start` | 启动已经创建的容器 |
+| `docker exec -it ... bash` | 进入正在运行的容器终端 |
+
+`docker create` 只需执行一次。同名容器已经存在时，可用
+`docker ps -a --filter name=ame-gem5-rvv-dev` 查看状态，直接执行 `docker start` 和 `docker exec`。
+重新构建同名镜像不会更新已经创建的容器；需要使用新镜像时，可另取容器名重新创建。
+
+**第三步：在容器内准备模拟器和工具链，然后运行测试。**
+
+```bash
+# 已通过 docker exec 进入容器；此处不再加 docker run 前缀。
+cd /work
+
+# 已有与当前源码相符的 gem5 构建产物时可跳过；内存不足时调低 -j16。
+scons build/RISCV/gem5.opt -j16 --ignore-style
+
+# AME/RVV 性能对比需要 AME 工具链；已安装且可用时可跳过。
+python3 example_rvv1.0/benchmark/setup_toolchain.py --direct
+
+# 检查关键工具。
+clang-18 --version
+toolchain/install/bin/clang --version
+build/RISCV/gem5.opt --build-info
+
+# 单算子：校验 GELU 正确性并比较 AME/RVV 性能。
+python3 example_rvv1.0/benchmark/run.py \\
+  --cases gelu --repeats 3 --jobs 2 \\
+  --output example_rvv1.0/build/performance/gelu_retest
+
+# 只做 RVV 全套正确性测试时使用这个入口。
+make -C example_rvv1.0 test
+```
+
+只测试 RVV 时，容器自带的 Clang 18 即可使用，不必安装 AME 工具链。
+`--direct` 忽略代理环境变量；需要代理时移除此选项，并按网络环境配置容器代理。
 离线时将校验一致的完整归档放到仓库内，再用 `--archive /work/路径/ame_toolchain.tar.gz`。
 安装器拒绝覆盖已有非空且未标记为同一归档的工具链目录；可以 `--dest` 安装到新目录，
 再给 `run.py` 指定相应 `--ame-clang` 与 `--objdump`。
+
+**第四步：退出、停止和下次重新启用。**
+
+```bash
+# 容器终端内执行：退出当前 shell；容器仍然运行。
+exit
+
+# 以下回到宿主机执行；确认测试已结束后再停止容器。
+docker stop ame-gem5-rvv-dev
+
+# 下次使用：启动已有容器，再进入终端。
+docker start ame-gem5-rvv-dev
+docker exec -it ame-gem5-rvv-dev bash
+```
+
+所有写入 `/work` 的源码、工具链、二进制、日志和报告，都保存在宿主机仓库的对应路径，
+停止容器后仍然保留。例如容器内 `/work/example_rvv1.0/build/performance/gelu_retest/results.json`
+对应宿主机 `AME_gem5/example_rvv1.0/build/performance/gelu_retest/results.json`。
+
+后面的 7.2、7.3 使用另一种方便脚本化的方式：在宿主机执行 `docker run --rm ...`，
+自动创建并启动临时容器，命令结束后删除该容器，挂载目录内的结果仍然保留。
+这种方式不要求 `ame-gem5-rvv-dev` 正在运行，也不需要先手动执行 `docker create/start`。
+若已经进入命名容器，可直接执行相应的 `python3 ...` 命令，不要在容器内再次运行 `docker run`。
+
 
 ### 7.2 重新测量全部算子并生成报告
 

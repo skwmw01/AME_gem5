@@ -60,6 +60,10 @@ docker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/work" -w /work \
 ```
 
 Docker 内编译的 gem5 需要在同一镜像或兼容的系统中运行。
+上面的 `docker run --rm` 会自动创建并启动临时容器，任务结束后删除容器；
+仓库通过 `/work` 挂载，生成的结果仍保存在宿主机。若希望创建可重复进入的命名容器，
+完整的镜像构建、`docker create/start/exec/stop` 和容器内测试步骤见
+[性能报告第 7.1 节](report.md#71-镜像构建容器创建与启动)。
 
 ## 校验与输出
 
