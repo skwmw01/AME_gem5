@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "rules": 20,
+  "legal_field_combinations": 292832,
+  "errors": [],
+  "tables": {
+    "xuantie_v06": "7c0cb6fce095e5d4107d875d408865160e681bc9fb0549e9133cd24575b16f4f",
+    "spec_v05a": "60fefc260a3877881e2a2b37e4deaf4c5259a89c0ac1b57058006e1c342ab9c6"
+  },
+  "note": "Table/field audit; actual decoder and ELF validation recorded separately."
+}

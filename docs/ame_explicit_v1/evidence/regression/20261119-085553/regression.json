@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "elf": "native_primary_xuantie_v06",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "4c749eec99de2108c0738fcaec1ca410341a6a37c85f92a00f77392cf136c20b",
+        "stats": {
+          "simTicks": "21288945000",
+          "simInsts": "1289534",
+          "simOps": "1289534",
+          "system.cpu.numCycles": "21288945"
+        }
+      },
+      "reference": {
+        "report": "4c749eec99de2108c0738fcaec1ca410341a6a37c85f92a00f77392cf136c20b",
+        "stats": {
+          "simTicks": "21288945000",
+          "simInsts": "1289534",
+          "simOps": "1289534",
+          "system.cpu.numCycles": "21288945"
+        }
+      }
+    },
+    {
+      "elf": "native_primary_xuantie_v06",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "4c749eec99de2108c0738fcaec1ca410341a6a37c85f92a00f77392cf136c20b",
+        "stats": {
+          "simTicks": "21288945000",
+          "simInsts": "1289534",
+          "simOps": "1289534",
+          "system.cpu.numCycles": "21288945"
+        }
+      },
+      "reference": {
+        "report": "4c749eec99de2108c0738fcaec1ca410341a6a37c85f92a00f77392cf136c20b",
+        "stats": {
+          "simTicks": "21288945000",
+          "simInsts": "1289534",
+          "simOps": "1289534",
+          "system.cpu.numCycles": "21288945"
+        }
+      }
+    },
+    {
+      "elf": "native_primary_xuantie_v06",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "4c749eec99de2108c0738fcaec1ca410341a6a37c85f92a00f77392cf136c20b",
+        "stats": {
+          "simTicks": "21288945000",
+          "simInsts": "1289534",
+          "simOps": "1289534",
+          "system.cpu.numCycles": "21288945"
+        }
+      },
+      "reference": {
+        "report": "4c749eec99de2108c0738fcaec1ca410341a6a37c85f92a00f77392cf136c20b",
+        "stats": {
+          "simTicks": "21288945000",
+          "simInsts": "1289534",
+          "simOps": "1289534",
+          "system.cpu.numCycles": "21288945"
+        }
+      }
+    },
+    {
+      "elf": "native_primary_xuantie_v06",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "4c749eec99de2108c0738fcaec1ca410341a6a37c85f92a00f77392cf136c20b",
+        "stats": {
+          "simTicks": "21288945000",
+          "simInsts": "1289534",
+          "simOps": "1289534",
+          "system.cpu.numCycles": "21288945"
+        }
+      },
+      "reference": {
+        "report": "4c749eec99de2108c0738fcaec1ca410341a6a37c85f92a00f77392cf136c20b",
+        "stats": {
+          "simTicks": "21288945000",
+          "simInsts": "1289534",
+          "simOps": "1289534",
+          "system.cpu.numCycles": "21288945"
+        }
+      }
+    },
+    {
+      "elf": "native_primary_xuantie_v06",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "4c749eec99de2108c0738fcaec1ca410341a6a37c85f92a00f77392cf136c20b",
+        "stats": {
+          "simTicks": "21288945000",
+          "simInsts": "1289534",
+          "simOps": "1289534",
+          "system.cpu.numCycles": "21288945"
+        }
+      },
+      "reference": {
+        "report": "4c749eec99de2108c0738fcaec1ca410341a6a37c85f92a00f77392cf136c20b",
+        "stats": {
+          "simTicks": "21288945000",
+          "simInsts": "1289534",
+          "simOps": "1289534",
+          "system.cpu.numCycles": "21288945"
+        }
+      }
+    }
+  ],
+  "run": "20261119-085553"
+}

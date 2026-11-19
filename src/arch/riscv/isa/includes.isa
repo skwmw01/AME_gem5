@@ -35,6 +35,14 @@
 //
 
 output header {{
+#include "config/use_xuantie_v06_explicit.hh"
+#include "config/use_spec_v05a_explicit.hh"
+#if USE_XUANTIE_V06_EXPLICIT
+#include "arch/riscv/insts/xuantie_v06_explicit.hh"
+#endif
+#if USE_SPEC_V05A_EXPLICIT
+#include "arch/riscv/insts/spec_v05a_explicit.hh"
+#endif
 #include <functional>
 #include <iomanip>
 #include <sstream>
@@ -68,6 +76,8 @@ output header {{
 }};
 
 output decoder {{
+#include "config/use_xuantie_v06_explicit.hh"
+#include "config/use_spec_v05a_explicit.hh"
 #include <cfenv>
 #include <cmath>
 #include <limits>
@@ -97,6 +107,8 @@ using namespace RiscvISA;
 }};
 
 output exec {{
+#include "config/use_xuantie_v06_explicit.hh"
+#include "config/use_spec_v05a_explicit.hh"
 #include <cfenv>
 #include <cmath>
 #include <string>

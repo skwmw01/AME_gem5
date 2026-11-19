@@ -1,0 +1,5 @@
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /work/toolchain/install/bin
+Build config: +assertions

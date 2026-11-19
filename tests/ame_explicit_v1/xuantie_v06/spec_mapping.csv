@@ -1,0 +1,11 @@
+experiment,native,reference,preserved,adaptation,test
+xt06.add.i32,madd.w.mm,5.5.1 PDF47-48,word addition,fixed 4x4 M and wraparound,XT06-0
+xt06.add.f32,mfadd.s.mm,5.5.2 PDF49-50,FP32 addition,fixed RNE and AMEFFLAGS,XT06-1
+xt06.max.i32,mmax.w.mm,5.5.1 PDF47-48,signed comparison,fixed 4x4 M,XT06-2
+xt06.max.u32,mumax.w.mm,5.5.1 PDF47-48,unsigned comparison,fixed 4x4 M,XT06-3
+xt06.macbt.i8.i32,mmacc.w.b,5.2.2 PDF26-28,signed widening dot product,fixed BT layout and non-saturating; plan mmaqa.b name corrected against supplied PDF,XT06-4
+xt06.macbt.f16.f32,mfmacc.s.h,5.2.2 PDF26-28,FP16 widening product,fixed BT layout and ordered k FP32 FMA,XT06-5
+xt06.macbt.bf16.f32,mfmacc.s.bf16,5.2.2 PDF26-28,BF16 widening product,fixed BT layout and ordered k FP32 FMA,XT06-6
+xt06.cvt.f32.i32,msfcvt.s.w,5.5.3 PDF51-55,signed integer to float,fixed RNE,XT06-7
+xt06.cvt.i32.f32,mfscvt.w.s,5.5.3 PDF51-55,float to signed integer,experimental clipping and NV without NX on invalid,XT06-8
+xt06.cvtlo.f32.f16,mfcvtl.s.h,5.5.3 PDF51-55,low columns widening,fixed four low columns of each 8-half row,XT06-9

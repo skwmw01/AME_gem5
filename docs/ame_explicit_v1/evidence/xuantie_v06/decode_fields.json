@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "executions": 146432,
+  "by_instruction": {
+    "xt06.add.i32": 32768,
+    "xt06.add.f32": 32768,
+    "xt06.max.i32": 32768,
+    "xt06.max.u32": 32768,
+    "xt06.macbt.i8.i32": 4096,
+    "xt06.macbt.f16.f32": 4096,
+    "xt06.macbt.bf16.f32": 4096,
+    "xt06.cvt.f32.i32": 1024,
+    "xt06.cvt.i32.f32": 1024,
+    "xt06.cvtlo.f32.f16": 1024
+  },
+  "run": "results/ame_explicit_v1/xuantie_v06/20261119-085919-all-fields",
+  "elf_sha256": "ae079aa8a08d5438acd8eeb36d14ee7bd6e0cfd7861078af119c85db513b9bd1",
+  "words_sha256": "a3d351e40e8708256cb2f0f21994828cfb65b0b8af6b8db03f2b4e37f75c5ac3",
+  "trace_sha256": "1b4fc915760756ff89f1802aceb350d48bf9880c5b496caddb9a7f0de9002356",
+  "gem5_sha256": "6ddf3e8b74544dbe52acad7265fec506f54da96fd9c0c02caf25479ef9355ef9",
+  "errors": [],
+  "reanalysis": "Same preserved raw trace; gem5 OpClass display string is Matrix, enum is MatrixOp.",
+  "previous_analysis_sha256": "953e5ccb7167b640456f71f34dab3c1a7b3200e331c7bbfa3abc8f7d52211101"
+}

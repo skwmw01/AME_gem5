@@ -1,0 +1,55 @@
+// S05A instruction wrappers and atomic two-register widening writeback.
+def template S05AExecute {{
+#if USE_SPEC_V05A_EXPLICIT
+Fault
+%(class_name)s::execute(ExecContext *xc, trace::InstRecord *traceData) const
+{
+    auto fault = RiscvISA::checkAMEEnabled(xc, machInst);
+    if (fault != NoFault)
+        return fault;
+    if (xc->readMiscReg(MISCREG_AMENLEN) != 4 ||
+        xc->readMiscReg(MISCREG_AMEUDSZ) != 32 || %(invalid_span)s)
+        return std::make_shared<IllegalInstFault>("S05A shape/span", machInst);
+    %(op_decl)s;
+    %(op_rd)s;
+    %(code)s;
+    %(op_wb)s;
+    if (exceptions != 0) {
+        auto flags = xc->readMiscReg(MISCREG_AMEFFLAGS);
+        xc->setMiscReg(MISCREG_AMEFFLAGS, (flags | exceptions) & 0x1f);
+    }
+    RiscvISA::markAMEDirty(xc);
+    return NoFault;
+}
+#endif
+}};
+
+def format S05AOp(function, element, display, form) {{
+    if form == 'wide':
+        code = '''
+            auto first = S05ADst;
+            auto second = S05ANext;
+            uint32_t exceptions = S05A::widenAll(first, second, S05ASrcA);
+            S05ADst = first;
+            S05ANext = second;
+        '''
+    else:
+        destination = 'S05AAcc' if form == 'acc' else 'S05ADst'
+        code = 'auto output = %s;\n' % destination
+        code += 'uint32_t exceptions = S05A::%s(output, S05ASrcA, ' % function
+        if form == 'cast':
+            code += 'S05A::Cast::%s);\n' % element
+        else:
+            code += 'S05ASrcB, S05A::Element::%s);\n' % element
+        code += '%s = output;\n' % destination
+    iop = InstObjParams(name, Name, 'S05AStaticInst', code,
+                        ['MatrixOp', 'IsMatrix', 'IsSerializeBefore',
+                         'IsSerializeAfter'])
+    iop.mnemonic = display
+    iop.invalid_span = 'RD == 31' if form == 'wide' else 'false'
+    guard = '#if USE_SPEC_V05A_EXPLICIT\n'
+    header_output = guard + BasicDeclare.subst(iop) + '\n#endif\n'
+    decoder_output = guard + BasicConstructor.subst(iop) + '\n#endif\n'
+    exec_output = S05AExecute.subst(iop)
+    decode_block = BasicDecode.subst(iop)
+}};

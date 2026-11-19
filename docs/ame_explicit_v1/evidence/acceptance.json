@@ -1,0 +1,463 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "xuantie_v06 full B10",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-085014-AME_B10/functional.json",
+      "executions": 28718
+    },
+    {
+      "name": "xuantie_v06 full B11",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-084255-AME_B11/functional.json",
+      "executions": 28718
+    },
+    {
+      "name": "xuantie_v06 single/dual equality",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-085014-AME_B10",
+        "results/ame_explicit_v1/xuantie_v06/20261119-084255-AME_B11"
+      ]
+    },
+    {
+      "name": "xuantie_v06 random/exhaustive coverage",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-084255-AME_B11",
+      "random_cases": 10000,
+      "half_patterns": 65536
+    },
+    {
+      "name": "xuantie_v06 disabled B00",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-085015-AME_B00/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "xuantie_v06 disabled B01",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-085013-AME_B01/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "xuantie_v06 dependencies",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-084849-AME_B11/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "xuantie_v06 checkpoint",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/checkpoint.json",
+      "executions": 20
+    },
+    {
+      "name": "xuantie_v06 negative_state",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/negative_state.json",
+      "executions": 10
+    },
+    {
+      "name": "xuantie_v06 shape",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/shape.json",
+      "executions": 20
+    },
+    {
+      "name": "xuantie_v06 storage",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/storage.json",
+      "executions": 20
+    },
+    {
+      "name": "xuantie_v06 decode_fields",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/decode_fields.json",
+      "executions": 146432
+    },
+    {
+      "name": "xuantie_v06 negative/access B00",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-085015-edge-AME_B00/edge.json",
+      "executions": 1211
+    },
+    {
+      "name": "xuantie_v06 negative/access B10",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-085014-edge-AME_B10/edge.json",
+      "executions": 1211
+    },
+    {
+      "name": "xuantie_v06 negative/access B01",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-085013-edge-AME_B01/edge.json",
+      "executions": 1211
+    },
+    {
+      "name": "xuantie_v06 negative/access B11",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-084255-edge-AME_B11/edge.json",
+      "executions": 1211
+    },
+    {
+      "name": "spec_v05a full B01",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-085013-AME_B01/functional.json",
+      "executions": 24622
+    },
+    {
+      "name": "spec_v05a full B11",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-084255-AME_B11/functional.json",
+      "executions": 24622
+    },
+    {
+      "name": "spec_v05a single/dual equality",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/spec_v05a/20261119-085013-AME_B01",
+        "results/ame_explicit_v1/spec_v05a/20261119-084255-AME_B11"
+      ]
+    },
+    {
+      "name": "spec_v05a random/exhaustive coverage",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-084255-AME_B11",
+      "random_cases": 10000,
+      "half_patterns": 65536
+    },
+    {
+      "name": "spec_v05a disabled B00",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-085015-AME_B00/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "spec_v05a disabled B10",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-085014-AME_B10/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "spec_v05a dependencies",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-084849-AME_B11/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "spec_v05a checkpoint",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/checkpoint.json",
+      "executions": 20
+    },
+    {
+      "name": "spec_v05a negative_state",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/negative_state.json",
+      "executions": 10
+    },
+    {
+      "name": "spec_v05a shape",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/shape.json",
+      "executions": 20
+    },
+    {
+      "name": "spec_v05a storage",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/storage.json",
+      "executions": 20
+    },
+    {
+      "name": "spec_v05a decode_fields",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/decode_fields.json",
+      "executions": 146400
+    },
+    {
+      "name": "spec_v05a negative/access B00",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-085015-edge-AME_B00/edge.json",
+      "executions": 1212
+    },
+    {
+      "name": "spec_v05a negative/access B10",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-085014-edge-AME_B10/edge.json",
+      "executions": 1212
+    },
+    {
+      "name": "spec_v05a negative/access B01",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-085013-edge-AME_B01/edge.json",
+      "executions": 1212
+    },
+    {
+      "name": "spec_v05a negative/access B11",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-084254-edge-AME_B11/edge.json",
+      "executions": 1212
+    },
+    {
+      "name": "same mathematical products with distinct B packing",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-084255-AME_B11",
+        "results/ame_explicit_v1/spec_v05a/20261119-084255-AME_B11"
+      ],
+      "executions": 6
+    },
+    {
+      "name": "B00 compile/link/operands",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/B00-inspection.json"
+    },
+    {
+      "name": "B10 compile/link/operands",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/B10-inspection.json"
+    },
+    {
+      "name": "B01 compile/link/operands",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/B01-inspection.json"
+    },
+    {
+      "name": "B11 compile/link/operands",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/B11-inspection.json"
+    },
+    {
+      "name": "incremental off-before",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-085846-off-before/functional.json",
+        "results/ame_explicit_v1/spec_v05a/20261119-085859-off-before/functional.json"
+      ],
+      "gem5_sha256": "ef05cb0a5f228715b44f7910ce3a8c1dd24eef9c8b3c5e4124560e415aff5424",
+      "linked": [
+        false,
+        false
+      ]
+    },
+    {
+      "name": "incremental on",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-090538-on/functional.json",
+        "results/ame_explicit_v1/spec_v05a/20261119-090551-on/functional.json"
+      ],
+      "gem5_sha256": "f3d19b6e4d059171256b5ba2ee73db65c0f9a85dde27f221eceffdd3d9333623",
+      "linked": [
+        true,
+        true
+      ]
+    },
+    {
+      "name": "incremental off-after",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-091240-off-after/functional.json",
+        "results/ame_explicit_v1/spec_v05a/20261119-091253-off-after/functional.json"
+      ],
+      "gem5_sha256": "e604e608c0c6a12fc776abd412efaf5dd8ff132bd0985fbfb7eb403ea289fe8d",
+      "linked": [
+        false,
+        false
+      ]
+    },
+    {
+      "name": "default switches restored off",
+      "status": "PASS",
+      "evidence": "build/RISCV/gem5.build/config"
+    },
+    {
+      "name": "x06 fault isolation",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/fault_injection/x06-mutated.json",
+        "results/ame_explicit_v1/fault_injection/s05-unaffected.json"
+      ],
+      "expected_failures": 104
+    },
+    {
+      "name": "s05 fault isolation",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/fault_injection/s05-mutated.json",
+        "results/ame_explicit_v1/fault_injection/x06-unaffected.json"
+      ],
+      "expected_failures": 104
+    },
+    {
+      "name": "encoding audit",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/encoding_audit.json"
+    },
+    {
+      "name": "interleave P/X06/S05A",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/interleave/interleave.json"
+    },
+    {
+      "name": "regression compat_rvv_scalar_m5",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression ffn",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression gelu",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression gemm_fp32",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression gemm_int8",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression gemm_mixed",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression gemm_mixed_source_types",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression mha",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression native_primary_spec_v05a",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085632/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085632/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085632/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085632/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085632/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression native_primary_xuantie_v06",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085553/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085553/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085553/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085553/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085553/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression rmsnorm",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression rope",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    },
+    {
+      "name": "regression softmax",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json",
+        "results/ame_explicit_v1/regression/20261119-085153/regression.json"
+      ],
+      "builds": 5
+    }
+  ],
+  "summary": {
+    "PASS": 58
+  }
+}

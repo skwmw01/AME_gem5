@@ -25,3 +25,13 @@
 
 config USE_RISCV_ISA
     bool "RISC-V ISA support"
+
+config USE_XUANTIE_V06_EXPLICIT
+    bool "Xuantie v0.6 research explicit subset"
+    depends on USE_RISCV_ISA
+    default n
+
+config USE_SPEC_V05A_EXPLICIT
+    bool "spec-v0.5a research explicit subset"
+    depends on USE_RISCV_ISA
+    default n

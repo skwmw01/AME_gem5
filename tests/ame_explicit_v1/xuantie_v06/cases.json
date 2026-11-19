@@ -1,0 +1,332 @@
+[
+  {
+    "id": "XT06-0",
+    "mnemonic": "xt06.add.i32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "XT06-1",
+    "mnemonic": "xt06.add.f32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "XT06-2",
+    "mnemonic": "xt06.max.i32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "XT06-3",
+    "mnemonic": "xt06.max.u32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "XT06-4",
+    "mnemonic": "xt06.macbt.i8.i32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "XT06-5",
+    "mnemonic": "xt06.macbt.f16.f32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "XT06-6",
+    "mnemonic": "xt06.macbt.bf16.f32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "XT06-7",
+    "mnemonic": "xt06.cvt.f32.i32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "XT06-8",
+    "mnemonic": "xt06.cvt.i32.f32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "XT06-9",
+    "mnemonic": "xt06.cvtlo.f32.f16",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 65536
+  }
+]

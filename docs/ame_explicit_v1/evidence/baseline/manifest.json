@@ -1,0 +1,21 @@
+{
+  "commit": "6677b2c8f6e76363050427009d47c5481f9e53bf",
+  "files": {
+    "results/ame_explicit_v1/baseline/elf/gemm_fp32": "0a4ae1e6ea7843deeb5d15c9f27e8c9e6d398365627ba5449b66b859265dfbf6",
+    "results/ame_explicit_v1/baseline/elf/gemm_int8": "a87b1343079511f856c66d303d1d7a85a1d236b0476e390709b482e8fc8fa66d",
+    "results/ame_explicit_v1/baseline/elf/gemm_mixed": "e46ee88508e1303c467a95e07e5c4f23392965cdc876224f701979d9e5af9265",
+    "results/ame_explicit_v1/baseline/elf/gemm_mixed_source_types": "db48b7e17e7aeabf3a44a84e9f65eaf9be346366f1f939ca7ebce41e1956e618",
+    "results/ame_explicit_v1/baseline/elf/gelu": "f90913b1619facd483ea59cfb260d9073a8e94151dea537a143e5e9b612e90ba",
+    "results/ame_explicit_v1/baseline/elf/softmax": "13aa9df1fbca1e020841b1cb59166dca8dacfa76776d3e98e0fdec94db4c6508",
+    "results/ame_explicit_v1/baseline/elf/mha": "03ce1d549c881a0df43b8b303780bf791278f96ea49838c00606d6116d3ec5bf",
+    "results/ame_explicit_v1/baseline/elf/ffn": "02019cbbfb5de3a158eda9d178cd9302c740a043c5d0e49a87581860df66bad9",
+    "results/ame_explicit_v1/baseline/elf/rope": "a559d2267a6700352a541514c22a909a51a7fa46964c395ccccea3c90e012518",
+    "results/ame_explicit_v1/baseline/elf/rmsnorm": "597c2353138e0f1a697d0c29ee71ccbdb99c7cc52dcf57177bf769e1bbec0c6a",
+    "results/ame_explicit_v1/baseline/gem5.opt": "bb345e9bad511777213a0c5683ded1bfe06c1495be0d522e0f4a17b55a398014",
+    "results/ame_explicit_v1/baseline/config": "f839a59b33a593a63c3f5bef53bfac468df0619fcc46c3583c76b08b2d08564c"
+  },
+  "pdf": {
+    "xuantie-v0.6.pdf": "1b3d93177c4768bad1c7440fde90d4c8d3d5d884ea0f1c430c845cf446c77960",
+    "spec-v0.5a.pdf": "82cb1e19f14011e3b59d29be8e04082119f0319bdaf7c90727951d34feb3499c"
+  }
+}

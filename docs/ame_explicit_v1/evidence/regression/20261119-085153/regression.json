@@ -1,0 +1,1271 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "elf": "compat_rvv_scalar_m5",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "af55b8bc8ef32793ffcd6701570a5294178b555784893a764aa4fc2844db952b",
+        "stats": {
+          "simTicks": "404365000",
+          "simInsts": "29616",
+          "simOps": "29616",
+          "system.cpu.numCycles": "404365"
+        }
+      },
+      "reference": {
+        "report": "af55b8bc8ef32793ffcd6701570a5294178b555784893a764aa4fc2844db952b",
+        "stats": {
+          "simTicks": "404365000",
+          "simInsts": "29616",
+          "simOps": "29616",
+          "system.cpu.numCycles": "404365"
+        }
+      }
+    },
+    {
+      "elf": "compat_rvv_scalar_m5",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "af55b8bc8ef32793ffcd6701570a5294178b555784893a764aa4fc2844db952b",
+        "stats": {
+          "simTicks": "404365000",
+          "simInsts": "29616",
+          "simOps": "29616",
+          "system.cpu.numCycles": "404365"
+        }
+      },
+      "reference": {
+        "report": "af55b8bc8ef32793ffcd6701570a5294178b555784893a764aa4fc2844db952b",
+        "stats": {
+          "simTicks": "404365000",
+          "simInsts": "29616",
+          "simOps": "29616",
+          "system.cpu.numCycles": "404365"
+        }
+      }
+    },
+    {
+      "elf": "compat_rvv_scalar_m5",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "af55b8bc8ef32793ffcd6701570a5294178b555784893a764aa4fc2844db952b",
+        "stats": {
+          "simTicks": "404365000",
+          "simInsts": "29616",
+          "simOps": "29616",
+          "system.cpu.numCycles": "404365"
+        }
+      },
+      "reference": {
+        "report": "af55b8bc8ef32793ffcd6701570a5294178b555784893a764aa4fc2844db952b",
+        "stats": {
+          "simTicks": "404365000",
+          "simInsts": "29616",
+          "simOps": "29616",
+          "system.cpu.numCycles": "404365"
+        }
+      }
+    },
+    {
+      "elf": "compat_rvv_scalar_m5",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "af55b8bc8ef32793ffcd6701570a5294178b555784893a764aa4fc2844db952b",
+        "stats": {
+          "simTicks": "404365000",
+          "simInsts": "29616",
+          "simOps": "29616",
+          "system.cpu.numCycles": "404365"
+        }
+      },
+      "reference": {
+        "report": "af55b8bc8ef32793ffcd6701570a5294178b555784893a764aa4fc2844db952b",
+        "stats": {
+          "simTicks": "404365000",
+          "simInsts": "29616",
+          "simOps": "29616",
+          "system.cpu.numCycles": "404365"
+        }
+      }
+    },
+    {
+      "elf": "compat_rvv_scalar_m5",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "af55b8bc8ef32793ffcd6701570a5294178b555784893a764aa4fc2844db952b",
+        "stats": {
+          "simTicks": "404365000",
+          "simInsts": "29616",
+          "simOps": "29616",
+          "system.cpu.numCycles": "404365"
+        }
+      },
+      "reference": {
+        "report": "af55b8bc8ef32793ffcd6701570a5294178b555784893a764aa4fc2844db952b",
+        "stats": {
+          "simTicks": "404365000",
+          "simInsts": "29616",
+          "simOps": "29616",
+          "system.cpu.numCycles": "404365"
+        }
+      }
+    },
+    {
+      "elf": "ffn",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "77b7fcfb7217aed2cde750946ac27ba68b3b0d992db4373d34ca9ba736d46448",
+        "stats": {
+          "simTicks": "40564274000",
+          "simInsts": "1401347",
+          "simOps": "1401350",
+          "system.cpu.numCycles": "40564274"
+        }
+      },
+      "reference": {
+        "report": "77b7fcfb7217aed2cde750946ac27ba68b3b0d992db4373d34ca9ba736d46448",
+        "stats": {
+          "simTicks": "40564274000",
+          "simInsts": "1401347",
+          "simOps": "1401350",
+          "system.cpu.numCycles": "40564274"
+        }
+      }
+    },
+    {
+      "elf": "ffn",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "77b7fcfb7217aed2cde750946ac27ba68b3b0d992db4373d34ca9ba736d46448",
+        "stats": {
+          "simTicks": "40564274000",
+          "simInsts": "1401347",
+          "simOps": "1401350",
+          "system.cpu.numCycles": "40564274"
+        }
+      },
+      "reference": {
+        "report": "77b7fcfb7217aed2cde750946ac27ba68b3b0d992db4373d34ca9ba736d46448",
+        "stats": {
+          "simTicks": "40564274000",
+          "simInsts": "1401347",
+          "simOps": "1401350",
+          "system.cpu.numCycles": "40564274"
+        }
+      }
+    },
+    {
+      "elf": "ffn",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "77b7fcfb7217aed2cde750946ac27ba68b3b0d992db4373d34ca9ba736d46448",
+        "stats": {
+          "simTicks": "40564274000",
+          "simInsts": "1401347",
+          "simOps": "1401350",
+          "system.cpu.numCycles": "40564274"
+        }
+      },
+      "reference": {
+        "report": "77b7fcfb7217aed2cde750946ac27ba68b3b0d992db4373d34ca9ba736d46448",
+        "stats": {
+          "simTicks": "40564274000",
+          "simInsts": "1401347",
+          "simOps": "1401350",
+          "system.cpu.numCycles": "40564274"
+        }
+      }
+    },
+    {
+      "elf": "ffn",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "77b7fcfb7217aed2cde750946ac27ba68b3b0d992db4373d34ca9ba736d46448",
+        "stats": {
+          "simTicks": "40564274000",
+          "simInsts": "1401347",
+          "simOps": "1401350",
+          "system.cpu.numCycles": "40564274"
+        }
+      },
+      "reference": {
+        "report": "77b7fcfb7217aed2cde750946ac27ba68b3b0d992db4373d34ca9ba736d46448",
+        "stats": {
+          "simTicks": "40564274000",
+          "simInsts": "1401347",
+          "simOps": "1401350",
+          "system.cpu.numCycles": "40564274"
+        }
+      }
+    },
+    {
+      "elf": "ffn",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "77b7fcfb7217aed2cde750946ac27ba68b3b0d992db4373d34ca9ba736d46448",
+        "stats": {
+          "simTicks": "40564274000",
+          "simInsts": "1401347",
+          "simOps": "1401350",
+          "system.cpu.numCycles": "40564274"
+        }
+      },
+      "reference": {
+        "report": "77b7fcfb7217aed2cde750946ac27ba68b3b0d992db4373d34ca9ba736d46448",
+        "stats": {
+          "simTicks": "40564274000",
+          "simInsts": "1401347",
+          "simOps": "1401350",
+          "system.cpu.numCycles": "40564274"
+        }
+      }
+    },
+    {
+      "elf": "gelu",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "fc12c3f4bb54eee3fd58425bb91312e34fa9a2fd1d9813f6727470194831fc93",
+        "stats": {
+          "simTicks": "40565868000",
+          "simInsts": "1401442",
+          "simOps": "1401442",
+          "system.cpu.numCycles": "40565868"
+        }
+      },
+      "reference": {
+        "report": "fc12c3f4bb54eee3fd58425bb91312e34fa9a2fd1d9813f6727470194831fc93",
+        "stats": {
+          "simTicks": "40565868000",
+          "simInsts": "1401442",
+          "simOps": "1401442",
+          "system.cpu.numCycles": "40565868"
+        }
+      }
+    },
+    {
+      "elf": "gelu",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "fc12c3f4bb54eee3fd58425bb91312e34fa9a2fd1d9813f6727470194831fc93",
+        "stats": {
+          "simTicks": "40565868000",
+          "simInsts": "1401442",
+          "simOps": "1401442",
+          "system.cpu.numCycles": "40565868"
+        }
+      },
+      "reference": {
+        "report": "fc12c3f4bb54eee3fd58425bb91312e34fa9a2fd1d9813f6727470194831fc93",
+        "stats": {
+          "simTicks": "40565868000",
+          "simInsts": "1401442",
+          "simOps": "1401442",
+          "system.cpu.numCycles": "40565868"
+        }
+      }
+    },
+    {
+      "elf": "gelu",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "fc12c3f4bb54eee3fd58425bb91312e34fa9a2fd1d9813f6727470194831fc93",
+        "stats": {
+          "simTicks": "40565868000",
+          "simInsts": "1401442",
+          "simOps": "1401442",
+          "system.cpu.numCycles": "40565868"
+        }
+      },
+      "reference": {
+        "report": "fc12c3f4bb54eee3fd58425bb91312e34fa9a2fd1d9813f6727470194831fc93",
+        "stats": {
+          "simTicks": "40565868000",
+          "simInsts": "1401442",
+          "simOps": "1401442",
+          "system.cpu.numCycles": "40565868"
+        }
+      }
+    },
+    {
+      "elf": "gelu",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "fc12c3f4bb54eee3fd58425bb91312e34fa9a2fd1d9813f6727470194831fc93",
+        "stats": {
+          "simTicks": "40565868000",
+          "simInsts": "1401442",
+          "simOps": "1401442",
+          "system.cpu.numCycles": "40565868"
+        }
+      },
+      "reference": {
+        "report": "fc12c3f4bb54eee3fd58425bb91312e34fa9a2fd1d9813f6727470194831fc93",
+        "stats": {
+          "simTicks": "40565868000",
+          "simInsts": "1401442",
+          "simOps": "1401442",
+          "system.cpu.numCycles": "40565868"
+        }
+      }
+    },
+    {
+      "elf": "gelu",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "fc12c3f4bb54eee3fd58425bb91312e34fa9a2fd1d9813f6727470194831fc93",
+        "stats": {
+          "simTicks": "40565868000",
+          "simInsts": "1401442",
+          "simOps": "1401442",
+          "system.cpu.numCycles": "40565868"
+        }
+      },
+      "reference": {
+        "report": "fc12c3f4bb54eee3fd58425bb91312e34fa9a2fd1d9813f6727470194831fc93",
+        "stats": {
+          "simTicks": "40565868000",
+          "simInsts": "1401442",
+          "simOps": "1401442",
+          "system.cpu.numCycles": "40565868"
+        }
+      }
+    },
+    {
+      "elf": "gemm_fp32",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "2bde55697d94102b3ca5ca01aed18d153f270cb27c82fb3d6b3f77aa7342f1cc",
+        "stats": {
+          "simTicks": "40837916000",
+          "simInsts": "1416004",
+          "simOps": "1416116",
+          "system.cpu.numCycles": "40837916"
+        }
+      },
+      "reference": {
+        "report": "2bde55697d94102b3ca5ca01aed18d153f270cb27c82fb3d6b3f77aa7342f1cc",
+        "stats": {
+          "simTicks": "40837916000",
+          "simInsts": "1416004",
+          "simOps": "1416116",
+          "system.cpu.numCycles": "40837916"
+        }
+      }
+    },
+    {
+      "elf": "gemm_fp32",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "2bde55697d94102b3ca5ca01aed18d153f270cb27c82fb3d6b3f77aa7342f1cc",
+        "stats": {
+          "simTicks": "40837916000",
+          "simInsts": "1416004",
+          "simOps": "1416116",
+          "system.cpu.numCycles": "40837916"
+        }
+      },
+      "reference": {
+        "report": "2bde55697d94102b3ca5ca01aed18d153f270cb27c82fb3d6b3f77aa7342f1cc",
+        "stats": {
+          "simTicks": "40837916000",
+          "simInsts": "1416004",
+          "simOps": "1416116",
+          "system.cpu.numCycles": "40837916"
+        }
+      }
+    },
+    {
+      "elf": "gemm_fp32",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "2bde55697d94102b3ca5ca01aed18d153f270cb27c82fb3d6b3f77aa7342f1cc",
+        "stats": {
+          "simTicks": "40837916000",
+          "simInsts": "1416004",
+          "simOps": "1416116",
+          "system.cpu.numCycles": "40837916"
+        }
+      },
+      "reference": {
+        "report": "2bde55697d94102b3ca5ca01aed18d153f270cb27c82fb3d6b3f77aa7342f1cc",
+        "stats": {
+          "simTicks": "40837916000",
+          "simInsts": "1416004",
+          "simOps": "1416116",
+          "system.cpu.numCycles": "40837916"
+        }
+      }
+    },
+    {
+      "elf": "gemm_fp32",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "2bde55697d94102b3ca5ca01aed18d153f270cb27c82fb3d6b3f77aa7342f1cc",
+        "stats": {
+          "simTicks": "40837916000",
+          "simInsts": "1416004",
+          "simOps": "1416116",
+          "system.cpu.numCycles": "40837916"
+        }
+      },
+      "reference": {
+        "report": "2bde55697d94102b3ca5ca01aed18d153f270cb27c82fb3d6b3f77aa7342f1cc",
+        "stats": {
+          "simTicks": "40837916000",
+          "simInsts": "1416004",
+          "simOps": "1416116",
+          "system.cpu.numCycles": "40837916"
+        }
+      }
+    },
+    {
+      "elf": "gemm_fp32",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "2bde55697d94102b3ca5ca01aed18d153f270cb27c82fb3d6b3f77aa7342f1cc",
+        "stats": {
+          "simTicks": "40837916000",
+          "simInsts": "1416004",
+          "simOps": "1416116",
+          "system.cpu.numCycles": "40837916"
+        }
+      },
+      "reference": {
+        "report": "2bde55697d94102b3ca5ca01aed18d153f270cb27c82fb3d6b3f77aa7342f1cc",
+        "stats": {
+          "simTicks": "40837916000",
+          "simInsts": "1416004",
+          "simOps": "1416116",
+          "system.cpu.numCycles": "40837916"
+        }
+      }
+    },
+    {
+      "elf": "gemm_int8",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "0547456950e1666a9430c026e6837291558aabea044c7b9886aede9a42b6ff84",
+        "stats": {
+          "simTicks": "76560931000",
+          "simInsts": "4070997",
+          "simOps": "4070997",
+          "system.cpu.numCycles": "76560931"
+        }
+      },
+      "reference": {
+        "report": "0547456950e1666a9430c026e6837291558aabea044c7b9886aede9a42b6ff84",
+        "stats": {
+          "simTicks": "76560931000",
+          "simInsts": "4070997",
+          "simOps": "4070997",
+          "system.cpu.numCycles": "76560931"
+        }
+      }
+    },
+    {
+      "elf": "gemm_int8",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "0547456950e1666a9430c026e6837291558aabea044c7b9886aede9a42b6ff84",
+        "stats": {
+          "simTicks": "76560931000",
+          "simInsts": "4070997",
+          "simOps": "4070997",
+          "system.cpu.numCycles": "76560931"
+        }
+      },
+      "reference": {
+        "report": "0547456950e1666a9430c026e6837291558aabea044c7b9886aede9a42b6ff84",
+        "stats": {
+          "simTicks": "76560931000",
+          "simInsts": "4070997",
+          "simOps": "4070997",
+          "system.cpu.numCycles": "76560931"
+        }
+      }
+    },
+    {
+      "elf": "gemm_int8",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "0547456950e1666a9430c026e6837291558aabea044c7b9886aede9a42b6ff84",
+        "stats": {
+          "simTicks": "76560931000",
+          "simInsts": "4070997",
+          "simOps": "4070997",
+          "system.cpu.numCycles": "76560931"
+        }
+      },
+      "reference": {
+        "report": "0547456950e1666a9430c026e6837291558aabea044c7b9886aede9a42b6ff84",
+        "stats": {
+          "simTicks": "76560931000",
+          "simInsts": "4070997",
+          "simOps": "4070997",
+          "system.cpu.numCycles": "76560931"
+        }
+      }
+    },
+    {
+      "elf": "gemm_int8",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "0547456950e1666a9430c026e6837291558aabea044c7b9886aede9a42b6ff84",
+        "stats": {
+          "simTicks": "76560931000",
+          "simInsts": "4070997",
+          "simOps": "4070997",
+          "system.cpu.numCycles": "76560931"
+        }
+      },
+      "reference": {
+        "report": "0547456950e1666a9430c026e6837291558aabea044c7b9886aede9a42b6ff84",
+        "stats": {
+          "simTicks": "76560931000",
+          "simInsts": "4070997",
+          "simOps": "4070997",
+          "system.cpu.numCycles": "76560931"
+        }
+      }
+    },
+    {
+      "elf": "gemm_int8",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "0547456950e1666a9430c026e6837291558aabea044c7b9886aede9a42b6ff84",
+        "stats": {
+          "simTicks": "76560931000",
+          "simInsts": "4070997",
+          "simOps": "4070997",
+          "system.cpu.numCycles": "76560931"
+        }
+      },
+      "reference": {
+        "report": "0547456950e1666a9430c026e6837291558aabea044c7b9886aede9a42b6ff84",
+        "stats": {
+          "simTicks": "76560931000",
+          "simInsts": "4070997",
+          "simOps": "4070997",
+          "system.cpu.numCycles": "76560931"
+        }
+      }
+    },
+    {
+      "elf": "gemm_mixed",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "317338533e8dd24ff0704ab3b9175a0a77bb95abd71a142d3f6942b10dcfc35a",
+        "stats": {
+          "simTicks": "79893446000",
+          "simInsts": "4066877",
+          "simOps": "4066877",
+          "system.cpu.numCycles": "79893446"
+        }
+      },
+      "reference": {
+        "report": "317338533e8dd24ff0704ab3b9175a0a77bb95abd71a142d3f6942b10dcfc35a",
+        "stats": {
+          "simTicks": "79893446000",
+          "simInsts": "4066877",
+          "simOps": "4066877",
+          "system.cpu.numCycles": "79893446"
+        }
+      }
+    },
+    {
+      "elf": "gemm_mixed",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "317338533e8dd24ff0704ab3b9175a0a77bb95abd71a142d3f6942b10dcfc35a",
+        "stats": {
+          "simTicks": "79893446000",
+          "simInsts": "4066877",
+          "simOps": "4066877",
+          "system.cpu.numCycles": "79893446"
+        }
+      },
+      "reference": {
+        "report": "317338533e8dd24ff0704ab3b9175a0a77bb95abd71a142d3f6942b10dcfc35a",
+        "stats": {
+          "simTicks": "79893446000",
+          "simInsts": "4066877",
+          "simOps": "4066877",
+          "system.cpu.numCycles": "79893446"
+        }
+      }
+    },
+    {
+      "elf": "gemm_mixed",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "317338533e8dd24ff0704ab3b9175a0a77bb95abd71a142d3f6942b10dcfc35a",
+        "stats": {
+          "simTicks": "79893446000",
+          "simInsts": "4066877",
+          "simOps": "4066877",
+          "system.cpu.numCycles": "79893446"
+        }
+      },
+      "reference": {
+        "report": "317338533e8dd24ff0704ab3b9175a0a77bb95abd71a142d3f6942b10dcfc35a",
+        "stats": {
+          "simTicks": "79893446000",
+          "simInsts": "4066877",
+          "simOps": "4066877",
+          "system.cpu.numCycles": "79893446"
+        }
+      }
+    },
+    {
+      "elf": "gemm_mixed",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "317338533e8dd24ff0704ab3b9175a0a77bb95abd71a142d3f6942b10dcfc35a",
+        "stats": {
+          "simTicks": "79893446000",
+          "simInsts": "4066877",
+          "simOps": "4066877",
+          "system.cpu.numCycles": "79893446"
+        }
+      },
+      "reference": {
+        "report": "317338533e8dd24ff0704ab3b9175a0a77bb95abd71a142d3f6942b10dcfc35a",
+        "stats": {
+          "simTicks": "79893446000",
+          "simInsts": "4066877",
+          "simOps": "4066877",
+          "system.cpu.numCycles": "79893446"
+        }
+      }
+    },
+    {
+      "elf": "gemm_mixed",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "317338533e8dd24ff0704ab3b9175a0a77bb95abd71a142d3f6942b10dcfc35a",
+        "stats": {
+          "simTicks": "79893446000",
+          "simInsts": "4066877",
+          "simOps": "4066877",
+          "system.cpu.numCycles": "79893446"
+        }
+      },
+      "reference": {
+        "report": "317338533e8dd24ff0704ab3b9175a0a77bb95abd71a142d3f6942b10dcfc35a",
+        "stats": {
+          "simTicks": "79893446000",
+          "simInsts": "4066877",
+          "simOps": "4066877",
+          "system.cpu.numCycles": "79893446"
+        }
+      }
+    },
+    {
+      "elf": "gemm_mixed_source_types",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "0afab6620e892d038f244c900ad4beb7ce6bbca86b17f12abc92ce622a762b53",
+        "stats": {
+          "simTicks": "159902761000",
+          "simInsts": "8034868",
+          "simOps": "8034870",
+          "system.cpu.numCycles": "159902761"
+        }
+      },
+      "reference": {
+        "report": "0afab6620e892d038f244c900ad4beb7ce6bbca86b17f12abc92ce622a762b53",
+        "stats": {
+          "simTicks": "159902761000",
+          "simInsts": "8034868",
+          "simOps": "8034870",
+          "system.cpu.numCycles": "159902761"
+        }
+      }
+    },
+    {
+      "elf": "gemm_mixed_source_types",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "0afab6620e892d038f244c900ad4beb7ce6bbca86b17f12abc92ce622a762b53",
+        "stats": {
+          "simTicks": "159902761000",
+          "simInsts": "8034868",
+          "simOps": "8034870",
+          "system.cpu.numCycles": "159902761"
+        }
+      },
+      "reference": {
+        "report": "0afab6620e892d038f244c900ad4beb7ce6bbca86b17f12abc92ce622a762b53",
+        "stats": {
+          "simTicks": "159902761000",
+          "simInsts": "8034868",
+          "simOps": "8034870",
+          "system.cpu.numCycles": "159902761"
+        }
+      }
+    },
+    {
+      "elf": "gemm_mixed_source_types",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "0afab6620e892d038f244c900ad4beb7ce6bbca86b17f12abc92ce622a762b53",
+        "stats": {
+          "simTicks": "159902761000",
+          "simInsts": "8034868",
+          "simOps": "8034870",
+          "system.cpu.numCycles": "159902761"
+        }
+      },
+      "reference": {
+        "report": "0afab6620e892d038f244c900ad4beb7ce6bbca86b17f12abc92ce622a762b53",
+        "stats": {
+          "simTicks": "159902761000",
+          "simInsts": "8034868",
+          "simOps": "8034870",
+          "system.cpu.numCycles": "159902761"
+        }
+      }
+    },
+    {
+      "elf": "gemm_mixed_source_types",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "0afab6620e892d038f244c900ad4beb7ce6bbca86b17f12abc92ce622a762b53",
+        "stats": {
+          "simTicks": "159902761000",
+          "simInsts": "8034868",
+          "simOps": "8034870",
+          "system.cpu.numCycles": "159902761"
+        }
+      },
+      "reference": {
+        "report": "0afab6620e892d038f244c900ad4beb7ce6bbca86b17f12abc92ce622a762b53",
+        "stats": {
+          "simTicks": "159902761000",
+          "simInsts": "8034868",
+          "simOps": "8034870",
+          "system.cpu.numCycles": "159902761"
+        }
+      }
+    },
+    {
+      "elf": "gemm_mixed_source_types",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "0afab6620e892d038f244c900ad4beb7ce6bbca86b17f12abc92ce622a762b53",
+        "stats": {
+          "simTicks": "159902761000",
+          "simInsts": "8034868",
+          "simOps": "8034870",
+          "system.cpu.numCycles": "159902761"
+        }
+      },
+      "reference": {
+        "report": "0afab6620e892d038f244c900ad4beb7ce6bbca86b17f12abc92ce622a762b53",
+        "stats": {
+          "simTicks": "159902761000",
+          "simInsts": "8034868",
+          "simOps": "8034870",
+          "system.cpu.numCycles": "159902761"
+        }
+      }
+    },
+    {
+      "elf": "mha",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "b19aec740af2f5cb6f8b87a2df5992abb9efa8caffd9410488cc6d432cb759d8",
+        "stats": {
+          "simTicks": "40811620000",
+          "simInsts": "1416494",
+          "simOps": "1416505",
+          "system.cpu.numCycles": "40811620"
+        }
+      },
+      "reference": {
+        "report": "b19aec740af2f5cb6f8b87a2df5992abb9efa8caffd9410488cc6d432cb759d8",
+        "stats": {
+          "simTicks": "40811620000",
+          "simInsts": "1416494",
+          "simOps": "1416505",
+          "system.cpu.numCycles": "40811620"
+        }
+      }
+    },
+    {
+      "elf": "mha",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "b19aec740af2f5cb6f8b87a2df5992abb9efa8caffd9410488cc6d432cb759d8",
+        "stats": {
+          "simTicks": "40811620000",
+          "simInsts": "1416494",
+          "simOps": "1416505",
+          "system.cpu.numCycles": "40811620"
+        }
+      },
+      "reference": {
+        "report": "b19aec740af2f5cb6f8b87a2df5992abb9efa8caffd9410488cc6d432cb759d8",
+        "stats": {
+          "simTicks": "40811620000",
+          "simInsts": "1416494",
+          "simOps": "1416505",
+          "system.cpu.numCycles": "40811620"
+        }
+      }
+    },
+    {
+      "elf": "mha",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "b19aec740af2f5cb6f8b87a2df5992abb9efa8caffd9410488cc6d432cb759d8",
+        "stats": {
+          "simTicks": "40811620000",
+          "simInsts": "1416494",
+          "simOps": "1416505",
+          "system.cpu.numCycles": "40811620"
+        }
+      },
+      "reference": {
+        "report": "b19aec740af2f5cb6f8b87a2df5992abb9efa8caffd9410488cc6d432cb759d8",
+        "stats": {
+          "simTicks": "40811620000",
+          "simInsts": "1416494",
+          "simOps": "1416505",
+          "system.cpu.numCycles": "40811620"
+        }
+      }
+    },
+    {
+      "elf": "mha",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "b19aec740af2f5cb6f8b87a2df5992abb9efa8caffd9410488cc6d432cb759d8",
+        "stats": {
+          "simTicks": "40811620000",
+          "simInsts": "1416494",
+          "simOps": "1416505",
+          "system.cpu.numCycles": "40811620"
+        }
+      },
+      "reference": {
+        "report": "b19aec740af2f5cb6f8b87a2df5992abb9efa8caffd9410488cc6d432cb759d8",
+        "stats": {
+          "simTicks": "40811620000",
+          "simInsts": "1416494",
+          "simOps": "1416505",
+          "system.cpu.numCycles": "40811620"
+        }
+      }
+    },
+    {
+      "elf": "mha",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "b19aec740af2f5cb6f8b87a2df5992abb9efa8caffd9410488cc6d432cb759d8",
+        "stats": {
+          "simTicks": "40811620000",
+          "simInsts": "1416494",
+          "simOps": "1416505",
+          "system.cpu.numCycles": "40811620"
+        }
+      },
+      "reference": {
+        "report": "b19aec740af2f5cb6f8b87a2df5992abb9efa8caffd9410488cc6d432cb759d8",
+        "stats": {
+          "simTicks": "40811620000",
+          "simInsts": "1416494",
+          "simOps": "1416505",
+          "system.cpu.numCycles": "40811620"
+        }
+      }
+    },
+    {
+      "elf": "rmsnorm",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "cf4265e9e31053a03940621b1aea57688a99d876983d192bd68651d562ae6865",
+        "stats": {
+          "simTicks": "40576026000",
+          "simInsts": "1401732",
+          "simOps": "1401732",
+          "system.cpu.numCycles": "40576026"
+        }
+      },
+      "reference": {
+        "report": "cf4265e9e31053a03940621b1aea57688a99d876983d192bd68651d562ae6865",
+        "stats": {
+          "simTicks": "40576026000",
+          "simInsts": "1401732",
+          "simOps": "1401732",
+          "system.cpu.numCycles": "40576026"
+        }
+      }
+    },
+    {
+      "elf": "rmsnorm",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "cf4265e9e31053a03940621b1aea57688a99d876983d192bd68651d562ae6865",
+        "stats": {
+          "simTicks": "40576026000",
+          "simInsts": "1401732",
+          "simOps": "1401732",
+          "system.cpu.numCycles": "40576026"
+        }
+      },
+      "reference": {
+        "report": "cf4265e9e31053a03940621b1aea57688a99d876983d192bd68651d562ae6865",
+        "stats": {
+          "simTicks": "40576026000",
+          "simInsts": "1401732",
+          "simOps": "1401732",
+          "system.cpu.numCycles": "40576026"
+        }
+      }
+    },
+    {
+      "elf": "rmsnorm",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "cf4265e9e31053a03940621b1aea57688a99d876983d192bd68651d562ae6865",
+        "stats": {
+          "simTicks": "40576026000",
+          "simInsts": "1401732",
+          "simOps": "1401732",
+          "system.cpu.numCycles": "40576026"
+        }
+      },
+      "reference": {
+        "report": "cf4265e9e31053a03940621b1aea57688a99d876983d192bd68651d562ae6865",
+        "stats": {
+          "simTicks": "40576026000",
+          "simInsts": "1401732",
+          "simOps": "1401732",
+          "system.cpu.numCycles": "40576026"
+        }
+      }
+    },
+    {
+      "elf": "rmsnorm",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "cf4265e9e31053a03940621b1aea57688a99d876983d192bd68651d562ae6865",
+        "stats": {
+          "simTicks": "40576026000",
+          "simInsts": "1401732",
+          "simOps": "1401732",
+          "system.cpu.numCycles": "40576026"
+        }
+      },
+      "reference": {
+        "report": "cf4265e9e31053a03940621b1aea57688a99d876983d192bd68651d562ae6865",
+        "stats": {
+          "simTicks": "40576026000",
+          "simInsts": "1401732",
+          "simOps": "1401732",
+          "system.cpu.numCycles": "40576026"
+        }
+      }
+    },
+    {
+      "elf": "rmsnorm",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "cf4265e9e31053a03940621b1aea57688a99d876983d192bd68651d562ae6865",
+        "stats": {
+          "simTicks": "40576026000",
+          "simInsts": "1401732",
+          "simOps": "1401732",
+          "system.cpu.numCycles": "40576026"
+        }
+      },
+      "reference": {
+        "report": "cf4265e9e31053a03940621b1aea57688a99d876983d192bd68651d562ae6865",
+        "stats": {
+          "simTicks": "40576026000",
+          "simInsts": "1401732",
+          "simOps": "1401732",
+          "system.cpu.numCycles": "40576026"
+        }
+      }
+    },
+    {
+      "elf": "rope",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "8655de9507389bbedab6a7763364bd819bd42d37da000d51be27465fc5954f1c",
+        "stats": {
+          "simTicks": "40570296000",
+          "simInsts": "1401760",
+          "simOps": "1401760",
+          "system.cpu.numCycles": "40570296"
+        }
+      },
+      "reference": {
+        "report": "8655de9507389bbedab6a7763364bd819bd42d37da000d51be27465fc5954f1c",
+        "stats": {
+          "simTicks": "40570296000",
+          "simInsts": "1401760",
+          "simOps": "1401760",
+          "system.cpu.numCycles": "40570296"
+        }
+      }
+    },
+    {
+      "elf": "rope",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "8655de9507389bbedab6a7763364bd819bd42d37da000d51be27465fc5954f1c",
+        "stats": {
+          "simTicks": "40570296000",
+          "simInsts": "1401760",
+          "simOps": "1401760",
+          "system.cpu.numCycles": "40570296"
+        }
+      },
+      "reference": {
+        "report": "8655de9507389bbedab6a7763364bd819bd42d37da000d51be27465fc5954f1c",
+        "stats": {
+          "simTicks": "40570296000",
+          "simInsts": "1401760",
+          "simOps": "1401760",
+          "system.cpu.numCycles": "40570296"
+        }
+      }
+    },
+    {
+      "elf": "rope",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "8655de9507389bbedab6a7763364bd819bd42d37da000d51be27465fc5954f1c",
+        "stats": {
+          "simTicks": "40570296000",
+          "simInsts": "1401760",
+          "simOps": "1401760",
+          "system.cpu.numCycles": "40570296"
+        }
+      },
+      "reference": {
+        "report": "8655de9507389bbedab6a7763364bd819bd42d37da000d51be27465fc5954f1c",
+        "stats": {
+          "simTicks": "40570296000",
+          "simInsts": "1401760",
+          "simOps": "1401760",
+          "system.cpu.numCycles": "40570296"
+        }
+      }
+    },
+    {
+      "elf": "rope",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "8655de9507389bbedab6a7763364bd819bd42d37da000d51be27465fc5954f1c",
+        "stats": {
+          "simTicks": "40570296000",
+          "simInsts": "1401760",
+          "simOps": "1401760",
+          "system.cpu.numCycles": "40570296"
+        }
+      },
+      "reference": {
+        "report": "8655de9507389bbedab6a7763364bd819bd42d37da000d51be27465fc5954f1c",
+        "stats": {
+          "simTicks": "40570296000",
+          "simInsts": "1401760",
+          "simOps": "1401760",
+          "system.cpu.numCycles": "40570296"
+        }
+      }
+    },
+    {
+      "elf": "rope",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "8655de9507389bbedab6a7763364bd819bd42d37da000d51be27465fc5954f1c",
+        "stats": {
+          "simTicks": "40570296000",
+          "simInsts": "1401760",
+          "simOps": "1401760",
+          "system.cpu.numCycles": "40570296"
+        }
+      },
+      "reference": {
+        "report": "8655de9507389bbedab6a7763364bd819bd42d37da000d51be27465fc5954f1c",
+        "stats": {
+          "simTicks": "40570296000",
+          "simInsts": "1401760",
+          "simOps": "1401760",
+          "system.cpu.numCycles": "40570296"
+        }
+      }
+    },
+    {
+      "elf": "softmax",
+      "build": "baseline",
+      "status": "PASS",
+      "observed": {
+        "report": "31ff689d00aa1165661e66ac5085679e8390bfe969ac0679886289acf381ee26",
+        "stats": {
+          "simTicks": "40568730000",
+          "simInsts": "1401322",
+          "simOps": "1401324",
+          "system.cpu.numCycles": "40568730"
+        }
+      },
+      "reference": {
+        "report": "31ff689d00aa1165661e66ac5085679e8390bfe969ac0679886289acf381ee26",
+        "stats": {
+          "simTicks": "40568730000",
+          "simInsts": "1401322",
+          "simOps": "1401324",
+          "system.cpu.numCycles": "40568730"
+        }
+      }
+    },
+    {
+      "elf": "softmax",
+      "build": "B00",
+      "status": "PASS",
+      "observed": {
+        "report": "31ff689d00aa1165661e66ac5085679e8390bfe969ac0679886289acf381ee26",
+        "stats": {
+          "simTicks": "40568730000",
+          "simInsts": "1401322",
+          "simOps": "1401324",
+          "system.cpu.numCycles": "40568730"
+        }
+      },
+      "reference": {
+        "report": "31ff689d00aa1165661e66ac5085679e8390bfe969ac0679886289acf381ee26",
+        "stats": {
+          "simTicks": "40568730000",
+          "simInsts": "1401322",
+          "simOps": "1401324",
+          "system.cpu.numCycles": "40568730"
+        }
+      }
+    },
+    {
+      "elf": "softmax",
+      "build": "B10",
+      "status": "PASS",
+      "observed": {
+        "report": "31ff689d00aa1165661e66ac5085679e8390bfe969ac0679886289acf381ee26",
+        "stats": {
+          "simTicks": "40568730000",
+          "simInsts": "1401322",
+          "simOps": "1401324",
+          "system.cpu.numCycles": "40568730"
+        }
+      },
+      "reference": {
+        "report": "31ff689d00aa1165661e66ac5085679e8390bfe969ac0679886289acf381ee26",
+        "stats": {
+          "simTicks": "40568730000",
+          "simInsts": "1401322",
+          "simOps": "1401324",
+          "system.cpu.numCycles": "40568730"
+        }
+      }
+    },
+    {
+      "elf": "softmax",
+      "build": "B01",
+      "status": "PASS",
+      "observed": {
+        "report": "31ff689d00aa1165661e66ac5085679e8390bfe969ac0679886289acf381ee26",
+        "stats": {
+          "simTicks": "40568730000",
+          "simInsts": "1401322",
+          "simOps": "1401324",
+          "system.cpu.numCycles": "40568730"
+        }
+      },
+      "reference": {
+        "report": "31ff689d00aa1165661e66ac5085679e8390bfe969ac0679886289acf381ee26",
+        "stats": {
+          "simTicks": "40568730000",
+          "simInsts": "1401322",
+          "simOps": "1401324",
+          "system.cpu.numCycles": "40568730"
+        }
+      }
+    },
+    {
+      "elf": "softmax",
+      "build": "B11",
+      "status": "PASS",
+      "observed": {
+        "report": "31ff689d00aa1165661e66ac5085679e8390bfe969ac0679886289acf381ee26",
+        "stats": {
+          "simTicks": "40568730000",
+          "simInsts": "1401322",
+          "simOps": "1401324",
+          "system.cpu.numCycles": "40568730"
+        }
+      },
+      "reference": {
+        "report": "31ff689d00aa1165661e66ac5085679e8390bfe969ac0679886289acf381ee26",
+        "stats": {
+          "simTicks": "40568730000",
+          "simInsts": "1401322",
+          "simOps": "1401324",
+          "system.cpu.numCycles": "40568730"
+        }
+      }
+    }
+  ],
+  "run": "20261119-085153"
+}

@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "outcomes": [
+    {
+      "invalid_descriptors": false,
+      "register_count": 72,
+      "bytes_per_register": 256,
+      "checks": [
+        {
+          "instruction": "xt06.add.i32",
+          "status": "PASS",
+          "expected_matrix_sha256": "844ed4ced02308286d410e61847feb1908b252a54d8da7da8e640af95ac3e77d",
+          "actual_matrix_sha256": "844ed4ced02308286d410e61847feb1908b252a54d8da7da8e640af95ac3e77d",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.add.f32",
+          "status": "PASS",
+          "expected_matrix_sha256": "3aadb31f1e46f52651dd398b1340961a0eb33517898aa0593e4bddc452a3aaf6",
+          "actual_matrix_sha256": "3aadb31f1e46f52651dd398b1340961a0eb33517898aa0593e4bddc452a3aaf6",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.max.i32",
+          "status": "PASS",
+          "expected_matrix_sha256": "3aadb31f1e46f52651dd398b1340961a0eb33517898aa0593e4bddc452a3aaf6",
+          "actual_matrix_sha256": "3aadb31f1e46f52651dd398b1340961a0eb33517898aa0593e4bddc452a3aaf6",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.max.u32",
+          "status": "PASS",
+          "expected_matrix_sha256": "3aadb31f1e46f52651dd398b1340961a0eb33517898aa0593e4bddc452a3aaf6",
+          "actual_matrix_sha256": "3aadb31f1e46f52651dd398b1340961a0eb33517898aa0593e4bddc452a3aaf6",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.macbt.i8.i32",
+          "status": "PASS",
+          "expected_matrix_sha256": "ffc97937005ad343bb2201fff855b4407236ef03516d2cf47e5f1103da24e9b6",
+          "actual_matrix_sha256": "ffc97937005ad343bb2201fff855b4407236ef03516d2cf47e5f1103da24e9b6",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.macbt.f16.f32",
+          "status": "PASS",
+          "expected_matrix_sha256": "ffc97937005ad343bb2201fff855b4407236ef03516d2cf47e5f1103da24e9b6",
+          "actual_matrix_sha256": "ffc97937005ad343bb2201fff855b4407236ef03516d2cf47e5f1103da24e9b6",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.macbt.bf16.f32",
+          "status": "PASS",
+          "expected_matrix_sha256": "ffc97937005ad343bb2201fff855b4407236ef03516d2cf47e5f1103da24e9b6",
+          "actual_matrix_sha256": "ffc97937005ad343bb2201fff855b4407236ef03516d2cf47e5f1103da24e9b6",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.cvt.f32.i32",
+          "status": "PASS",
+          "expected_matrix_sha256": "16914134c5b3fbb7533f73738535fd69d0dc4377ef116b37eaf69e0ebe8b1e13",
+          "actual_matrix_sha256": "16914134c5b3fbb7533f73738535fd69d0dc4377ef116b37eaf69e0ebe8b1e13",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.cvt.i32.f32",
+          "status": "PASS",
+          "expected_matrix_sha256": "78f4930b9bd00efb4c6c6e9a7567b5c58c977398f9d5bd49be30850461413485",
+          "actual_matrix_sha256": "78f4930b9bd00efb4c6c6e9a7567b5c58c977398f9d5bd49be30850461413485",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.cvtlo.f32.f16",
+          "status": "PASS",
+          "expected_matrix_sha256": "2bcdc57108912215b45a4b0144169d80088aa34816612c18a80dafffbb725d3f",
+          "actual_matrix_sha256": "2bcdc57108912215b45a4b0144169d80088aa34816612c18a80dafffbb725d3f",
+          "csr_differences": {}
+        }
+      ]
+    },
+    {
+      "invalid_descriptors": true,
+      "register_count": 72,
+      "bytes_per_register": 256,
+      "checks": [
+        {
+          "instruction": "xt06.add.i32",
+          "status": "PASS",
+          "expected_matrix_sha256": "b20cd8ecf50fe9d85b142a047d27f2a8f7813ed45b056daf4c7f605aab731bde",
+          "actual_matrix_sha256": "b20cd8ecf50fe9d85b142a047d27f2a8f7813ed45b056daf4c7f605aab731bde",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.add.f32",
+          "status": "PASS",
+          "expected_matrix_sha256": "c9e0b3b90856ae888c4a24333b7b648c80a5d1f6c2417d102ab5e3f6cb614f67",
+          "actual_matrix_sha256": "c9e0b3b90856ae888c4a24333b7b648c80a5d1f6c2417d102ab5e3f6cb614f67",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.max.i32",
+          "status": "PASS",
+          "expected_matrix_sha256": "c9e0b3b90856ae888c4a24333b7b648c80a5d1f6c2417d102ab5e3f6cb614f67",
+          "actual_matrix_sha256": "c9e0b3b90856ae888c4a24333b7b648c80a5d1f6c2417d102ab5e3f6cb614f67",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.max.u32",
+          "status": "PASS",
+          "expected_matrix_sha256": "c9e0b3b90856ae888c4a24333b7b648c80a5d1f6c2417d102ab5e3f6cb614f67",
+          "actual_matrix_sha256": "c9e0b3b90856ae888c4a24333b7b648c80a5d1f6c2417d102ab5e3f6cb614f67",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.macbt.i8.i32",
+          "status": "PASS",
+          "expected_matrix_sha256": "5135abeb038c7a3337a51857390f8db1a5e4ee45ebf1c58d0868f2eab5d4f618",
+          "actual_matrix_sha256": "5135abeb038c7a3337a51857390f8db1a5e4ee45ebf1c58d0868f2eab5d4f618",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.macbt.f16.f32",
+          "status": "PASS",
+          "expected_matrix_sha256": "5135abeb038c7a3337a51857390f8db1a5e4ee45ebf1c58d0868f2eab5d4f618",
+          "actual_matrix_sha256": "5135abeb038c7a3337a51857390f8db1a5e4ee45ebf1c58d0868f2eab5d4f618",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.macbt.bf16.f32",
+          "status": "PASS",
+          "expected_matrix_sha256": "5135abeb038c7a3337a51857390f8db1a5e4ee45ebf1c58d0868f2eab5d4f618",
+          "actual_matrix_sha256": "5135abeb038c7a3337a51857390f8db1a5e4ee45ebf1c58d0868f2eab5d4f618",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.cvt.f32.i32",
+          "status": "PASS",
+          "expected_matrix_sha256": "59562af9e8bfb070081162f2d98f8ae58f1e711754ffbae61cc563906d9d5b87",
+          "actual_matrix_sha256": "59562af9e8bfb070081162f2d98f8ae58f1e711754ffbae61cc563906d9d5b87",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.cvt.i32.f32",
+          "status": "PASS",
+          "expected_matrix_sha256": "0ba71cbe7fbc9bf23483a9ee45d587f2df1720f871d2c42c7139449998fe3aa8",
+          "actual_matrix_sha256": "0ba71cbe7fbc9bf23483a9ee45d587f2df1720f871d2c42c7139449998fe3aa8",
+          "csr_differences": {}
+        },
+        {
+          "instruction": "xt06.cvtlo.f32.f16",
+          "status": "PASS",
+          "expected_matrix_sha256": "21960f1cecee209e73a515da8a6259b6a2b682506e2f7367f8fefbbc2d852ce1",
+          "actual_matrix_sha256": "21960f1cecee209e73a515da8a6259b6a2b682506e2f7367f8fefbbc2d852ce1",
+          "csr_differences": {}
+        }
+      ]
+    }
+  ],
+  "run": "results/ame_explicit_v1/xuantie_v06/20261119-090454-storage",
+  "gem5_sha256": "6ddf3e8b74544dbe52acad7265fec506f54da96fd9c0c02caf25479ef9355ef9"
+}

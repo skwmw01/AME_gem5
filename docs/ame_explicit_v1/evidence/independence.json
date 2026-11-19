@@ -1,0 +1,103 @@
+{
+  "static_dependencies": {
+    "xuantie_v06": [],
+    "spec_v05a": []
+  },
+  "static_status": "PASS",
+  "generated_code": "PASS",
+  "fault_injection": "PASS",
+  "checks": [
+    {
+      "name": "xuantie_v06 full B10",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-085014-AME_B10/functional.json",
+      "executions": 28718
+    },
+    {
+      "name": "xuantie_v06 full B11",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-084255-AME_B11/functional.json",
+      "executions": 28718
+    },
+    {
+      "name": "xuantie_v06 single/dual equality",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-085014-AME_B10",
+        "results/ame_explicit_v1/xuantie_v06/20261119-084255-AME_B11"
+      ]
+    },
+    {
+      "name": "xuantie_v06 dependencies",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-084849-AME_B11/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "xuantie_v06 decode_fields",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/decode_fields.json",
+      "executions": 146432
+    },
+    {
+      "name": "spec_v05a full B01",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-085013-AME_B01/functional.json",
+      "executions": 24622
+    },
+    {
+      "name": "spec_v05a full B11",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-084255-AME_B11/functional.json",
+      "executions": 24622
+    },
+    {
+      "name": "spec_v05a single/dual equality",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/spec_v05a/20261119-085013-AME_B01",
+        "results/ame_explicit_v1/spec_v05a/20261119-084255-AME_B11"
+      ]
+    },
+    {
+      "name": "spec_v05a dependencies",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-084849-AME_B11/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "spec_v05a decode_fields",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/decode_fields.json",
+      "executions": 146400
+    },
+    {
+      "name": "same mathematical products with distinct B packing",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-084255-AME_B11",
+        "results/ame_explicit_v1/spec_v05a/20261119-084255-AME_B11"
+      ],
+      "executions": 6
+    },
+    {
+      "name": "x06 fault isolation",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/fault_injection/x06-mutated.json",
+        "results/ame_explicit_v1/fault_injection/s05-unaffected.json"
+      ],
+      "expected_failures": 104
+    },
+    {
+      "name": "s05 fault isolation",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/fault_injection/s05-mutated.json",
+        "results/ame_explicit_v1/fault_injection/x06-unaffected.json"
+      ],
+      "expected_failures": 104
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "executions": 146400,
+  "by_instruction": {
+    "sp05a.add.i32": 32768,
+    "sp05a.add.f32": 32768,
+    "sp05a.max.i32": 32768,
+    "sp05a.max.u32": 32768,
+    "sp05a.mac.i8.i32": 4096,
+    "sp05a.mac.f16.f32": 4096,
+    "sp05a.mac.bf16.f32": 4096,
+    "sp05a.cvt.f32.i32": 1024,
+    "sp05a.cvt.i32.f32": 1024,
+    "sp05a.cvt.f32.f16": 992
+  },
+  "run": "results/ame_explicit_v1/spec_v05a/20261119-085919-all-fields",
+  "elf_sha256": "f59f077351db4c0d4b7de1e49efee94c87c7f6bde2fe78f670ff61552420de91",
+  "words_sha256": "2f058a85da6e6fb163c316d85ca8c5c9f1b06ee3e3fe27824a312d04dba39b54",
+  "trace_sha256": "7cc5300362480673fa5991b2a6eaafadbf0ed7935e69668db6dde37819bb553f",
+  "gem5_sha256": "6ddf3e8b74544dbe52acad7265fec506f54da96fd9c0c02caf25479ef9355ef9",
+  "errors": [],
+  "reanalysis": "Same preserved raw trace; gem5 OpClass display string is Matrix, enum is MatrixOp.",
+  "previous_analysis_sha256": "3cdd85975d7d89a912329dad118b358358ae2a8d39e9dbded440a97658b7a9aa"
+}

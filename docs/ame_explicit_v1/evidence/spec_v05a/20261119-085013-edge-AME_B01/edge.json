@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "executions": 1212,
+  "failures": [],
+  "probes": 1192,
+  "run": "results/ame_explicit_v1/spec_v05a/20261119-085013-edge-AME_B01",
+  "elf_sha256": "a4306e037161c44106ed18dec477febaa494d82c94de851773df66651a4833c2",
+  "gem5_sha256": "71f811b6b0d89417fc4cc3ab25b554d460693d771889745d99091ed23a161aea",
+  "owner_state_observation": "NOT_RUN: architectural reads forbidden; reacquire clears registers"
+}

@@ -1,0 +1,492 @@
+{
+  "baseline": "6677b2c8f6e76363050427009d47c5481f9e53bf",
+  "branch": "ztt0.6-xuantie0.6-spec0.5a-vs",
+  "head_at_report": "6677b2c8f6e76363050427009d47c5481f9e53bf",
+  "implementation_identity": "source_manifest_sha256 (excludes generated docs/evidence)",
+  "source_manifest_sha256": "ec0502ae9498645dc2598ea4abcdbdb18a10f21df1d9794eca7b78d7c19ee306",
+  "sources": {
+    "results/.gitignore": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+    "src/arch/riscv/Kconfig": "bf57d24205b47bf4ec21c878d9ac316641fa7aa3096d65f57a9d782d0495047e",
+    "src/arch/riscv/SConscript": "2879459b58c57883011b6016d161c6081bc2e7ebd5a1a2183bff83a0f9cf3efa",
+    "src/arch/riscv/insts/spec_v05a_explicit.cc": "3f526583eb0563a4e8fc3ad3c2f020b3cba0692c131dcd61acda55834111b957",
+    "src/arch/riscv/insts/spec_v05a_explicit.hh": "3117a20cb7d6b506f02eee2160a129d8faa9f3e8c853b77ef40e2d3ddd4d379b",
+    "src/arch/riscv/insts/xuantie_v06_explicit.cc": "13395a6a58d260e6417b7a41a8867c73798a1e52383f4ad709bd89f568192554",
+    "src/arch/riscv/insts/xuantie_v06_explicit.hh": "5a6b470526402dab5935b38466aacbf60eb1490f9182240d88a66f3a1c59a785",
+    "src/arch/riscv/isa/decoder.isa": "170726da0f44740cd9a0b5719eb34ad9d4d0e83a16fdac4c426ca0184ee0e542",
+    "src/arch/riscv/isa/decoder/spec_v05a_explicit.isa": "3850dc29e7e3ff04b4c86e551853147b2c9de9c690855d58abd8406344110742",
+    "src/arch/riscv/isa/decoder/xuantie_v06_explicit.isa": "136bb4c9474b99d75b91c7298626454f7e7a34129c3364d14f9bedb203ad8394",
+    "src/arch/riscv/isa/formats/formats.isa": "bc92cc945a1011e1215f3a36fa770b848c3d41af95ccbfeaadedf521c58aafbf",
+    "src/arch/riscv/isa/formats/spec_v05a_explicit.isa": "b740615ed0920220f4116295dd16b6217c7e77a5e34afad705e1df241c66f17b",
+    "src/arch/riscv/isa/formats/xuantie_v06_explicit.isa": "08ede1e87198726bc10e2e4a62d7414c91812f9652dd799c0de619333d92d770",
+    "src/arch/riscv/isa/includes.isa": "efc5eb904b8d44e223dd06b6ff7216d2d03b2d3405b0d8b86795efcc8cfe7565",
+    "src/arch/riscv/isa/operands.isa": "d623c04cf90d7813ae4416f2ec737f70370e825d82bef761ec7fe1737710899e",
+    "tests/ame_explicit_v1/README.md": "8ef75027d1193a85d35cda8714f6346919ecab8aa427ff2c84e1145c5b977674",
+    "tests/ame_explicit_v1/common/acceptance.py": "8331fff74ac338333ab23b8bd91a5700c35b5be1ebcd3148e136db634ad4382b",
+    "tests/ame_explicit_v1/common/checkpoint_config.py": "10f15fa38001cfabaa457fa3ace836e50aa63212e66a7a2d7211228669988351",
+    "tests/ame_explicit_v1/common/checkpoint_guest.c": "becaf545fa939b6c920018ed19b428f7409817c334562b6a7a1b0404e91cede1",
+    "tests/ame_explicit_v1/common/compile_compat.py": "a4df3f572c6cb4793d44a908e8aa6f81448c0eb4fbe1e1d4c1f38c42ed6a30ef",
+    "tests/ame_explicit_v1/common/decode_fields.py": "6a5f9a60f5ea6d43861d1d2cb5bb510c17ae18175bbc39452172340f607b819a",
+    "tests/ame_explicit_v1/common/edge_generate.py": "ab32837de6f0463a0bacd410e32906abc9ce645f868db3e3f32b3a4a64cb02dd",
+    "tests/ame_explicit_v1/common/edge_guest.c": "89b0c0a9b2f9a40e64508d82ef7d6448c28976e8921d9e9e1c9e470b4f8e41ae",
+    "tests/ame_explicit_v1/common/extra_tests.py": "1037da31867dcca3589f8ed5243389db0ff408f84e662a136885345716e3151a",
+    "tests/ame_explicit_v1/common/fault_injection.sh": "1d5ad567e7dd028ee003eb24bcd9893ce7b00825ff4bca415840084765828fa4",
+    "tests/ame_explicit_v1/common/generate.py": "0634bc8d8615965d6afd07a399a4e3db81420edc571811737460a9d3dafe9745",
+    "tests/ame_explicit_v1/common/guest.c": "79829c765dd6fac172becb8520fc3db8a8e1ae6bb2353573feb3a7a245795609",
+    "tests/ame_explicit_v1/common/ieee.py": "c592bca8c8281502275b9a866806e6d88eda0612967ef42d2fb1e02771a7fec6",
+    "tests/ame_explicit_v1/common/incremental.sh": "29aeae4c90d9c13c11adafd8be3f77c254871c9fd13ee2ab7b651d1c3fa61d3e",
+    "tests/ame_explicit_v1/common/inspect_build.py": "b4b17586954e8be5398552dfb509f109a6d0763424ed4463c67fb386ff76bed1",
+    "tests/ame_explicit_v1/common/interleave.c": "de7b443717bd41b26ae60d0f3a470100e30cdb96a5f3a707bf161fbaa6938f21",
+    "tests/ame_explicit_v1/common/reporting.py": "02f538fd763a70cd75d75ac7e9ac9ba67279e97cc63738d32d9df917136ba9ce",
+    "tests/ame_explicit_v1/common/runtime.c": "e551e1af889da55dc8fbc4f3d42ab292d22756b45dc46696b4e6f7cd25d93c33",
+    "tests/ame_explicit_v1/common/shape.py": "86f91dcd28d72e87ce23eeeff3d670f895dd7a4cfd80410136e0025100c15da8",
+    "tests/ame_explicit_v1/common/storage.py": "5fd3bee3a912975bda2925bdf9adfa463595edda8a22aec41443f2628e079492",
+    "tests/ame_explicit_v1/common/trap.S": "de07dccfb41da529a152f4ba8bf2d9537d97add11564ebbc6e6ff7f581644de7",
+    "tests/ame_explicit_v1/regression/README.md": "9d673b18964e5cb7f5f8f92e4b0424f4d3dee35533e37bc1440fa1abd6441b81",
+    "tests/ame_explicit_v1/regression/compat.c": "70d168f3c1a52234cb2fa066c21f651f7642d250ed4495efe8ae6913aec14cf8",
+    "tests/ame_explicit_v1/run.py": "dbf48b67e2b0cfbf08d47e65ca11938d8946464f819aa4a1b06337964a9a2e4f",
+    "tests/ame_explicit_v1/spec_v05a/README.md": "d163a4c686fad92f7ad1ed6e5fe912dd21971a6d1cd71473cce72427c2825c33",
+    "tests/ame_explicit_v1/spec_v05a/cases.json": "8b3dc2f01157a215e52166eea1d67f8395e3d529f75df8dd60a44af5af0f6266",
+    "tests/ame_explicit_v1/spec_v05a/encoding.csv": "60fefc260a3877881e2a2b37e4deaf4c5259a89c0ac1b57058006e1c342ab9c6",
+    "tests/ame_explicit_v1/spec_v05a/encoding.h": "d3490a42019258e8537473d6e55904a158763685da9600f8b5dbbdb377502a51",
+    "tests/ame_explicit_v1/spec_v05a/kernels.S": "8f9a84e37c77a417b99f9cd95000e0a7659d409e444e7284b9061932e6a13b8f",
+    "tests/ame_explicit_v1/spec_v05a/reference.py": "0b7134fdc1d21d6354ec289e24aeca651690bddf8103bd64ed127d933e6cd6e1",
+    "tests/ame_explicit_v1/spec_v05a/semantic_contract.md": "080ed8c245eaabdd767d19ac18352d17a5aab74162d8525565592574c5b58870",
+    "tests/ame_explicit_v1/spec_v05a/spec_mapping.csv": "dd347b019d3d42d66eda73a881bc4f0f68bdf93e058063dbc09963292b83fe43",
+    "tests/ame_explicit_v1/xuantie_v06/README.md": "59606ccb047a0905f31b6807de99962d4245bfe4d77e292efe1376929be709c4",
+    "tests/ame_explicit_v1/xuantie_v06/cases.json": "95fc1bfe994e796f5b90d798586c1be8e38880129369359f67fb6cea0ea6753c",
+    "tests/ame_explicit_v1/xuantie_v06/encoding.csv": "7c0cb6fce095e5d4107d875d408865160e681bc9fb0549e9133cd24575b16f4f",
+    "tests/ame_explicit_v1/xuantie_v06/encoding.h": "eb62d1d65d03e101dea285241522a4ec6f66fb9f4110ba28721e41f62b91f81a",
+    "tests/ame_explicit_v1/xuantie_v06/kernels.S": "6956660f2d668db2363fb34336df899b4017674d02f52c636c79ee3b9ba9e5cc",
+    "tests/ame_explicit_v1/xuantie_v06/reference.py": "194d8c70e9053d50793b67341f1c475f404d0bb69f7e5a2066c52bb80e72aac5",
+    "tests/ame_explicit_v1/xuantie_v06/semantic_contract.md": "15206a4492fcc0aa706fbf461357d54cdf888f7149cd9937bd84b54cec647526",
+    "tests/ame_explicit_v1/xuantie_v06/spec_mapping.csv": "f735f327e8a45aceb95be3bca1cc3e75ed3307648eb9b614936c21c707cd25b5"
+  },
+  "changes": [
+    {
+      "file": "results/.gitignore",
+      "change": "\u65b0\u589e",
+      "insertions": "2",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/Kconfig",
+      "change": "\u4fee\u6539",
+      "insertions": "10",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/SConscript",
+      "change": "\u4fee\u6539",
+      "insertions": "5",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/insts/spec_v05a_explicit.cc",
+      "change": "\u65b0\u589e",
+      "insertions": "201",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/insts/spec_v05a_explicit.hh",
+      "change": "\u65b0\u589e",
+      "insertions": "28",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/insts/xuantie_v06_explicit.cc",
+      "change": "\u65b0\u589e",
+      "insertions": "177",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/insts/xuantie_v06_explicit.hh",
+      "change": "\u65b0\u589e",
+      "insertions": "26",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/isa/decoder.isa",
+      "change": "\u4fee\u6539",
+      "insertions": "2",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/isa/decoder/spec_v05a_explicit.isa",
+      "change": "\u65b0\u589e",
+      "insertions": "29",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/isa/decoder/xuantie_v06_explicit.isa",
+      "change": "\u65b0\u589e",
+      "insertions": "26",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/isa/formats/formats.isa",
+      "change": "\u4fee\u6539",
+      "insertions": "3",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/isa/formats/spec_v05a_explicit.isa",
+      "change": "\u65b0\u589e",
+      "insertions": "55",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/isa/formats/xuantie_v06_explicit.isa",
+      "change": "\u65b0\u589e",
+      "insertions": "44",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/isa/includes.isa",
+      "change": "\u4fee\u6539",
+      "insertions": "12",
+      "deletions": "0"
+    },
+    {
+      "file": "src/arch/riscv/isa/operands.isa",
+      "change": "\u4fee\u6539",
+      "insertions": "13",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/README.md",
+      "change": "\u65b0\u589e",
+      "insertions": "118",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/acceptance.py",
+      "change": "\u65b0\u589e",
+      "insertions": "118",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/checkpoint_config.py",
+      "change": "\u65b0\u589e",
+      "insertions": "19",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/checkpoint_guest.c",
+      "change": "\u65b0\u589e",
+      "insertions": "49",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/compile_compat.py",
+      "change": "\u65b0\u589e",
+      "insertions": "10",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/decode_fields.py",
+      "change": "\u65b0\u589e",
+      "insertions": "57",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/edge_generate.py",
+      "change": "\u65b0\u589e",
+      "insertions": "32",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/edge_guest.c",
+      "change": "\u65b0\u589e",
+      "insertions": "57",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/extra_tests.py",
+      "change": "\u65b0\u589e",
+      "insertions": "24",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/fault_injection.sh",
+      "change": "\u65b0\u589e",
+      "insertions": "48",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/generate.py",
+      "change": "\u65b0\u589e",
+      "insertions": "111",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/guest.c",
+      "change": "\u65b0\u589e",
+      "insertions": "114",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/ieee.py",
+      "change": "\u65b0\u589e",
+      "insertions": "101",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/incremental.sh",
+      "change": "\u65b0\u589e",
+      "insertions": "20",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/inspect_build.py",
+      "change": "\u65b0\u589e",
+      "insertions": "37",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/interleave.c",
+      "change": "\u65b0\u589e",
+      "insertions": "43",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/reporting.py",
+      "change": "\u65b0\u589e",
+      "insertions": "190",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/runtime.c",
+      "change": "\u65b0\u589e",
+      "insertions": "391",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/shape.py",
+      "change": "\u65b0\u589e",
+      "insertions": "58",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/storage.py",
+      "change": "\u65b0\u589e",
+      "insertions": "59",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/common/trap.S",
+      "change": "\u65b0\u589e",
+      "insertions": "26",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/regression/README.md",
+      "change": "\u65b0\u589e",
+      "insertions": "10",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/regression/compat.c",
+      "change": "\u65b0\u589e",
+      "insertions": "33",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/run.py",
+      "change": "\u65b0\u589e",
+      "insertions": "394",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/spec_v05a/README.md",
+      "change": "\u65b0\u589e",
+      "insertions": "8",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/spec_v05a/cases.json",
+      "change": "\u65b0\u589e",
+      "insertions": "332",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/spec_v05a/encoding.csv",
+      "change": "\u65b0\u589e",
+      "insertions": "11",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/spec_v05a/encoding.h",
+      "change": "\u65b0\u589e",
+      "insertions": "34",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/spec_v05a/kernels.S",
+      "change": "\u65b0\u589e",
+      "insertions": "162",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/spec_v05a/reference.py",
+      "change": "\u65b0\u589e",
+      "insertions": "55",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/spec_v05a/semantic_contract.md",
+      "change": "\u65b0\u589e",
+      "insertions": "30",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/spec_v05a/spec_mapping.csv",
+      "change": "\u65b0\u589e",
+      "insertions": "11",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/xuantie_v06/README.md",
+      "change": "\u65b0\u589e",
+      "insertions": "9",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/xuantie_v06/cases.json",
+      "change": "\u65b0\u589e",
+      "insertions": "332",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/xuantie_v06/encoding.csv",
+      "change": "\u65b0\u589e",
+      "insertions": "11",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/xuantie_v06/encoding.h",
+      "change": "\u65b0\u589e",
+      "insertions": "34",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/xuantie_v06/kernels.S",
+      "change": "\u65b0\u589e",
+      "insertions": "162",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/xuantie_v06/reference.py",
+      "change": "\u65b0\u589e",
+      "insertions": "53",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/xuantie_v06/semantic_contract.md",
+      "change": "\u65b0\u589e",
+      "insertions": "29",
+      "deletions": "0"
+    },
+    {
+      "file": "tests/ame_explicit_v1/xuantie_v06/spec_mapping.csv",
+      "change": "\u65b0\u589e",
+      "insertions": "11",
+      "deletions": "0"
+    }
+  ],
+  "pdf": {
+    "xuantie-v0.6.pdf": "1b3d93177c4768bad1c7440fde90d4c8d3d5d884ea0f1c430c845cf446c77960",
+    "spec-v0.5a.pdf": "82cb1e19f14011e3b59d29be8e04082119f0319bdaf7c90727951d34feb3499c"
+  },
+  "frozen_elfs": {
+    "compat_rvv_scalar_m5": "cf4ebebf24344504860ac73e30a5d700996aa3fcaa2110cc46e79cfef18d1011",
+    "ffn": "02019cbbfb5de3a158eda9d178cd9302c740a043c5d0e49a87581860df66bad9",
+    "gelu": "f90913b1619facd483ea59cfb260d9073a8e94151dea537a143e5e9b612e90ba",
+    "gemm_fp32": "0a4ae1e6ea7843deeb5d15c9f27e8c9e6d398365627ba5449b66b859265dfbf6",
+    "gemm_int8": "a87b1343079511f856c66d303d1d7a85a1d236b0476e390709b482e8fc8fa66d",
+    "gemm_mixed": "e46ee88508e1303c467a95e07e5c4f23392965cdc876224f701979d9e5af9265",
+    "gemm_mixed_source_types": "db48b7e17e7aeabf3a44a84e9f65eaf9be346366f1f939ca7ebce41e1956e618",
+    "mha": "03ce1d549c881a0df43b8b303780bf791278f96ea49838c00606d6116d3ec5bf",
+    "native_primary_spec_v05a": "6e57ed592b7db50ac25097a1b81cadb21d279d59a7ef9f77bf33686e27f12f0d",
+    "native_primary_xuantie_v06": "fefc3af259d81d891b5c1f2708cd0bae9a7f64f2659caf18e1aab0983dca62cf",
+    "rmsnorm": "597c2353138e0f1a697d0c29ee71ccbdb99c7cc52dcf57177bf769e1bbec0c6a",
+    "rope": "a559d2267a6700352a541514c22a909a51a7fa46964c395ccccea3c90e012518",
+    "softmax": "13aa9df1fbca1e020841b1cb59166dca8dacfa76776d3e98e0fdec94db4c6508"
+  },
+  "baseline_simulator_sha256": "bb345e9bad511777213a0c5683ded1bfe06c1495be0d522e0f4a17b55a398014",
+  "evidence_sha256": {
+    "B00-inspection.json": "4f701b408c333769f5568093c8b2441b9b618ba0e4abc107b6fbeb4f49c3bd69",
+    "B01-inspection.json": "c1faa320259b2387a7f4bae7df7fdbfa65ad396a42ac30b3a7433de1c1e46380",
+    "B10-inspection.json": "a8f84db1e4e1a2fd774dd136554b0f5f2594c7ef8cef064c308da8ff943391d8",
+    "B11-inspection.json": "da16238873ce645f284e66857d899aa593ed3d90f0ed26087c24b54aad1a6643",
+    "acceptance.json": "9efd17ec218d8ce63ce8930b5b83f7cd052af3375a145432ca31457395c773f3",
+    "baseline/compat-manifest.json": "9724ed066434cab9b7b3de4089a2f210f2eacc5755ef491445bacc2c7bf28f72",
+    "baseline/manifest.json": "9077684603f3dc294c92e01c442fdd55a57db39d9e2d2020a1ee5270f0d32e81",
+    "build_matrix.json": "7f17a92bf6dffbebc5095848bcac5739b58be424252c005744b01cbe316bded8",
+    "commands.log": "d83ca3691f2d2847329a3ac930677aed0ec301bbba39e0aaa788c99a51b48c3e",
+    "encoding_audit.json": "a583536b3cb078124043e7cc0ea49645ecdc6f5d531cb720fce5acaa08149086",
+    "environment/clang.txt": "94c376ca1f3dd91a7a486f019f62f6821abd1e57483554c97a719462ffe69627",
+    "environment/gcc.txt": "0c45c2417cda20b1ea33e8f54aee9aa0443c940cb9f23b71c6f126148cb8ff9c",
+    "environment/python.txt": "5b3e43dc38ca01e3f5a7854ba50d4330864b0c1e0f646650b2c78cf072acc366",
+    "environment/scons.txt": "6312cab21248241fe91354331761870cb4c5450e65b15dfed99c4cce197149da",
+    "fault_injection/s05-mutated.json": "0c35397571ae3a8e470de85bf86487c3f6ad5ef9f535b7cde66ad2951df1af3d",
+    "fault_injection/s05-unaffected.json": "ed16da51f3c103c1f4b9915a066c062b1944950de4c07c63660c3384b82a4b96",
+    "fault_injection/x06-mutated.json": "52c8c9a5c70dcf643e0d6bb39d4786bb55d30ce80cd97cb72722f4f29e25dc7c",
+    "fault_injection/x06-unaffected.json": "6aaedf5e060aac1ee7d6512374793bd17253ffe992594a33e0f89002878146c9",
+    "independence.json": "115d8727740c56913130d04d95dfec710f198e3c9f39304c6127882c181b8d74",
+    "interleave/interleave.json": "76884b782bbeb4bd558260569c5982b9b6c6d4dbc588594c0f42f09ef72725e5",
+    "regression/20261119-085153/regression.json": "5713f151d75419b709c8fd43ae164e86942ae483e0e1eadad9d6c7a98cef68db",
+    "regression/20261119-085553/regression.json": "da5c51304cd3bd738b4ace92b9846e05ac3caeaf1447c6ff1516d64d9f8224f3",
+    "regression/20261119-085632/regression.json": "4f1f6aa208dfa8ab81d044ffe20333633a3c9cf44ea1b1662f31f9d656f5ed10",
+    "regression.json": "785b2676df91a18cccd820680f86f24104a18d934e5a2d018eb0ae2b481458ca",
+    "spec_v05a/20261119-084254-edge-AME_B11/edge.json": "95127b2c266e5931f4e8b06cbbbb7b0f7268f41f1e098003e091cd5ab94d3b1b",
+    "spec_v05a/20261119-084255-AME_B11/elf_audit.json": "ed7d45b9c1082b02c6f6cb573bf4d5389525320ae75fdcd23e795abfa10904d8",
+    "spec_v05a/20261119-084255-AME_B11/functional.json": "a5125b9f33f10b1d0abacb1a3eca612ad4614326109867b461f64b84c4015cfb",
+    "spec_v05a/20261119-084849-AME_B11/elf_audit.json": "f15314338f928008ca567a8a423409ef1538814c3dc41b8a929ca9fa1db7734a",
+    "spec_v05a/20261119-084849-AME_B11/functional.json": "9a4dc90ad40cc62b5b019146536df1bf41c3303b452ded1bf2c73efc3f9a25d6",
+    "spec_v05a/20261119-085013-AME_B01/elf_audit.json": "c1ecf83b80a37559a71968c59b8bdeff109ee9f6b4bb8ca4157aa8f16dc16a34",
+    "spec_v05a/20261119-085013-AME_B01/functional.json": "fa5e9f023b52526cb82054b7d171c5a99160623f41206b6f1ad70276e1de944f",
+    "spec_v05a/20261119-085013-edge-AME_B01/edge.json": "1621d2d5e58228ec37b1c114970cdd2e19730888fbe26270e155252ed4b82fe3",
+    "spec_v05a/20261119-085014-AME_B10/elf_audit.json": "7242f07b1cac3f74386980228204cdbee7bbcb2c4657a2b34c8f240d2fe35eda",
+    "spec_v05a/20261119-085014-AME_B10/functional.json": "bb88fd7848cd6e8e877b2d7680363288997690afe31af0939803465e1e43b5e8",
+    "spec_v05a/20261119-085014-edge-AME_B10/edge.json": "58c58ea6f49ef349ddd8d992e82f06c14dd3fcb87eababb4d57da138e6f8b33a",
+    "spec_v05a/20261119-085015-AME_B00/elf_audit.json": "728dcfb06118ccc91527ee82c419b8870349eb571f35ca8ff4fd026d3a57569c",
+    "spec_v05a/20261119-085015-AME_B00/functional.json": "dd7dd98ace099b7735b00097a5ea78de85f65561044e786d1f3fbd3f705e7a98",
+    "spec_v05a/20261119-085015-edge-AME_B00/edge.json": "9c7f3ef9092876a1f325cbace508f98bafe626c85303599053b8cd27df851d45",
+    "spec_v05a/20261119-085859-off-before/elf_audit.json": "078b5387aa11887123537bb6cf52fa7897c9371d46be10c0c501642e7e29603e",
+    "spec_v05a/20261119-085859-off-before/functional.json": "fd27f5a633c8b554976886187964a22125f5aec545a2aa09850c260e95735fcf",
+    "spec_v05a/20261119-090551-on/elf_audit.json": "7d1c29a422838cad275a60972666c970e8f15a247689094b9d9134c9c9291a9e",
+    "spec_v05a/20261119-090551-on/functional.json": "77044e8b68adef720e362165402fbc78c662441331488849222c7897239dae16",
+    "spec_v05a/20261119-091253-off-after/elf_audit.json": "0dd90467d2c725f2a9892b1e1502f403ea26e11e91c5e3e97f74f966e63c44ba",
+    "spec_v05a/20261119-091253-off-after/functional.json": "d1f56ed0ca7c0f966a5d80259729ca18b8c3d149bf90cf6d295bae589eb0cd32",
+    "spec_v05a/checkpoint.json": "ac4255aa2cf05b940f2a304ed7c2fdcad4b625cf1649ffaef676960e023b55e5",
+    "spec_v05a/decode_fields.json": "158ab28acf11b4783cbf7a8c426f55f55561fa3e18473ac1afe85d21ffd4921a",
+    "spec_v05a/negative_state.json": "48ced90fe38e80c59572a3663453d7de8a19bf0ebb32da48b094e88d3480ab7f",
+    "spec_v05a/shape.json": "962645aea1f7355c8a34ea00fceee67d74a41c142dd919dafcad92a804927790",
+    "spec_v05a/storage.json": "b230396431f220acf9f839b8fb6b981e8d822d9c0339fe6e0ed4b78b2f139e3b",
+    "xuantie_v06/20261119-084255-AME_B11/elf_audit.json": "8e5d38a785b6f4762d71be413229974b9ff9b9a28ac5a40f51fe321958bdcd90",
+    "xuantie_v06/20261119-084255-AME_B11/functional.json": "f36746e30387c5f2930246bcdf84480b4b72bfb5b0ca1796a3428adb9e70132d",
+    "xuantie_v06/20261119-084255-edge-AME_B11/edge.json": "42a915a26e7e5c64fbe014d219823af0b2b51470e39fd24643181df78da43d36",
+    "xuantie_v06/20261119-084849-AME_B11/elf_audit.json": "247641ceffd0acb1924dbf21c6a62dc08196bfcbd664bc3c0901511de0573866",
+    "xuantie_v06/20261119-084849-AME_B11/functional.json": "ff59baf99b93db617d13f2d9528c7c65de7b14cebdce9c748c879116c2427497",
+    "xuantie_v06/20261119-085013-AME_B01/elf_audit.json": "3637633ba3d7143bf2b41939535d17d3cd509e923c588972524b05a5013a982b",
+    "xuantie_v06/20261119-085013-AME_B01/functional.json": "4ccacc9369d88f9af704897908739a7a420c3961495ee24ee2649cdeb99bd796",
+    "xuantie_v06/20261119-085013-edge-AME_B01/edge.json": "a5aa9f78c4b53c881a770fa8656126d4bf9eea663b6b4a53c568d03613a3cb28",
+    "xuantie_v06/20261119-085014-AME_B10/elf_audit.json": "fefad702576849c4ddc76c06ed8cd7372811a9c3bbbd2c7cc325bafb7e3cf408",
+    "xuantie_v06/20261119-085014-AME_B10/functional.json": "b53572bde3483e1b090d2e7ec21d4918238b22452cda8d71b660fe5e9947bc37",
+    "xuantie_v06/20261119-085014-edge-AME_B10/edge.json": "a90cc1535cc3245a0018c4ac116843e74205e430b088f07859dd6b989387eda2",
+    "xuantie_v06/20261119-085015-AME_B00/elf_audit.json": "9e57d91dddbdd8d4f733373f0a6ef4f348bc6d273f9da983866e570d819c9a85",
+    "xuantie_v06/20261119-085015-AME_B00/functional.json": "6646af224e28226e6ca6f9d200010da587eaec56f8e9687b2fbb41de609d4a75",
+    "xuantie_v06/20261119-085015-edge-AME_B00/edge.json": "599e69d7673b2d9c3b9c2008d2682bdab2ebaf94c2217f48046ffb61e7e66afa",
+    "xuantie_v06/20261119-085846-off-before/elf_audit.json": "6c20e6a67e89108cac16ac870f4d7dfad8816b41a273acdc443650b1c8466350",
+    "xuantie_v06/20261119-085846-off-before/functional.json": "f39c7f660133057db391893a02aa9c9f2391531e6e86f7bb5f5a515f68fe3656",
+    "xuantie_v06/20261119-090538-on/elf_audit.json": "699b3c35ab7a89fde5333570b22f4345289c6b149c30e7154b4df20e481f0e6a",
+    "xuantie_v06/20261119-090538-on/functional.json": "89f202bbe8e005b6f48e476f70409ed58f7395716f675eb3533f624a5263eec5",
+    "xuantie_v06/20261119-091240-off-after/elf_audit.json": "33fb167e9b1e03c1afe3f9e56b655d32325993141da4ef6b72102325c1cc105c",
+    "xuantie_v06/20261119-091240-off-after/functional.json": "7e7875566f43af8198a7619ce30b3051b04ea643070d12c3adb320372f163308",
+    "xuantie_v06/checkpoint.json": "44f390323f2889175527b2442df7bdb4487c6c02f609b31142ae786664c7eee9",
+    "xuantie_v06/decode_fields.json": "77628f42e922fd0f2f700d1053f95f5c9b31e9b7b4acf38e3e36c5407f259cfe",
+    "xuantie_v06/negative_state.json": "00c159d8014526c24d8983e3e66267849f35a1ad219496cbc83e3c7d07547f7e",
+    "xuantie_v06/shape.json": "3a77d4d92fb45dc428c5a30bf93f8196264aef11f91a77b2547a911c00286d59",
+    "xuantie_v06/storage.json": "691d9a8e3f5c010dabf6a217f628285eb593fc2a74cb9ff9662696243330cc70"
+  }
+}

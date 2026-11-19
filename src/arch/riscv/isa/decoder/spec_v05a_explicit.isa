@@ -1,0 +1,29 @@
+#if USE_SPEC_V05A_EXPLICIT
+0x16: decode FUNCT7 {
+    0x20: decode FUNCT3 {
+        0: S05AOp::sp05a_add_i32(sum, SignedWord, 'sp05a.add.i32', binary);
+        1: S05AOp::sp05a_add_f32(sum, Float, 'sp05a.add.f32', binary);
+    }
+    0x21: decode FUNCT3 {
+        0: S05AOp::sp05a_max_i32(max, SignedWord, 'sp05a.max.i32', binary);
+        1: S05AOp::sp05a_max_u32(max, UnsignedWord, 'sp05a.max.u32', binary);
+    }
+    0x22: decode RD {
+        0, 1, 2, 3: decode FUNCT3 {
+            0: S05AOp::sp05a_mac_i8_i32(multiplyAccumulate, Byte, 'sp05a.mac.i8.i32', acc);
+            1: S05AOp::sp05a_mac_f16_f32(multiplyAccumulate, Half, 'sp05a.mac.f16.f32', acc);
+            2: S05AOp::sp05a_mac_bf16_f32(multiplyAccumulate, BFloat, 'sp05a.mac.bf16.f32', acc);
+        }
+    }
+    0x23: decode RS2 {
+        0: decode FUNCT3 {
+            0: S05AOp::sp05a_cvt_f32_i32(cast, IntToFloat, 'sp05a.cvt.f32.i32', cast);
+            1: S05AOp::sp05a_cvt_i32_f32(cast, FloatToInt, 'sp05a.cvt.i32.f32', cast);
+            2: decode RD {
+                31: Unknown::unknown();
+                default: S05AOp::sp05a_cvt_f32_f16(widenAll, HalfToFloat, 'sp05a.cvt.f32.f16', wide);
+            }
+        }
+    }
+}
+#endif

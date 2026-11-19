@@ -49,6 +49,9 @@
 ##include "ztt_arith.isa"
 ##include "ztt_mv.isa"
 
+##include "xuantie_v06_explicit.isa"
+##include "spec_v05a_explicit.isa"
+
 // Include formats for nonstandard extensions
 ##include "compressed.isa"
 

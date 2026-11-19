@@ -1,0 +1,11 @@
+mnemonic,match,mask,kind
+xt06.add.i32,0x2000000b,0xfe00707f,binary
+xt06.add.f32,0x2000100b,0xfe00707f,binary
+xt06.max.i32,0x2200000b,0xfe00707f,binary
+xt06.max.u32,0x2200100b,0xfe00707f,binary
+xt06.macbt.i8.i32,0x2400000b,0xfe007e7f,mac
+xt06.macbt.f16.f32,0x2400100b,0xfe007e7f,mac
+xt06.macbt.bf16.f32,0x2400200b,0xfe007e7f,mac
+xt06.cvt.f32.i32,0x2600000b,0xfff0707f,cvt
+xt06.cvt.i32.f32,0x2600100b,0xfff0707f,cvt
+xt06.cvtlo.f32.f16,0x2600200b,0xfff0707f,cvt

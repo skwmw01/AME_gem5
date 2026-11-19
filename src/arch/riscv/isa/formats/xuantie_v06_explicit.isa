@@ -1,0 +1,44 @@
+// X06 instruction wrappers. Only generic register/ISA templates are shared.
+def template X06Execute {{
+#if USE_XUANTIE_V06_EXPLICIT
+Fault
+%(class_name)s::execute(ExecContext *xc, trace::InstRecord *traceData) const
+{
+    Fault access = RiscvISA::checkAMEEnabled(xc, machInst);
+    if (access != NoFault)
+        return access;
+    if (xc->readMiscReg(MISCREG_AMENLEN) != 4 ||
+        xc->readMiscReg(MISCREG_AMEUDSZ) != 32)
+        return std::make_shared<IllegalInstFault>("X06 shape", machInst);
+    %(op_decl)s;
+    %(op_rd)s;
+    %(code)s;
+    %(op_wb)s;
+    if (raised)
+        xc->setMiscReg(MISCREG_AMEFFLAGS,
+            (xc->readMiscReg(MISCREG_AMEFFLAGS) | raised) & 31);
+    RiscvISA::markAMEDirty(xc);
+    return NoFault;
+}
+#endif
+}};
+
+def format X06Op(function, type, display, kind) {{
+    target = 'X06Acc' if kind == 'mac' else 'X06Dst'
+    # The target is also a source to preserve unspecified container bytes.
+    code = 'auto result = %s;\n' % target
+    code += 'uint32_t raised = X06::%s(result, X06Src1, ' % function
+    if kind != 'cvt':
+        code += 'X06Src2, X06::Type::%s);\n' % type
+    else:
+        code += 'X06::Conversion::%s);\n' % type
+    code += '%s = result;\n' % target
+    iop = InstObjParams(name, Name, 'X06StaticInst', code,
+                        ['IsMatrix', 'IsSerializeBefore', 'IsSerializeAfter',
+                         'MatrixOp'])
+    iop.mnemonic = display
+    header_output = '#if USE_XUANTIE_V06_EXPLICIT\n' + BasicDeclare.subst(iop) + '\n#endif\n'
+    decoder_output = '#if USE_XUANTIE_V06_EXPLICIT\n' + BasicConstructor.subst(iop) + '\n#endif\n'
+    decode_block = BasicDecode.subst(iop)
+    exec_output = X06Execute.subst(iop)
+}};

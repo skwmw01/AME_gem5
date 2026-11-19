@@ -1,0 +1,332 @@
+[
+  {
+    "id": "SP05A-0",
+    "mnemonic": "sp05a.add.i32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "SP05A-1",
+    "mnemonic": "sp05a.add.f32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "SP05A-2",
+    "mnemonic": "sp05a.max.i32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "SP05A-3",
+    "mnemonic": "sp05a.max.u32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "SP05A-4",
+    "mnemonic": "sp05a.mac.i8.i32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "SP05A-5",
+    "mnemonic": "sp05a.mac.f16.f32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "SP05A-6",
+    "mnemonic": "sp05a.mac.bf16.f32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "SP05A-7",
+    "mnemonic": "sp05a.cvt.f32.i32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "SP05A-8",
+    "mnemonic": "sp05a.cvt.i32.f32",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 0
+  },
+  {
+    "id": "SP05A-9",
+    "mnemonic": "sp05a.cvt.f32.f16",
+    "directed": 26,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "random_per_seed": 100,
+    "descriptor_modes": 2,
+    "scalar_frm": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "alias_variants": [
+      8,
+      0,
+      4,
+      30
+    ],
+    "exhaustive_half_patterns": 65536
+  }
+]

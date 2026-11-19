@@ -66,6 +66,11 @@ Source('semihosting.cc', tags=['riscv isa'])
 Source('system.cc', tags=['riscv isa'])
 Source('tlb.cc', tags=['riscv isa'])
 
+if env['CONF']['USE_XUANTIE_V06_EXPLICIT']:
+    Source('insts/xuantie_v06_explicit.cc', tags=['riscv isa'])
+if env['CONF']['USE_SPEC_V05A_EXPLICIT']:
+    Source('insts/spec_v05a_explicit.cc', tags=['riscv isa'])
+
 Source('linux/se_workload.cc', tags=['riscv isa'])
 Source('linux/fs_workload.cc', tags=['riscv isa'])
 

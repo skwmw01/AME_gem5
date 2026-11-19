@@ -1,0 +1,11 @@
+mnemonic,match,mask,kind
+sp05a.add.i32,0x4000005b,0xfe00707f,binary
+sp05a.add.f32,0x4000105b,0xfe00707f,binary
+sp05a.max.i32,0x4200005b,0xfe00707f,binary
+sp05a.max.u32,0x4200105b,0xfe00707f,binary
+sp05a.mac.i8.i32,0x4400005b,0xfe007e7f,mac
+sp05a.mac.f16.f32,0x4400105b,0xfe007e7f,mac
+sp05a.mac.bf16.f32,0x4400205b,0xfe007e7f,mac
+sp05a.cvt.f32.i32,0x4600005b,0xfff0707f,cvt
+sp05a.cvt.i32.f32,0x4600105b,0xfff0707f,cvt
+sp05a.cvt.f32.f16,0x4600205b,0xfff0707f,wide

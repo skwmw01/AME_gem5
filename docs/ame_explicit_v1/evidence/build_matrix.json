@@ -1,0 +1,667 @@
+{
+  "status": "PASS",
+  "builds": [
+    {
+      "status": "PASS",
+      "errors": [],
+      "dependencies": [
+        {
+          "instruction": "Xt06_add_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_add_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_cvt_f32_i32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_cvt_i32_f32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_cvtlo_f32_f16",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_macbt_bf16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_macbt_f16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_macbt_i8_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_max_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_max_u32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_add_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_add_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_cvt_f32_f16",
+          "sources": 3,
+          "destinations": 2,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_cvt_f32_i32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_cvt_i32_f32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_mac_bf16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_mac_f16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_mac_i8_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_max_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_max_u32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        }
+      ],
+      "symbols": {
+        "X06": false,
+        "S05A": false
+      },
+      "build": "B00",
+      "sha256": "ab6e3680998a4128d7a55a6a5cd2d6e44ad13f01d8ff0dee694c9060a4bb6459",
+      "config": "# BATCH is not set\nM5_BUILD_CACHE=\"\"\n# USE_EFENCE is not set\nHAVE_FENV=y\nHAVE_PNG=y\nHAVE_DEPRECATED_NAMESPACE=y\nHAVE_POSIX_CLOCK=y\n# USE_POSIX_CLOCK is not set\nHAVE_HDF5=y\n\n#\n# Ruby\n#\nRUBY=y\n\n#\n# Ruby protocols\n#\nUSE_MULTIPLE_PROTOCOLS=y\nPROTOCOL=\"MI_example\"\n# RUBY_PROTOCOL_MOESI_AMD_Base is not set\n# RUBY_PROTOCOL_MESI_Two_Level is not set\n# RUBY_PROTOCOL_MESI_Three_Level is not set\n# RUBY_PROTOCOL_MESI_Three_Level_HTM is not set\nRUBY_PROTOCOL_MI_example=y\n# RUBY_PROTOCOL_MOESI_CMP_directory is not set\n# RUBY_PROTOCOL_MOESI_CMP_token is not set\n# RUBY_PROTOCOL_MOESI_hammer is not set\n# RUBY_PROTOCOL_Garnet_standalone is not set\n# RUBY_PROTOCOL_CHI is not set\n# RUBY_PROTOCOL_MSI is not set\n# end of Ruby protocols\n\n# SLICC_HTML is not set\nNUMBER_BITS_PER_SET=64\n# end of Ruby\n\nHAVE_PROTOBUF=y\nHAVE_TUNTAP=y\nBUILD_ISA=y\n\n#\n# ISA\n#\n# USE_ARM_ISA is not set\n\n#\n# Fast Model\n#\n# end of Fast Model\n\n# USE_MIPS_ISA is not set\n# USE_POWER_ISA is not set\nUSE_RISCV_ISA=y\n# USE_XUANTIE_V06_EXPLICIT is not set\n# USE_SPEC_V05A_EXPLICIT is not set\n# USE_SPARC_ISA is not set\n# USE_X86_ISA is not set\n# end of ISA\n\nHAVE_KVM=y\nKVM_ISA=\"x86\"\nUSE_KVM=y\nHAVE_SYSTEMC=y\nUSE_SYSTEMC=y\n# BUILD_GPU is not set\n# USE_TEST_OBJECTS is not set\n"
+    },
+    {
+      "status": "PASS",
+      "errors": [],
+      "dependencies": [
+        {
+          "instruction": "Xt06_add_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_add_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_cvt_f32_i32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_cvt_i32_f32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_cvtlo_f32_f16",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_macbt_bf16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_macbt_f16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_macbt_i8_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_max_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_max_u32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_add_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_add_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_cvt_f32_f16",
+          "sources": 3,
+          "destinations": 2,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_cvt_f32_i32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_cvt_i32_f32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_mac_bf16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_mac_f16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_mac_i8_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_max_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_max_u32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        }
+      ],
+      "symbols": {
+        "X06": true,
+        "S05A": false
+      },
+      "build": "B10",
+      "sha256": "39e390b4e7eea0ab27008d78af76fe91d8a7cc3173d749001d0e5636e7412270",
+      "config": "# BATCH is not set\nM5_BUILD_CACHE=\"\"\n# USE_EFENCE is not set\nHAVE_FENV=y\nHAVE_PNG=y\nHAVE_DEPRECATED_NAMESPACE=y\nHAVE_POSIX_CLOCK=y\n# USE_POSIX_CLOCK is not set\nHAVE_HDF5=y\n\n#\n# Ruby\n#\nRUBY=y\n\n#\n# Ruby protocols\n#\nUSE_MULTIPLE_PROTOCOLS=y\nPROTOCOL=\"MI_example\"\n# RUBY_PROTOCOL_MOESI_AMD_Base is not set\n# RUBY_PROTOCOL_MESI_Two_Level is not set\n# RUBY_PROTOCOL_MESI_Three_Level is not set\n# RUBY_PROTOCOL_MESI_Three_Level_HTM is not set\nRUBY_PROTOCOL_MI_example=y\n# RUBY_PROTOCOL_MOESI_CMP_directory is not set\n# RUBY_PROTOCOL_MOESI_CMP_token is not set\n# RUBY_PROTOCOL_MOESI_hammer is not set\n# RUBY_PROTOCOL_Garnet_standalone is not set\n# RUBY_PROTOCOL_CHI is not set\n# RUBY_PROTOCOL_MSI is not set\n# end of Ruby protocols\n\n# SLICC_HTML is not set\nNUMBER_BITS_PER_SET=64\n# end of Ruby\n\nHAVE_PROTOBUF=y\nHAVE_TUNTAP=y\nBUILD_ISA=y\n\n#\n# ISA\n#\n# USE_ARM_ISA is not set\n\n#\n# Fast Model\n#\n# end of Fast Model\n\n# USE_MIPS_ISA is not set\n# USE_POWER_ISA is not set\nUSE_RISCV_ISA=y\nUSE_XUANTIE_V06_EXPLICIT=y\n# USE_SPEC_V05A_EXPLICIT is not set\n# USE_SPARC_ISA is not set\n# USE_X86_ISA is not set\n# end of ISA\n\nHAVE_KVM=y\nKVM_ISA=\"x86\"\nUSE_KVM=y\nHAVE_SYSTEMC=y\nUSE_SYSTEMC=y\n# BUILD_GPU is not set\n# USE_TEST_OBJECTS is not set\n"
+    },
+    {
+      "status": "PASS",
+      "errors": [],
+      "dependencies": [
+        {
+          "instruction": "Xt06_add_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_add_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_cvt_f32_i32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_cvt_i32_f32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_cvtlo_f32_f16",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_macbt_bf16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_macbt_f16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_macbt_i8_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_max_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Xt06_max_u32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": false
+        },
+        {
+          "instruction": "Sp05a_add_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_add_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_cvt_f32_f16",
+          "sources": 3,
+          "destinations": 2,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_cvt_f32_i32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_cvt_i32_f32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_mac_bf16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_mac_f16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_mac_i8_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_max_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_max_u32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        }
+      ],
+      "symbols": {
+        "X06": false,
+        "S05A": true
+      },
+      "build": "B01",
+      "sha256": "71f811b6b0d89417fc4cc3ab25b554d460693d771889745d99091ed23a161aea",
+      "config": "# BATCH is not set\nM5_BUILD_CACHE=\"\"\n# USE_EFENCE is not set\nHAVE_FENV=y\nHAVE_PNG=y\nHAVE_DEPRECATED_NAMESPACE=y\nHAVE_POSIX_CLOCK=y\n# USE_POSIX_CLOCK is not set\nHAVE_HDF5=y\n\n#\n# Ruby\n#\nRUBY=y\n\n#\n# Ruby protocols\n#\nUSE_MULTIPLE_PROTOCOLS=y\nPROTOCOL=\"MI_example\"\n# RUBY_PROTOCOL_MOESI_AMD_Base is not set\n# RUBY_PROTOCOL_MESI_Two_Level is not set\n# RUBY_PROTOCOL_MESI_Three_Level is not set\n# RUBY_PROTOCOL_MESI_Three_Level_HTM is not set\nRUBY_PROTOCOL_MI_example=y\n# RUBY_PROTOCOL_MOESI_CMP_directory is not set\n# RUBY_PROTOCOL_MOESI_CMP_token is not set\n# RUBY_PROTOCOL_MOESI_hammer is not set\n# RUBY_PROTOCOL_Garnet_standalone is not set\n# RUBY_PROTOCOL_CHI is not set\n# RUBY_PROTOCOL_MSI is not set\n# end of Ruby protocols\n\n# SLICC_HTML is not set\nNUMBER_BITS_PER_SET=64\n# end of Ruby\n\nHAVE_PROTOBUF=y\nHAVE_TUNTAP=y\nBUILD_ISA=y\n\n#\n# ISA\n#\n# USE_ARM_ISA is not set\n\n#\n# Fast Model\n#\n# end of Fast Model\n\n# USE_MIPS_ISA is not set\n# USE_POWER_ISA is not set\nUSE_RISCV_ISA=y\n# USE_XUANTIE_V06_EXPLICIT is not set\nUSE_SPEC_V05A_EXPLICIT=y\n# USE_SPARC_ISA is not set\n# USE_X86_ISA is not set\n# end of ISA\n\nHAVE_KVM=y\nKVM_ISA=\"x86\"\nUSE_KVM=y\nHAVE_SYSTEMC=y\nUSE_SYSTEMC=y\n# BUILD_GPU is not set\n# USE_TEST_OBJECTS is not set\n"
+    },
+    {
+      "status": "PASS",
+      "errors": [],
+      "dependencies": [
+        {
+          "instruction": "Xt06_add_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_add_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_cvt_f32_i32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_cvt_i32_f32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_cvtlo_f32_f16",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_macbt_bf16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_macbt_f16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_macbt_i8_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_max_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Xt06_max_u32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_add_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_add_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_cvt_f32_f16",
+          "sources": 3,
+          "destinations": 2,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_cvt_f32_i32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_cvt_i32_f32",
+          "sources": 2,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_mac_bf16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_mac_f16_f32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_mac_i8_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_max_i32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        },
+        {
+          "instruction": "Sp05a_max_u32",
+          "sources": 3,
+          "destinations": 1,
+          "enabled": true
+        }
+      ],
+      "symbols": {
+        "X06": true,
+        "S05A": true
+      },
+      "build": "B11",
+      "sha256": "6ddf3e8b74544dbe52acad7265fec506f54da96fd9c0c02caf25479ef9355ef9",
+      "config": "# BATCH is not set\nM5_BUILD_CACHE=\"\"\n# USE_EFENCE is not set\nHAVE_FENV=y\nHAVE_PNG=y\nHAVE_DEPRECATED_NAMESPACE=y\nHAVE_POSIX_CLOCK=y\n# USE_POSIX_CLOCK is not set\nHAVE_HDF5=y\n\n#\n# Ruby\n#\nRUBY=y\n\n#\n# Ruby protocols\n#\nUSE_MULTIPLE_PROTOCOLS=y\nPROTOCOL=\"MI_example\"\n# RUBY_PROTOCOL_MOESI_AMD_Base is not set\n# RUBY_PROTOCOL_MESI_Two_Level is not set\n# RUBY_PROTOCOL_MESI_Three_Level is not set\n# RUBY_PROTOCOL_MESI_Three_Level_HTM is not set\nRUBY_PROTOCOL_MI_example=y\n# RUBY_PROTOCOL_MOESI_CMP_directory is not set\n# RUBY_PROTOCOL_MOESI_CMP_token is not set\n# RUBY_PROTOCOL_MOESI_hammer is not set\n# RUBY_PROTOCOL_Garnet_standalone is not set\n# RUBY_PROTOCOL_CHI is not set\n# RUBY_PROTOCOL_MSI is not set\n# end of Ruby protocols\n\n# SLICC_HTML is not set\nNUMBER_BITS_PER_SET=64\n# end of Ruby\n\nHAVE_PROTOBUF=y\nHAVE_TUNTAP=y\nBUILD_ISA=y\n\n#\n# ISA\n#\n# USE_ARM_ISA is not set\n\n#\n# Fast Model\n#\n# end of Fast Model\n\n# USE_MIPS_ISA is not set\n# USE_POWER_ISA is not set\nUSE_RISCV_ISA=y\nUSE_XUANTIE_V06_EXPLICIT=y\nUSE_SPEC_V05A_EXPLICIT=y\n# USE_SPARC_ISA is not set\n# USE_X86_ISA is not set\n# end of ISA\n\nHAVE_KVM=y\nKVM_ISA=\"x86\"\nUSE_KVM=y\nHAVE_SYSTEMC=y\nUSE_SYSTEMC=y\n# BUILD_GPU is not set\n# USE_TEST_OBJECTS is not set\n"
+    }
+  ],
+  "checks": [
+    {
+      "name": "xuantie_v06 full B10",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-085014-AME_B10/functional.json",
+      "executions": 28718
+    },
+    {
+      "name": "xuantie_v06 full B11",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-084255-AME_B11/functional.json",
+      "executions": 28718
+    },
+    {
+      "name": "xuantie_v06 single/dual equality",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-085014-AME_B10",
+        "results/ame_explicit_v1/xuantie_v06/20261119-084255-AME_B11"
+      ]
+    },
+    {
+      "name": "xuantie_v06 disabled B00",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-085015-AME_B00/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "xuantie_v06 disabled B01",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/xuantie_v06/20261119-085013-AME_B01/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "spec_v05a full B01",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-085013-AME_B01/functional.json",
+      "executions": 24622
+    },
+    {
+      "name": "spec_v05a full B11",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-084255-AME_B11/functional.json",
+      "executions": 24622
+    },
+    {
+      "name": "spec_v05a single/dual equality",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/spec_v05a/20261119-085013-AME_B01",
+        "results/ame_explicit_v1/spec_v05a/20261119-084255-AME_B11"
+      ]
+    },
+    {
+      "name": "spec_v05a disabled B00",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-085015-AME_B00/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "spec_v05a disabled B10",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/spec_v05a/20261119-085014-AME_B10/functional.json",
+      "executions": 526
+    },
+    {
+      "name": "B00 compile/link/operands",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/B00-inspection.json"
+    },
+    {
+      "name": "B10 compile/link/operands",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/B10-inspection.json"
+    },
+    {
+      "name": "B01 compile/link/operands",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/B01-inspection.json"
+    },
+    {
+      "name": "B11 compile/link/operands",
+      "status": "PASS",
+      "evidence": "results/ame_explicit_v1/B11-inspection.json"
+    },
+    {
+      "name": "incremental off-before",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-085846-off-before/functional.json",
+        "results/ame_explicit_v1/spec_v05a/20261119-085859-off-before/functional.json"
+      ],
+      "gem5_sha256": "ef05cb0a5f228715b44f7910ce3a8c1dd24eef9c8b3c5e4124560e415aff5424",
+      "linked": [
+        false,
+        false
+      ]
+    },
+    {
+      "name": "incremental on",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-090538-on/functional.json",
+        "results/ame_explicit_v1/spec_v05a/20261119-090551-on/functional.json"
+      ],
+      "gem5_sha256": "f3d19b6e4d059171256b5ba2ee73db65c0f9a85dde27f221eceffdd3d9333623",
+      "linked": [
+        true,
+        true
+      ]
+    },
+    {
+      "name": "incremental off-after",
+      "status": "PASS",
+      "evidence": [
+        "results/ame_explicit_v1/xuantie_v06/20261119-091240-off-after/functional.json",
+        "results/ame_explicit_v1/spec_v05a/20261119-091253-off-after/functional.json"
+      ],
+      "gem5_sha256": "e604e608c0c6a12fc776abd412efaf5dd8ff132bd0985fbfb7eb403ea289fe8d",
+      "linked": [
+        false,
+        false
+      ]
+    },
+    {
+      "name": "default switches restored off",
+      "status": "PASS",
+      "evidence": "build/RISCV/gem5.build/config"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+#if USE_XUANTIE_V06_EXPLICIT
+0x02: decode FUNCT7 {
+    0x10: decode FUNCT3 {
+        0: X06Op::xt06_add_i32(add, I32, 'xt06.add.i32', binary);
+        1: X06Op::xt06_add_f32(add, F32, 'xt06.add.f32', binary);
+    }
+    0x11: decode FUNCT3 {
+        0: X06Op::xt06_max_i32(maximum, I32, 'xt06.max.i32', binary);
+        1: X06Op::xt06_max_u32(maximum, U32, 'xt06.max.u32', binary);
+    }
+    0x12: decode RD {
+        0, 1, 2, 3: decode FUNCT3 {
+            0: X06Op::xt06_macbt_i8_i32(macbt, I8, 'xt06.macbt.i8.i32', mac);
+            1: X06Op::xt06_macbt_f16_f32(macbt, F16, 'xt06.macbt.f16.f32', mac);
+            2: X06Op::xt06_macbt_bf16_f32(macbt, BF16, 'xt06.macbt.bf16.f32', mac);
+        }
+    }
+    0x13: decode RS2 {
+        0: decode FUNCT3 {
+            0: X06Op::xt06_cvt_f32_i32(convert, I32ToF32, 'xt06.cvt.f32.i32', cvt);
+            1: X06Op::xt06_cvt_i32_f32(convert, F32ToI32, 'xt06.cvt.i32.f32', cvt);
+            2: X06Op::xt06_cvtlo_f32_f16(convert, LowF16ToF32, 'xt06.cvtlo.f32.f16', cvt);
+        }
+    }
+}
+#endif

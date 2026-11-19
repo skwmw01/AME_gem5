@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "suite": "xuantie_v06",
+  "disabled": false,
+  "chain": false,
+  "cases": 263,
+  "executions": 526,
+  "random_per_seed": 0,
+  "limit": 263,
+  "failed": 0,
+  "failures": [],
+  "gem5_sha256": "9e88aa41c55e6eedc3801417adccc5c1720a007f9a9d3772f6e38d3925b9bd83",
+  "elf_sha256": "240e6a4e1a43e60289cb7ae8ee847943cf8b24ba81faf41b452d6f729d8f2b2d",
+  "inputs_sha256": "82de1d663dfee3ae926b0f90d23b855f1a93575fca77ec3f6f3670402e3966b6",
+  "oracle_sha256": "e6e06eb8f82e54cbb95708d9c190f3c4ca74490772a2612a50f402bdb6ed7cba",
+  "report_sha256": "0234df307473c25adcdbae70ce9d81dcd0c4e6bf2898d8131dff86cf1cb5807d",
+  "run": "results/ame_explicit_v1/xuantie_v06/20261119-085934-AME_B11"
+}

@@ -157,6 +157,19 @@ def operands {{
     'ZttAmovData': ZttAccDataRegOp('ud', 'ZTT_AMOV_AS', 'IsMatrix', 2),
 
 #Memory Operand
+    # Experimental operands name structural storage only. No type-register
+    # dependencies. Destinations are read/write to retain unspecified bytes.
+    'X06Dst': MatRegOp('mc', 'RiscvISA::ZttMatRegBase + RD', 'IsMatrix', 1),
+    'X06Src1': MatRegOp('mc', 'RiscvISA::ZttMatRegBase + RS1', 'IsMatrix', 2),
+    'X06Src2': MatRegOp('mc', 'RiscvISA::ZttMatRegBase + RS2', 'IsMatrix', 3),
+    'X06Acc': MatRegOp('mc', 'RiscvISA::ZttAccRegBase + RD', 'IsMatrix', 1),
+    'S05ADst': MatRegOp('mc', 'RiscvISA::ZttMatRegBase + RD', 'IsMatrix', 1),
+    # Decode rejects rd=31 before construction; the modulo is defensive.
+    'S05ANext': MatRegOp('mc', 'RiscvISA::ZttMatRegBase + ((RD + 1) & 31)', 'IsMatrix', 2),
+    'S05ASrcA': MatRegOp('mc', 'RiscvISA::ZttMatRegBase + RS1', 'IsMatrix', 3),
+    'S05ASrcB': MatRegOp('mc', 'RiscvISA::ZttMatRegBase + RS2', 'IsMatrix', 4),
+    'S05AAcc': MatRegOp('mc', 'RiscvISA::ZttAccRegBase + RD', 'IsMatrix', 1),
+
     'Mem': MemOp('ud', None, (None, 'IsLoad', 'IsStore'), 5),
 
 #Program Counter Operands

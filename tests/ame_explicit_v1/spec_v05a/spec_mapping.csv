@@ -1,0 +1,11 @@
+experiment,native,reference,preserved,adaptation,test
+sp05a.add.i32,madd.w.mm,4.5.2 PDF28-30,word addition,fixed M instead of native Acc,SP05A-0
+sp05a.add.f32,mfadd.f.mm,4.5.2 PDF28-30,FP32 addition,explicit FP32 instead of mtype; RNE,SP05A-1
+sp05a.max.i32,mmax.w.mm,4.5.2 PDF28-30,signed comparison,fixed M instead of native Acc,SP05A-2
+sp05a.max.u32,mmaxu.w.mm,4.5.2 PDF28-30,unsigned comparison,fixed M instead of native Acc,SP05A-3
+sp05a.mac.i8.i32,mqma.b.mm,4.5.1 PDF27-28; table29 PDF85,signed widening multiply,4x16 by 16x4 row-major; modulo 2^32,SP05A-4
+sp05a.mac.f16.f32,mfwma.hf.mm,4.5.1 PDF27-28; 6.9,FP16 widening multiply,explicit FP16 instead of mtype.mfp16; ordered FMA,SP05A-5
+sp05a.mac.bf16.f32,mfwma.hf.mm,4.5.1 PDF27-28; 6.10,BF16 widening multiply,explicit BF16 instead of mtype.mfp16; ordered FMA,SP05A-6
+sp05a.cvt.f32.i32,mfcvt.f.w.m,4.6 PDF30-34,signed integer to float,explicit FP32; fixed RNE,SP05A-7
+sp05a.cvt.i32.f32,mfcvt.w.f.m,4.6 PDF30-34,float to signed integer,experimental clipping and NV without NX on invalid,SP05A-8
+sp05a.cvt.f32.f16,mfwcvt.f.hf.m,4.6 PDF30-34; table32 PDF98,widen every source half,32 halves into consecutive M pair; md31 illegal,SP05A-9
