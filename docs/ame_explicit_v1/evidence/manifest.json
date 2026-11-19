@@ -1,9 +1,9 @@
 {
   "baseline": "6677b2c8f6e76363050427009d47c5481f9e53bf",
   "branch": "ztt0.6-xuantie0.6-spec0.5a-vs",
-  "head_at_report": "6677b2c8f6e76363050427009d47c5481f9e53bf",
+  "head_at_report": "1b8e52ee7e3bc8a150e9f43f9339e768a5ef0424",
   "implementation_identity": "source_manifest_sha256 (excludes generated docs/evidence)",
-  "source_manifest_sha256": "ec0502ae9498645dc2598ea4abcdbdb18a10f21df1d9794eca7b78d7c19ee306",
+  "source_manifest_sha256": "a596677a26feca0ae93859f9c315d50ae42c45ad607ec7ad50a289b972989e81",
   "sources": {
     "results/.gitignore": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
     "src/arch/riscv/Kconfig": "bf57d24205b47bf4ec21c878d9ac316641fa7aa3096d65f57a9d782d0495047e",
@@ -36,7 +36,7 @@
     "tests/ame_explicit_v1/common/incremental.sh": "29aeae4c90d9c13c11adafd8be3f77c254871c9fd13ee2ab7b651d1c3fa61d3e",
     "tests/ame_explicit_v1/common/inspect_build.py": "b4b17586954e8be5398552dfb509f109a6d0763424ed4463c67fb386ff76bed1",
     "tests/ame_explicit_v1/common/interleave.c": "de7b443717bd41b26ae60d0f3a470100e30cdb96a5f3a707bf161fbaa6938f21",
-    "tests/ame_explicit_v1/common/reporting.py": "02f538fd763a70cd75d75ac7e9ac9ba67279e97cc63738d32d9df917136ba9ce",
+    "tests/ame_explicit_v1/common/reporting.py": "172307fcb8650544b10e67409f256453604c16f76cd3669fa07d783af14b8f48",
     "tests/ame_explicit_v1/common/runtime.c": "e551e1af889da55dc8fbc4f3d42ab292d22756b45dc46696b4e6f7cd25d93c33",
     "tests/ame_explicit_v1/common/shape.py": "86f91dcd28d72e87ce23eeeff3d670f895dd7a4cfd80410136e0025100c15da8",
     "tests/ame_explicit_v1/common/storage.py": "5fd3bee3a912975bda2925bdf9adfa463595edda8a22aec41443f2628e079492",
@@ -251,7 +251,7 @@
     {
       "file": "tests/ame_explicit_v1/common/reporting.py",
       "change": "\u65b0\u589e",
-      "insertions": "190",
+      "insertions": "287",
       "deletions": "0"
     },
     {

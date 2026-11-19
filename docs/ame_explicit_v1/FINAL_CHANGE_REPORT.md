@@ -4,7 +4,7 @@
 
 总验收状态：**PASS**；检查汇总：`{'PASS': 58}`。
 基线：`6677b2c8f6e76363050427009d47c5481f9e53bf`；分支：`ztt0.6-xuantie0.6-spec0.5a-vs`。
-实现内容指纹（源文件 SHA256 清单的 SHA256）：`ec0502ae9498645dc2598ea4abcdbdb18a10f21df1d9794eca7b78d7c19ee306`。
+实现内容指纹（源文件 SHA256 清单的 SHA256）：`a596677a26feca0ae93859f9c315d50ae42c45ad607ec7ad50a289b972989e81`。
 指纹包含新增文件，不依赖提交或暂存状态；生成报告与证据不参与自身哈希。
 
 两组各十条研究性显式计算指令，分别拥有译码、指令类、运算循环、数值包装和参考适配。
@@ -50,7 +50,7 @@
 | `tests/ame_explicit_v1/common/incremental.sh` | 新增 | 20 / 0 |
 | `tests/ame_explicit_v1/common/inspect_build.py` | 新增 | 37 / 0 |
 | `tests/ame_explicit_v1/common/interleave.c` | 新增 | 43 / 0 |
-| `tests/ame_explicit_v1/common/reporting.py` | 新增 | 190 / 0 |
+| `tests/ame_explicit_v1/common/reporting.py` | 新增 | 287 / 0 |
 | `tests/ame_explicit_v1/common/runtime.c` | 新增 | 391 / 0 |
 | `tests/ame_explicit_v1/common/shape.py` | 新增 | 58 / 0 |
 | `tests/ame_explicit_v1/common/storage.py` | 新增 | 59 / 0 |
@@ -105,7 +105,103 @@
 
 X06 INT8 原生名称依据用户 PDF 修正为 `mmacc.w.b`；方案中的 `mmaqa.b` 不是该 PDF 的对应名称。
 
-## 4. 编译开关验收
+## 4. 编译开关使用与验收
+
+### 4.1 开关含义与使用环境
+
+两个开关定义于 `src/arch/riscv/Kconfig`，仅适用于 RISC-V 构建，默认均为 `n`：
+
+| 开关 | `y` 时启用 | `n` 时行为 |
+|---|---|---|
+| `USE_XUANTIE_V06_EXPLICIT` | 10 条 `xt06.*` 指令（X06） | 不编译/链接该组执行实现；对应实验机器字触发非法指令 |
+| `USE_SPEC_V05A_EXPLICIT` | 10 条 `sp05a.*` 指令（S05A） | 不编译/链接该组执行实现；对应实验机器字触发非法指令 |
+
+这是 **gem5 编译期开关**，配置按构建目录分别保存。修改后必须重新编译，并运行该目录下的 `gem5.opt`；不需要给 `example/ame_config.py` 增加运行时开关。关闭某组不影响原有 Ztt 指令。
+
+下面的 `scons`、测试和运行命令均在仓库根目录执行。本机采用现有 Docker 环境，可先在宿主的仓库根目录进入容器：
+
+```bash
+docker run --rm -it -v "$PWD:/work" -w /work ame-gem5-rvv:local bash
+```
+
+### 4.2 新建四种独立构建
+
+首次创建构建目录时执行 `defconfig`，随后用 `setconfig` 明确设置两组开关，再编译。以下四种组合可以分别执行；`-j8` 可按可用内存和 CPU 调整。
+
+```bash
+# B00：两组均关闭（默认行为）
+scons defconfig build/AME_B00 build_opts/RISCV
+scons setconfig build/AME_B00 USE_XUANTIE_V06_EXPLICIT=n USE_SPEC_V05A_EXPLICIT=n
+scons build/AME_B00/gem5.opt -j8
+
+# B10：仅启用 X06
+scons defconfig build/AME_B10 build_opts/RISCV
+scons setconfig build/AME_B10 USE_XUANTIE_V06_EXPLICIT=y USE_SPEC_V05A_EXPLICIT=n
+scons build/AME_B10/gem5.opt -j8
+
+# B01：仅启用 S05A
+scons defconfig build/AME_B01 build_opts/RISCV
+scons setconfig build/AME_B01 USE_XUANTIE_V06_EXPLICIT=n USE_SPEC_V05A_EXPLICIT=y
+scons build/AME_B01/gem5.opt -j8
+
+# B11：同时启用两组
+scons defconfig build/AME_B11 build_opts/RISCV
+scons setconfig build/AME_B11 USE_XUANTIE_V06_EXPLICIT=y USE_SPEC_V05A_EXPLICIT=y
+scons build/AME_B11/gem5.opt -j8
+```
+
+也可用统一入口一次构建并检查四种组合：
+
+```bash
+python3 tests/ame_explicit_v1/run.py build-matrix --build-root build --jobs 8
+```
+
+### 4.3 已有构建目录切换与关闭
+
+已有目录先执行 `olddefconfig` 接纳新增配置项并保留其他配置，再 `setconfig`。例如，在已有 `build/RISCV` 中启用两组：
+
+```bash
+scons olddefconfig build/RISCV
+scons setconfig build/RISCV USE_XUANTIE_V06_EXPLICIT=y USE_SPEC_V05A_EXPLICIT=y
+scons build/RISCV/gem5.opt -j8
+```
+
+仅启用一组时，将另一开关设为 `n`；恢复两组关闭：
+
+```bash
+scons setconfig build/RISCV USE_XUANTIE_V06_EXPLICIT=n USE_SPEC_V05A_EXPLICIT=n
+scons build/RISCV/gem5.opt -j8
+```
+
+不需要手工删除目标文件或修改生成头文件。本版已经验证同一目录关闭→开启→关闭的增量编译。此处命令是使用说明；本次交付时默认 `build/RISCV` 仍为两组关闭。
+
+### 4.4 确认配置并运行对应二进制
+
+实际配置保存在 `<构建目录>/gem5.build/config`。例如检查 B11：
+
+```bash
+grep -E 'USE_(XUANTIE_V06|SPEC_V05A)_EXPLICIT' build/AME_B11/gem5.build/config
+```
+
+启用时显示 `USE_..._EXPLICIT=y`，关闭时显示 `# USE_..._EXPLICIT is not set`。配置文件表示下一次构建所用设置，因此应确认上述编译成功后再运行：
+
+```bash
+# 对双开二进制分别验证两组指令
+python3 tests/ame_explicit_v1/run.py functional --suite xuantie_v06 --gem5 build/AME_B11/gem5.opt
+python3 tests/ame_explicit_v1/run.py functional --suite spec_v05a --gem5 build/AME_B11/gem5.opt
+
+# 对双关二进制验证非法指令路径
+python3 tests/ame_explicit_v1/run.py functional --suite xuantie_v06 --gem5 build/AME_B00/gem5.opt --disabled --random-count 0 --limit 263
+python3 tests/ame_explicit_v1/run.py functional --suite spec_v05a --gem5 build/AME_B00/gem5.opt --disabled --random-count 0 --limit 263
+
+# 运行自己的 ELF；将路径替换为实际来宾 ELF 与报告路径
+build/AME_B11/gem5.opt -d /work/m5out-explicit example/ame_config.py --cmd '/work/path/to/program.elf /work/path/to/report.txt'
+```
+
+`--disabled` 是测试程序的“预期非法指令”检查选项，不会改变 gem5 开关。两组实验助记符的汇编器支持不由这些开关提供；本版测试通过各组 `encoding.csv`、`encoding.h` 和 `kernels.S` 中的原始机器字发码。
+
+### 4.5 本次构建验收结果
+
 
 | 构建 | X06 / S05A | 编译及链接 | X06 / S05A 行为 | 模拟器 SHA256 |
 |---|---|---|---|---|
