@@ -1,9 +1,9 @@
 {
   "baseline": "6677b2c8f6e76363050427009d47c5481f9e53bf",
   "branch": "ztt0.6-xuantie0.6-spec0.5a-vs",
-  "head_at_report": "1b8e52ee7e3bc8a150e9f43f9339e768a5ef0424",
+  "head_at_report": "2ce6cbfae230862577848cc5dda2027c6d6c11c5",
   "implementation_identity": "source_manifest_sha256 (excludes generated docs/evidence)",
-  "source_manifest_sha256": "a596677a26feca0ae93859f9c315d50ae42c45ad607ec7ad50a289b972989e81",
+  "source_manifest_sha256": "fd845d84bd4513d847ebfac4e592ef98f3bde19515a6c01ae14935c35cebf32e",
   "sources": {
     "results/.gitignore": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
     "src/arch/riscv/Kconfig": "bf57d24205b47bf4ec21c878d9ac316641fa7aa3096d65f57a9d782d0495047e",
@@ -36,7 +36,7 @@
     "tests/ame_explicit_v1/common/incremental.sh": "29aeae4c90d9c13c11adafd8be3f77c254871c9fd13ee2ab7b651d1c3fa61d3e",
     "tests/ame_explicit_v1/common/inspect_build.py": "b4b17586954e8be5398552dfb509f109a6d0763424ed4463c67fb386ff76bed1",
     "tests/ame_explicit_v1/common/interleave.c": "de7b443717bd41b26ae60d0f3a470100e30cdb96a5f3a707bf161fbaa6938f21",
-    "tests/ame_explicit_v1/common/reporting.py": "172307fcb8650544b10e67409f256453604c16f76cd3669fa07d783af14b8f48",
+    "tests/ame_explicit_v1/common/reporting.py": "c5f19ce8138d3df3697af32b8ee74bd425765aa9e195ef40f76ad21c63148749",
     "tests/ame_explicit_v1/common/runtime.c": "e551e1af889da55dc8fbc4f3d42ab292d22756b45dc46696b4e6f7cd25d93c33",
     "tests/ame_explicit_v1/common/shape.py": "86f91dcd28d72e87ce23eeeff3d670f895dd7a4cfd80410136e0025100c15da8",
     "tests/ame_explicit_v1/common/storage.py": "5fd3bee3a912975bda2925bdf9adfa463595edda8a22aec41443f2628e079492",
@@ -251,7 +251,7 @@
     {
       "file": "tests/ame_explicit_v1/common/reporting.py",
       "change": "\u65b0\u589e",
-      "insertions": "287",
+      "insertions": "396",
       "deletions": "0"
     },
     {
@@ -422,7 +422,7 @@
     "baseline/compat-manifest.json": "9724ed066434cab9b7b3de4089a2f210f2eacc5755ef491445bacc2c7bf28f72",
     "baseline/manifest.json": "9077684603f3dc294c92e01c442fdd55a57db39d9e2d2020a1ee5270f0d32e81",
     "build_matrix.json": "7f17a92bf6dffbebc5095848bcac5739b58be424252c005744b01cbe316bded8",
-    "commands.log": "d83ca3691f2d2847329a3ac930677aed0ec301bbba39e0aaa788c99a51b48c3e",
+    "commands.log": "a299538d701d6b81cdfccfdc850739164e8555cd619099ae626f561af55732cf",
     "encoding_audit.json": "a583536b3cb078124043e7cc0ea49645ecdc6f5d531cb720fce5acaa08149086",
     "environment/clang.txt": "94c376ca1f3dd91a7a486f019f62f6821abd1e57483554c97a719462ffe69627",
     "environment/gcc.txt": "0c45c2417cda20b1ea33e8f54aee9aa0443c940cb9f23b71c6f126148cb8ff9c",

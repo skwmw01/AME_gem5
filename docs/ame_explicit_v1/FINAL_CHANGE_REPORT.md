@@ -4,7 +4,7 @@
 
 总验收状态：**PASS**；检查汇总：`{'PASS': 58}`。
 基线：`6677b2c8f6e76363050427009d47c5481f9e53bf`；分支：`ztt0.6-xuantie0.6-spec0.5a-vs`。
-实现内容指纹（源文件 SHA256 清单的 SHA256）：`a596677a26feca0ae93859f9c315d50ae42c45ad607ec7ad50a289b972989e81`。
+实现内容指纹（源文件 SHA256 清单的 SHA256）：`fd845d84bd4513d847ebfac4e592ef98f3bde19515a6c01ae14935c35cebf32e`。
 指纹包含新增文件，不依赖提交或暂存状态；生成报告与证据不参与自身哈希。
 
 两组各十条研究性显式计算指令，分别拥有译码、指令类、运算循环、数值包装和参考适配。
@@ -50,7 +50,7 @@
 | `tests/ame_explicit_v1/common/incremental.sh` | 新增 | 20 / 0 |
 | `tests/ame_explicit_v1/common/inspect_build.py` | 新增 | 37 / 0 |
 | `tests/ame_explicit_v1/common/interleave.c` | 新增 | 43 / 0 |
-| `tests/ame_explicit_v1/common/reporting.py` | 新增 | 287 / 0 |
+| `tests/ame_explicit_v1/common/reporting.py` | 新增 | 396 / 0 |
 | `tests/ame_explicit_v1/common/runtime.c` | 新增 | 391 / 0 |
 | `tests/ame_explicit_v1/common/shape.py` | 新增 | 58 / 0 |
 | `tests/ame_explicit_v1/common/storage.py` | 新增 | 59 / 0 |
@@ -200,7 +200,116 @@ build/AME_B11/gem5.opt -d /work/m5out-explicit example/ame_config.py --cmd '/wor
 
 `--disabled` 是测试程序的“预期非法指令”检查选项，不会改变 gem5 开关。两组实验助记符的汇编器支持不由这些开关提供；本版测试通过各组 `encoding.csv`、`encoding.h` 和 `kernels.S` 中的原始机器字发码。
 
-### 4.5 本次构建验收结果
+### 4.5 运行一条指令：复用正确性测试中的 xt06.add.i32
+
+本例直接复用已经验收的来宾程序、输入生成器和参考模型。选择第一条 `xt06.add.i32` 的第一个边界用例，计算 `m8 = m0 + m4`：16 个 INT32 元素逐项相加，结果按 32 位取模。
+
+**第一步：运行一个用例。** 在宿主仓库根目录执行以下完整命令；它使用已经启用 X06 的 B10 二进制。如果该二进制尚未构建，先执行第 4.2 节 B10 命令。
+
+```bash
+docker run --rm -v "$PWD:/work" -w /work ame-gem5-rvv:local \
+  python3 tests/ame_explicit_v1/run.py functional \
+  --suite xuantie_v06 --gem5 build/AME_B10/gem5.opt \
+  --random-count 0 --limit 1
+```
+
+`--random-count 0` 不生成随机用例；`--limit 1` 只选择用例清单的第一项，即 `op=0, tag=boundary-0`。本例不是选择任意指令的编号参数。测试框架仍会生成公共内核和准备代码，但来宾只调用所选加法内核。
+
+预期终端摘要含有：
+
+```json
+{"status": "PASS", "cases": 1, "executions": 2, "failed": 0}
+```
+
+这里测试的是**一种指令、一个输入用例**。`executions=2` 表示分别在匹配与故意不匹配的类型描述符下各执行一次，以验证显式指令不依赖描述符；它不是整个程序的动态指令数。初始化、访存、标量检查和结果输出也会执行。此短例不替代完整验收。
+
+**第二步：理解实际执行的指令。** `tests/ame_explicit_v1/xuantie_v06/kernels.S` 中的第一个内核为：
+
+```asm
+kernel_0_0:
+    .word 0x2040040b    # xt06.add.i32 m8, m0, m4
+    ret
+```
+
+机器字计算为 `0x2000000b | (8 << 7) | (0 << 15) | (4 << 20)`。新实验助记符尚未加入汇编器，使用 `.word` 发码；gem5 按该编码执行。`ret` 是返回测试框架的普通指令。
+
+完整初始化与取回代码在 `tests/ame_explicit_v1/common/guest.c`。它先取得 AME 所有权、安装异常处理器，设置描述符后将 A/B 的原始 64 字节分别装入 m0/m4，调用上述内核，再将 m8 存回内存。已有 `mls.1r`/`mss.1r` 负责整寄存器装载/存储。不要把 `.word` 单独交给宿主执行，也不要省略来宾的 AME 初始化。
+
+**第三步：查看实际输入、结果和标志。** 上一步打印的 `run` 字段是本次运行目录，形如 `results/ame_explicit_v1/xuantie_v06/<时间戳>-AME_B10/`，其中保留：
+
+| 文件 | 用途 |
+|---|---|
+| `guest.elf`、`kernels.S`、`disassembly.txt` | 来宾二进制、发码源码、反汇编 |
+| `compile.log`、`simulate.log` | 编译与模拟器运行日志 |
+| `cases.json` | 输入 A/B/C、参考结果、预期新增 flags |
+| `elf_audit.json` | 内核地址、实际机器字与 ELF 哈希 |
+| `guest.bin` | 两次实际执行的寄存器数据与状态观测 |
+| `functional.json` | 比较结果、失败详情及产物哈希 |
+
+紧接第一步，在宿主仓库根目录运行以下读取命令。它从最新摘要定位本次结果，并确认该摘要确实对应单用例运行；若期间运行了其他测试，改用第一步输出的 `run` 路径读取对应 `functional.json`。
+
+```bash
+python3 - <<'PY'
+import json
+import struct
+from pathlib import Path
+
+summary = json.loads(Path('results/ame_explicit_v1/xuantie_v06/functional.json').read_text())
+assert summary['cases'] == 1 and summary['limit'] == 1 and not summary['disabled']
+run = Path(summary['run'])
+case = json.loads((run / 'cases.json').read_text())[0]
+probe = json.loads((run / 'elf_audit.json').read_text())['probes']['kernel_0_0']
+print('run:', run)
+print('instruction: xt06.add.i32 m8, m0, m4')
+print(f"pc=0x{probe['pc']:x}, word=0x{probe['word']:08x}")
+print('case:', case['op'], case['tag'])
+
+def matrix(label, raw):
+    values = struct.unpack('<16I', raw[:64])
+    print(label)
+    for row in range(4):
+        print(' '.join(f'{v:08x}' for v in values[4*row:4*row+4]))
+
+matrix('A / m0:', bytes.fromhex(case['a']))
+matrix('B / m4:', bytes.fromhex(case['b']))
+matrix('expected m8:', bytes.fromhex(case['expected']))
+records = list(struct.iter_unpack('<13Q128s', (run / 'guest.bin').read_bytes()))
+assert len(records) == 2
+for r in records:
+    mode, traps, flags, fcsr = r[1], r[2], r[6], r[7]
+    actual = r[13][:64]
+    matrix(f'actual m8, descriptor mode={mode}:', actual)
+    print(f'traps={traps}, amefflags=0x{flags:x}, fcsr=0x{fcsr:x}')
+    assert actual.hex() == case['expected']
+    assert traps == 0 and flags == (case['flags'] | 8) and fcsr == 3
+print('Both descriptor modes: PASS')
+PY
+```
+
+所有矩阵按 4×4 的十六进制原始 32 位数据展示，便于观察溢出。此用例预期结果第一行为 `80000000 80800000 7f800000 ffffffff`；两种模式结果一致、`traps=0`。测试预置 `amefflags=0x8` 以检查粘滞保留，因此整数加法不产生新 flags 后仍为 `0x8`；本用例预置的标量 `fcsr=0x3` 也保持不变。
+
+若需脱离 Python 的自动编译/比较流程重跑已经生成的 ELF，可在第 4.1 节容器内用本次实际目录替换 `<运行目录>`：
+
+```bash
+build/AME_B10/gem5.opt -d '/work/<运行目录>/manual-m5out' \
+  example/ame_config.py \
+  --cmd '/work/<运行目录>/guest.elf /work/<运行目录>/manual-guest.bin'
+```
+
+这样会重新执行同一个来宾，并输出 `manual-guest.bin`；自动比较需再次运行上述 Python 读取示例，将其中 `guest.bin` 改为 `manual-guest.bin`。第二条 `--cmd` 参数是这个测试来宾约定的结果文件路径。
+
+S05A 的相同入口示例为：
+
+```bash
+docker run --rm -v "$PWD:/work" -w /work ame-gem5-rvv:local \
+  python3 tests/ame_explicit_v1/run.py functional \
+  --suite spec_v05a --gem5 build/AME_B01/gem5.opt \
+  --random-count 0 --limit 1
+```
+
+此时执行 `sp05a.add.i32 m8, m0, m4`，机器字 `0x4040045b`；结果位于 `results/ame_explicit_v1/spec_v05a/`。读取脚本相应替换目录即可。完整四类十条指令的覆盖仍使用不带 `--limit` 的完整功能命令。
+
+### 4.6 本次构建验收结果
 
 
 | 构建 | X06 / S05A | 编译及链接 | X06 / S05A 行为 | 模拟器 SHA256 |
