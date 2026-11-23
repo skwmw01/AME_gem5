@@ -1,0 +1,2194 @@
+{
+  "status": "PASS",
+  "timing_records": 5220,
+  "directories": 81,
+  "results": [
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/P/family0",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/P/family0/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/P/family0/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/P/family0/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "91caeafc1e8a5a83f6bee0806b3ec0c421af3f4d1f969f0938b681cb93e719af",
+        "guest.bin": "d00a379daeefc27a5fdcf107bb2034302624772ba721a96f55b16fa66e6c564f",
+        "command.json": "8a9dcd120b3ac986fe2f396cf6269be13465a620d2743e6139cd258043cd1ff0",
+        "symbols.txt": "57d6e4db5babb7ae88ba1dbcfb009b9214453224821f1556cc007d8f4c5b590e",
+        "disassembly.txt": "d33f793c56a2e73decc78e40feec18b821336f44d0212440afbb5c66e7b36305",
+        "sections.txt": "4bcdea5b6e75c23d0570c1e4fd148e1dbdcb92c06cc930479f94346748ce7f44",
+        "m5out/config.ini": "d89b17d75671ae836394385d53ff08a161929f8e8115f2cd236f8b5378a2a6b2",
+        "m5out/config.json": "87311a3536c375a763a45c20fd71e52bbc67aa17952da24652f09d66c988d50d",
+        "m5out/stats.txt": "a8c6a6d7e3dfd1725ef46e4b8905422886216fce3e47f4eeb325288900598d88",
+        "m5out/trace.gz": "0dfc927e6cd6867b170f9f4bcb1274c3c6544cf4d02eacafd9be8a026e48313c"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/P/family1",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/P/family1/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/P/family1/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/P/family1/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "6f1870ab60d0a274916a2098ad94e5017ad3b77fd2950e3fdf08c8066b06eb4f",
+        "guest.bin": "cf5de1f29ad8bf358d073c418d907f6115ccf867cb42878e4263068579587723",
+        "command.json": "dda2d0488bf233858136ca5fc5afa11dd416fbfdfe42b7e5600a6704845a306b",
+        "symbols.txt": "dfdb2489d198f73a6e3c7c3b60499ec1bf5ec30337636a8c30f7500df613461f",
+        "disassembly.txt": "0b160e0de33b92d54217a3978b7ff514267f1f369f43b1e88feb26a93c96e858",
+        "sections.txt": "30d361a73f684650a1ca7de084c21239961b7bd7c18da129ea4f2e58ec10197d",
+        "m5out/config.ini": "c3a7ea8f83ed8befae151ee8c3e2a5cfc4ea50a903ce8c47cece4af197d2ca5f",
+        "m5out/config.json": "f25fc9a320840d404666176a50c572dd4b791845b99474342ca2932cb1437ea9",
+        "m5out/stats.txt": "d56099e3cfdf52b6afb751b1028041bab3f0abb1ac5c18d2b1ff6720be0d9f33",
+        "m5out/trace.gz": "bd15082417ff916d81de9fee77e3aa8241fa7ba75274268f4a043e44d580e039"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/P/family2",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/P/family2/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/P/family2/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/P/family2/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "2ae74293fd0c46ab7d991d51c49918ef5e0dcb9a44effe6210b473b5f41bc365",
+        "guest.bin": "d9e127627cb1c5d89bd1fe4365b31ae5a688b66210ac1f4178671fcfcdbdde42",
+        "command.json": "208b5be94c6c037afa20657568f70ba3322ba8680484bbd1cc06ffedb97040f8",
+        "symbols.txt": "f6f63ff1fb9714b32bf37ef56acbe8c2df1b63c5a4c4863c3292b6c7b96538a0",
+        "disassembly.txt": "96d14f345f8f5d36f3ba3e5dfc597dba13e2b043e21f0c4b45f88c6743c7e3f9",
+        "sections.txt": "aa64b84ba5d94af393a19d836cc7691e1d42059d0f456295392cb20b19492d73",
+        "m5out/config.ini": "6f02983aaea67e2f75949899d2d58229b49b7db92487e8ba99f3aef39084339b",
+        "m5out/config.json": "3923f5222475b4f02d2bd6424d68c6eb934109898c319981311f6af65b030ced",
+        "m5out/stats.txt": "184554d575fc36af84e4f3af98ddf971cd023b13d750b88c41742482bc2564bd",
+        "m5out/trace.gz": "7334513e3289c58a059c5149681c0d3b82239e074035f0c2ff845f239250e292"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/P/family3",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/P/family3/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/P/family3/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/P/family3/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "92834a1dca4743e28653b0f7ca0bcf770892a7a44448241e77d6f385ea6871d2",
+        "guest.bin": "498dcdbc6c61bc9dd7bf381fdee795ed6058413162e877c7fef780205da89d76",
+        "command.json": "8a9df72c2676b83e036282eeb394fdf827d4ec4ec59be4f428845113c3a49f79",
+        "symbols.txt": "8abee7e7b7c6bb6fd12887e9b6aa841caf0d595b557f60db5442294bfb663a27",
+        "disassembly.txt": "ccaddded4f3f1a8201ab52c78db888faf34e5e62a42464829617d5c009fb1d10",
+        "sections.txt": "21e387936d0ebd948035947a97b4eb0cc089a727a563a1baa066a51165fe241a",
+        "m5out/config.ini": "e0c7a74b76a073fc8a398c566bcac5d6e0747dee042ac9cebc6fab469ec64026",
+        "m5out/config.json": "9c31b02260a14036a7cca667c90525d988d08bf01ce75f934f62ebeb1857acf7",
+        "m5out/stats.txt": "31bbb46f6488dcf9d29340afce4841dc67b92016d6770cdc08428d612c6f9fb0",
+        "m5out/trace.gz": "b235544131b53f2b4092c14edd321a0434f37060bf6ce2065daa0f66365c5575"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/S05A/family0",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family0/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family0/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family0/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "ed5f4b4040190c45564c59adeb3fff23a559b1429e5db49cfaa8039a8fa281c7",
+        "guest.bin": "efa1572e0e24bbf38bf0a691ba66f9c5707cf4ee9a42529ac2443090b0473a93",
+        "command.json": "5feee6fe7111506bd4c7704a710a8fbb1ae7483699ada7c5b27d901deaf2f915",
+        "symbols.txt": "96f53e7a7420692a88cd2a8065219f9986671ec5b065e6bd1b4b9ee1928fca0d",
+        "disassembly.txt": "688a7f385522d986b632942bfd500c6b2580c9bbaaa6567789344788d50883a5",
+        "sections.txt": "6f914adfdbe358e9389f4baa604b2a47935034751a9ac1f47d4a8c6e45cac822",
+        "m5out/config.ini": "094955f75073d15510bafa7b796723a5cc9adf1c9574ac24b04df674bfda7f4c",
+        "m5out/config.json": "fe347c2b103c2687b4049b6bd8c765f6ddadcbf9331d8c6a3fec7f8ad896f7f0",
+        "m5out/stats.txt": "e2c24272aa005c8e32f7152b15be701302151efeba4fbc7358be81f6c65bc969",
+        "m5out/trace.gz": "817e9311fcd363dfbde13f62b089bbb9d690411595c1a287193f615b7974791e"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/S05A/family1",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family1/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family1/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family1/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "d2d0506db1d8a104cf9b2ea9b0c26271ac24db358fd7755ec61c8a5e8b3fe75f",
+        "guest.bin": "955e73a24983df64d86ae7a38ee538aeb6c29ae92f08c70dcd7e61e2a5ce67cc",
+        "command.json": "0af948f7619d83681cc7fd0df620a21b0eb13d8f460bdd7d6ddb3efe119972b0",
+        "symbols.txt": "3826df8f2d1df27499c45884775ea371f4f7284a1b527fd9b0b00f9ceb0f8f01",
+        "disassembly.txt": "0f609d19f868402286772a5cb2f4a70da4c8504147dd354eb3ddeb841543c376",
+        "sections.txt": "5ff23dc91c2760ba8be33918462ac3c03fac478015261183b906dd5bb2cf3697",
+        "m5out/config.ini": "d34d94718883c5a5b7e4ca84d894a0b7a4f5bfaabf42e256e6445b7cd0231587",
+        "m5out/config.json": "824e0c2a8229eb39b5961019111ce7dc2d41140c61e69ce767980715e451bfb5",
+        "m5out/stats.txt": "00e39c0df430031264cabd942e81551d5a3c988f7716fc9f5dc5f05fa66ddf6e",
+        "m5out/trace.gz": "ec7ad6255cb7bdfe10cb04527cf63f539cd12c9da562b3fc4704248604232653"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/S05A/family2",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family2/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family2/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family2/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "0ba328d61790b957f022e09d419e803d6b08e1948d5021d9d6ff4e896f8eea91",
+        "guest.bin": "32fb390756b311cff8a02426704ac14163604f9bf70ce7bc722baa513d594ffe",
+        "command.json": "3e83cfe11704cbda3daf14f2cd2efda5d13dd0d42ae9206cde809650c68ad0c8",
+        "symbols.txt": "78fd0120c2595adf06b2d50f252863a0257097dbced2de5aba1cd5f34ba65cee",
+        "disassembly.txt": "96aa50b161e958b667786e1779751705a1c161e4dde717bad6393dde778e265d",
+        "sections.txt": "033d1ac02c71445685774c5ab49dcbdfc1878a358b33b9fa051e1df26ad35f5f",
+        "m5out/config.ini": "101a5666a328bf816dfea6df8499534a3d98cfa57930993d2410dc0d92ba3396",
+        "m5out/config.json": "d7f018fdc365269e6909abd545fe5206f860e4c2f24bce3b87987a7d94a28281",
+        "m5out/stats.txt": "e8afdcb459c7b21109798241b176f8eed08489cc01822693b0ece20d797343ec",
+        "m5out/trace.gz": "008157fd1b35d71b39570efd453542d85ecc35f26eb5b7935fe26bbda38b180e"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/S05A/family3",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family3/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family3/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/S05A/family3/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "cad9cfc85d6cd2fdeda20038e346ff9efd526199ab353f1acd00d4ed79783ff5",
+        "guest.bin": "1f7490b9c1b1f80c5f9e575016337625c0bc49f33632a7af0792d76457c3615d",
+        "command.json": "800ee417324d636a8a5ea8d06f3ab6faf2e2bbbc0f161e8a6391b6a86d101d64",
+        "symbols.txt": "abca2508bb11012e4876af732fc519293a2017001eeee4c1286491544f7c4bbf",
+        "disassembly.txt": "51b12c1696285722ce39cb2288157238eba9cdddaa0c1e5c6bf7710cca077344",
+        "sections.txt": "866a82bb2ce483a7f8b3527054d0e05359279c46ebef5566f2885acd7cdf00b9",
+        "m5out/config.ini": "1f0f5b14e9a36fe9c49c61bc49e2ea363e88d33730084246a7f99fe3ba19b228",
+        "m5out/config.json": "5b1445ff529f2e150c023efedce6a08284454530fdfc7a8b6f75296434452b8f",
+        "m5out/stats.txt": "3468163498f9a65e83af46aeef6c32f1c50e3dee3715ab8a333cd2d9562a22c1",
+        "m5out/trace.gz": "324910d23ca4fb554b73721da3bc9fba408b8e02dc231ac9cd7fdf962e21dd93"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/X06/family0",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/X06/family0/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/X06/family0/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/X06/family0/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "b136d044d3ae3a1fa422954a587716121482dde92fdd1227d9644ae107f2eb9f",
+        "guest.bin": "530f21736f2fe443ef7c1152ef38c8fd9a84aab496df58529cfa5ae0af4207b4",
+        "command.json": "503bac786bdb1e3ef753f5cfce2678223c7962061324f3054d099702089b3238",
+        "symbols.txt": "b254d6fb6004bfe5d6a879d5500780b5188440111ccfcaf89e98cca30c56b675",
+        "disassembly.txt": "a6852896ce200422aba2b366f82c076525b4ea71357c7fb95e01db0d666ada78",
+        "sections.txt": "77eb2ea1bfd0647723c8249e50dc44f0ff465f90dae2bbc70052e7aaaf61a05b",
+        "m5out/config.ini": "187a4bdea373933986017d00c7c93dc05062538082d22c50f89b7b3e28901b4e",
+        "m5out/config.json": "2b881a557f50eb3f25e3cf73f561e54387747b856064e1e92d9210aafe078f09",
+        "m5out/stats.txt": "92a0b0c7352856ec4e579bdf35fd6e97d65e72f9b662797c0235e69e44f39825",
+        "m5out/trace.gz": "3e28536eaec60b3bdfdc4b835f8f39c3c09ff19446f29bfd69b3c9e8ddd163c6"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/X06/family1",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/X06/family1/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/X06/family1/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/X06/family1/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "900057f2ac6cde7981fc42bca72e26c196a5b86d9138ad1b379cbd1fe41a6c27",
+        "guest.bin": "fdb77b9025cb920d8aee0b1e1eabec788ee9073078a49d8d2fb9abd843bfe965",
+        "command.json": "1fbad8c2d57224dc0d23a22a8dd772db33de1fab3721c6acc687d1bd31b40411",
+        "symbols.txt": "75c309a632511968f40657ec2237f6c1b11239e4c2ec6465bb82f1c7d771654d",
+        "disassembly.txt": "e7da024ba268c1253bc60fc54b4ee52a9d5200282fd31ffc7c957a0bf3f294bc",
+        "sections.txt": "b946f77e4f572cfa84cb8cdca39f74d43f1bd61c8a306c943dbe0c79af54a9bd",
+        "m5out/config.ini": "91197397799c03d97bd0be9f25ea87c19fc9a992789fa43b6a4e1a49281527c8",
+        "m5out/config.json": "1bb15e81e8e6854a91ce6a5862540aee17cdc345e7db6566a1b9aa6c7314feea",
+        "m5out/stats.txt": "e776d1c300be9da7d3b444a480265bed28490ae4bcb6a7cb9e31d916e7b256bf",
+        "m5out/trace.gz": "b5f6a484da8cff156b9ce34c5b46bfef539b7ef74109a97bda78b165a3448b95"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/X06/family2",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/X06/family2/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/X06/family2/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/X06/family2/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "388cfbbbb57b1d2b2f4868bf5dfd412475eaed1e5cd1905942fa887496d5455f",
+        "guest.bin": "b3498d25c4cefccb8e3a044d5d00f3e8fd075f6d372ae6f57699618b0c6cf967",
+        "command.json": "b7b7c0a5e0e0b32b1f79f44d38b40f92cbbe9ab6680bbfc146b67a3970e8f984",
+        "symbols.txt": "f78e083c142d51c3d7ce826c20b58c5e9741377cf389a972003aabef3871084b",
+        "disassembly.txt": "710b58c5b5c34941544f59dcbdd28bb1648a3fe806281a4078eeccfb209882b0",
+        "sections.txt": "daa5654c3a7fc3d67e1af9e5f96438e26db065517b46bce25911d6939708f736",
+        "m5out/config.ini": "8b0276efce1b2ef08dc23d98ddb6fc56b88aeb542fdc587513430e0a54de0a0b",
+        "m5out/config.json": "853d64352ccd6dec53cdbd75deedf0f4ac3ab7fb961c96e635617d76ad5e1915",
+        "m5out/stats.txt": "36aeee95d35c01e58dd804f2437a2859d217c067d2c5165c47b247e5bc78f2e8",
+        "m5out/trace.gz": "b42c3a2ddf2d787bbea7822a5db0455536f7fcbf29c182648bd0996ac35923c2"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/api-perf/20261122-165414/X06/family3",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=Exec",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/X06/family3/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/api-perf/20261122-165414/X06/family3/guest.elf /work/results/ame_compare_v1/api-perf/20261122-165414/X06/family3/guest.bin"
+      ],
+      "files": {
+        "guest.elf": "fa4cfb122d17257ba80c3f5050ae3a1fe01b9ebce048dcbebd34c4893eed8279",
+        "guest.bin": "2dc48005c9a74f0c0c3eee292aba4a4dcc2b2022910cb161818dd6733664a8fa",
+        "command.json": "32a7a66dba4dcb0cb56b73baf1cca28ce5ee0457639907754362b1b288087e5e",
+        "symbols.txt": "b52a900bf78ba9d6023f51171aa9bfc736d95c4622ea9051fcae649273b468d5",
+        "disassembly.txt": "2bcf77d45b71cd7dad92f3c2e0fe7771638bc5fdea595ab0a8c85600a9cf13f5",
+        "sections.txt": "492166c53e3e81812fe8e358840f657b5e1d46bf2366fa941e1fba06b3d2bac2",
+        "m5out/config.ini": "329ce5d5081b6995ed59b93fd13a42e4c8cb495682d07ada7d5bde037c215725",
+        "m5out/config.json": "81208e37a1655a19f475e4af3e8f7c9e529b5840641ac474e692a4352a43e8a1",
+        "m5out/stats.txt": "2e66e6e48aa6fb62800899ad207e5b794918c0346a8636c23202dcbe4ca3635b",
+        "m5out/trace.gz": "dcb4056ebf7a8d78938c70cdfff6d7bd5ab9b26006a5b3c60c3764b67bad1d7a"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165223-393341353-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165223-393341353-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-165223-393341353-formal/S05A/guest.bin 0 166"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "05a8151f62b06711155d06ac4c2b052ab7d673be964884da919c822bd68cd171",
+        "command.json": "c435fa48503d75ff36d487978c855f5142794598fd3bf26f9269c1099ab5aa38",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "fd1250f3745e99f152fedcd78afbfc14d890aa9140cdd95de90f2ed7582ff72b",
+        "m5out/config.json": "06d2278badee97eb148fe59364e094022985ef11b9a5a3c53aa823f62a164bf5",
+        "m5out/stats.txt": "100de3b18e3c0ffa6096a227fe22cb3aece269dc30dc697aa5439a427cf55f87",
+        "m5out/trace.gz": "f35047003dd0882319274662b3719f49c33007f73c80e964a79661d990b00130"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165223-394231283-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165223-394231283-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-165223-394231283-formal/P/guest.bin 0 166"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "903f39b23319c60074bf5721dbd9ef245b52f6271fded6f626bdd6d61c95861b",
+        "command.json": "368ba41619cc7189b2e1adea3b48eba04c9ada46d0cae1152f2def4a76c0d46b",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "ae586e6773624865e3ebd8cb82991555e9b6c1e43e6b5295b4f1afbce02f7bac",
+        "m5out/config.json": "b3c55273e93251713234900bb2bd63f259f363acfd93a6740f315acbef689c06",
+        "m5out/stats.txt": "e3f5e5564d39d832ef86f9e00d3f805141a0d5d30ef9c477567bf330871d491f",
+        "m5out/trace.gz": "3b9ca362981e863899f3393520e5f719f9dadb7ab4794ec7664d72f985c902a6"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165223-732584524-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165223-732584524-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-165223-732584524-formal/X06/guest.bin 0 166"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "ea35c1721a0e87f2a440e317fe3d1ebfd7b7854091823bf3012cec766840b778",
+        "command.json": "04b5a6fd3d0a1e17c5e483a7121ca7e3eac5fb298c5afb2652744b5e195b3bb6",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "f5e17a02e42bd99ecd842eb600b6d74b865ad97a7867035c8ed5c89ce9475bc1",
+        "m5out/config.json": "272bf4231b9163f02bb54d244fc1ab54a1e7cbd34872b8acab08bb5a3dea4f87",
+        "m5out/stats.txt": "c6f6a63e3ca5bc229c6702ab85330b233980f46533c67d96bfac96d2792bc874",
+        "m5out/trace.gz": "9ac27d13a90bdd2cbcd77b6c5e36aedc33647bc89ed5100157d877d373ecd3b2"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165308-618723532-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165308-618723532-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-165308-618723532-formal/S05A/guest.bin 226 256"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "e8e95e7cd300ed45f68f395e195956ac08d39d6370602cb151483318c8adf818",
+        "command.json": "15d370eb62f997258d56e1d840e20cd3e918ea79ec6a19c7cd8880beb3b9b7db",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "1e080e1c459a945ffbb4653470a4203d271f82e390b2098a517579f339fdfadf",
+        "m5out/config.json": "aca311c88101cb2637c485ea0678898b8611bb486a3108e8885664f3fbb8eff2",
+        "m5out/stats.txt": "003a48ae2ac8b5706647e4cde7d5dbfe16d685823742ff1960ab94320263fa23",
+        "m5out/trace.gz": "378d3c1d6634d633a3eefd3e89add2fe8cd74136ea97ba075e9bda3bcfcd2102"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165309-726503569-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165309-726503569-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-165309-726503569-formal/P/guest.bin 226 256"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "8e8194372dc4d037a5b4be23a2f503222eafd1874efb6dfd08138fccd07db9ad",
+        "command.json": "228e0779dd5f3fc26b822b8378719603c85bb01a55c713d038e7e12e9b55961c",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "2297b332ad5de20f10595d390b4e82a45c200efd1f0d1285ad6b1df7cb964a38",
+        "m5out/config.json": "899ec0ac97bae5d813a7cc579f6d5e9bb5d5047961840428f61ce770d1317280",
+        "m5out/stats.txt": "8afc8a582900cb26eefd8733210b56aebdde1153b9d35e9b399495ce64301911",
+        "m5out/trace.gz": "6ddc7ef2d95d9a74e30fc4f15e40832c933808f600da0a91aa7f58c9f7dd9414"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165309-909543849-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165309-909543849-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-165309-909543849-formal/X06/guest.bin 226 256"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "3cb3f352718e5ce53e8864a506453b581afc7df162c17962c77707a7b5097707",
+        "command.json": "6fd8ac8cf66831b79f49c4a8056e483ab8b1c2e29931328498b16cf3cd6b078a",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "39327c7b1e0a044ee606b070ee4dd9781a412f01f212ee0922701ebb43b466d2",
+        "m5out/config.json": "0e9eac4ad16724cf80ccf04709d96c6df291c2583a28d530960c92c4e5607e72",
+        "m5out/stats.txt": "e7278eb8c861e5e75aa03d4927874a613e73d7d519ab0ada645bc5156d1b070f",
+        "m5out/trace.gz": "d093669ecdde633a97104650e69570ed072dbe862f31836069a7bbd1def4dca7"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165342-118962806-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165342-118962806-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-165342-118962806-formal/S05A/guest.bin 256 316"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "93b590435c24a69646608fac74fe61a2a0b0a455b0cb3ce93dc8f504cc0888e3",
+        "command.json": "4d7e01ff62a77e224d48a36f821288e315922280be0b8a5b131f539c3c1e9e40",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "0553a909653db64746f5c4b1578eac92451cdda2877fc176d0ac3445479026b8",
+        "m5out/config.json": "bb09956fb3eeda4cddc9badef0a81d7d2d21dd8989a18c7b9adb5e1fe3bbd21d",
+        "m5out/stats.txt": "41f2362b2d304a65dc0deff6f3fd5f7edc4bdacad188aff3baada91405eb0ce8",
+        "m5out/trace.gz": "578fc8acd40926c85b2e7cdfd345d4688cb0d751b995f60ee88d647dbcc6183a"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165343-698098472-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165343-698098472-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-165343-698098472-formal/X06/guest.bin 256 316"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "96531ae7f49b5b1d14507fda86cd50d5aa6d8b1b9b870f831450d138737e5e29",
+        "command.json": "103dcf8e5a655f869f7b43df7b12c4ee463824dca0acc50a56296eba081ab5e5",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "b64ff213e7befd93da368cb61023fce35e70e5934eaa8de62fa712be67b1b2be",
+        "m5out/config.json": "fc6ca0a8dc0cef1c5f8cef89a14b4e6850f6964f65d2d44145eb116a91258431",
+        "m5out/stats.txt": "c5a8c13a8eebe228368b3617702d7dfe8d24732b2997f190d814022b9aae5369",
+        "m5out/trace.gz": "8e4cd5b95321e805003dd86e2b2f7a3438503f8e6c8484c3d31289675bcdfbbc"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165346-216001282-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165346-216001282-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-165346-216001282-formal/P/guest.bin 256 316"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "4b986eaa72d3938a80232863d39ca32060af87871cf4a58200eca920c02a1391",
+        "command.json": "e94db3b58ecbad7445bc582b86ce0ce4a335670d7d7574b85324b670266f7b4a",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "3cec573917107a1d9d8198d173215e76fe5a1b5ccd4b810043da3a3d2a82b122",
+        "m5out/config.json": "738c654106b472a0ed98ed4eb4f36255425b7f5f433238807f19af52a5506275",
+        "m5out/stats.txt": "63e3d47c939a5b351f2097649e9c527bba2dd7a65ec0f3778abb6a961197a115",
+        "m5out/trace.gz": "ff77933336034ff0b388e667366cdf17c6b2cb5579ac97a679298f3f6af99d9d"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165452-391051083-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165452-391051083-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-165452-391051083-formal/S05A/guest.bin 316 376"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "97b24b6069704f057254cf53bcfee738158c0fd5ae357ddf0e87546834fb188e",
+        "command.json": "fc8bfe524941ecf1ff2d984ffd94d264338cdbfd554579dc5485d83fbebda6e9",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "fba348a3a51154e21c775ae3c034d30472298e30b8868b8f55ff69ada03a5f18",
+        "m5out/config.json": "9bd8ebbc4c40f351c443c16ee97037426de678ea4d3cdd1f3025afe3e0d3a022",
+        "m5out/stats.txt": "36ce38bac6fff9baa5803e6c805e1d1f8e4cded5d9183e629d291c1bad411e1e",
+        "m5out/trace.gz": "04f0a329786fee45c0dccf7c4d7c1843121049b3b16e519dd708c1d2265c92a9"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165453-889599961-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165453-889599961-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-165453-889599961-formal/X06/guest.bin 316 376"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "fbc60466cdf4a859f621a2c24e7a0f18e46b741bb8bab3de994a90b2aa9f66f4",
+        "command.json": "025a76f41b5b717c2d795968a0a9227577ea09677c714a74e5db58b5f7b4f00c",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "f562e2e98af3148ac2dcc1ef1476d0e583b79e5701ead451d34aedb6d56c74c5",
+        "m5out/config.json": "0cd4c0d8273e17651a3690fa23b9a5cefd406a620fa4c781606c7bb6384da030",
+        "m5out/stats.txt": "8c5e970ab61aaa30d5cd4765bd66a070fe1f900fb1f4e28d643b74f749c8e98c",
+        "m5out/trace.gz": "2a3cd2f7dc2b765ee5f9115b1830d0d08ea8e450b2bc3404a784eb7d60b7d9d9"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165504-192205268-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165504-192205268-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-165504-192205268-formal/P/guest.bin 316 376"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "939c1ece262ae31b17f824527cb36ae96452cf4195c1e46c62cf4d6e23a3b2f2",
+        "command.json": "61ac41ee9cd8068030cea5479bdd9b79bc9da054c7df93ab08d7f64b228de63c",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "818964ec7c9536c23b3c321d2d88ef22b4ef2442adca4e0f479b4e368aec578d",
+        "m5out/config.json": "51aa82ebb6227bc5848d7f79428159cf836c81ead8d15aaa2589a83c8a14c123",
+        "m5out/stats.txt": "5b6c7abc51b131789e09e9bead568aac719461edefe37572188a2de3a2334fcc",
+        "m5out/trace.gz": "79b4c82c87b0ad68430a01508f980f89bfd578b2a8270e2ad873aa89a1450d40"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165556-621000038-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165556-621000038-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-165556-621000038-formal/S05A/guest.bin 376 436"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "5af8d7f7805433767fc198ec393a6b5798577fb994552866254c286e055452ea",
+        "command.json": "b8af9ec286e07ec848044400dce2129adcca3bba77a6fbef81387e4efffaa7b6",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "1083a6129890f87c0f4e890a3c60ac96bbf80f2926fa48435f76f074ab6469ff",
+        "m5out/config.json": "07fc0a543e1d817d6572e1f21b7e51ff440448bdaa44c9643537ca22a66eb212",
+        "m5out/stats.txt": "015e19dd62b41b5a4271e516a04f0c95b5f59979f1640a643deeb91683af43e7",
+        "m5out/trace.gz": "4a224b6283ef2b4b9ffa04fca71a990cb515997c789b13075854ce46ecf632c5"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165558-474965381-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165558-474965381-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-165558-474965381-formal/X06/guest.bin 376 436"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "9d1d398e87e5883f3d1981bf7595b79ce7165b768d1f22d426d8fec4faf835ba",
+        "command.json": "37fe3b699dffa59498216dced55543f9e4b9c5b1171d80109f1654bd80492a01",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "6219e40a678febc050b31a25a8f7ca433c3969bdeae13798d00e60d377b8c081",
+        "m5out/config.json": "49e4804bf911925c3f8b5ab55a370a2d34be57fcc0b6972ffd2b17325d57e028",
+        "m5out/stats.txt": "f0bfe57f119ef4c3c98c3a9502d73c32f95d0d0f61b7695105d2836ed61cfa5d",
+        "m5out/trace.gz": "0070d977f377c1a94239513c35903a072eb12d501f08435c61c386c277dbad2a"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165617-300063008-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165617-300063008-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-165617-300063008-formal/P/guest.bin 376 436"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "8af1ea4db4ffd248d8ed454cc4b0abbb27752cec59e67b28111da0e23a305689",
+        "command.json": "e780db6c747281591fb9f0e4f1e7d4d511da066d78a5e167ae21be0fae133ec5",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "115ebbd54c1401f8b16a750c4d5238176046f16c4e63e5258c2191918e4bd6da",
+        "m5out/config.json": "b83641db77da499d0b75fffaf0c14789cbd97a969f0eaf43c3bce8a1153ae822",
+        "m5out/stats.txt": "ce16df1708e61d2a0ec2c46221d2487c5920f45f80579e93e9ddee24314ddbd8",
+        "m5out/trace.gz": "8201c29d0990eec006976f2370299c6f3b32c4873265b46d62adc668469a6282"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165623-28742160-formal-batches-v2/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165623-28742160-formal-batches-v2/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/batch-build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-165623-28742160-formal-batches-v2/P/guest.bin 31 166"
+      ],
+      "files": {
+        "guest.elf": "0b49f9e6893fd851f114c0c781f459a005463091ce7e63f2f9a20f08d00b15a9",
+        "guest.bin": "f18ace094b045ef048776295e4eacce0ca5a5cc0deb939a3c497aed9eef4e9b5",
+        "command.json": "b0d00a0152e1ffa78da6055d8e4c9cd5f7cd3a2e9abd84f37186989f5b16664e",
+        "symbols.txt": "5818a9586ea28b672a9ec882b6e46316fdd1eca9bf9b6a14aca1bc39da92465d",
+        "disassembly.txt": "10b0d814e83dbe131663b62bb9ad4a01bfd166290d5495229cf045adba2bc02a",
+        "sections.txt": "d499e570bba0ea405bb62c9d5b2763018fc54f4710191991f322b7eb5bb3de54",
+        "m5out/config.ini": "bfbfb5a47ed24f03e2f2156bb2d5980ac0240ed648441900fd43cc113e2e8c2e",
+        "m5out/config.json": "2c2baf029038fe54177e05309f1963415bec1234fa81a03b27d3ab2ea0bfd2d6",
+        "m5out/stats.txt": "075aa81e01be09f35be58205d55e70c300664076c0db36b2a0b7b46aac657c1a",
+        "m5out/trace.gz": "3ce2aa645bb66cc01a14ac023362dffda8adc53b0f69aedef80a95c7d23cb744"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165623-28742160-formal-batches-v2/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165623-28742160-formal-batches-v2/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/batch-build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-165623-28742160-formal-batches-v2/S05A/guest.bin 31 166"
+      ],
+      "files": {
+        "guest.elf": "c902c3cd6e50aae5b2a9511e941ad9bd00056f3238e2c9b0df8d0f320e004041",
+        "guest.bin": "68b1c0f8111907b8ce15c885e053339ebac16623b4554521be804eff28bcf445",
+        "command.json": "4eba0748ae163783df8f395d608ef60bda767e7fd6f7be19f596d6acc4ed6a01",
+        "symbols.txt": "7a91a540451b7d380b3a0015a894ec02cf436ec3cd381deb05dbddbb9b0f1bcf",
+        "disassembly.txt": "c0d9d73a9b77157fc20194c24732b1007e0ed9461e81068f753ddee9b3200577",
+        "sections.txt": "b4e48b6e994325d693b061cc9b2d5398a8725233348d6dbd24eed7c7cf1c66bf",
+        "m5out/config.ini": "36a08f585741d6db62a8bb289130c22bc2956d5773c2aa1ad8f0f307c6dde453",
+        "m5out/config.json": "84bc3234e3ddaf77c18d1933c2d99eec80ca13cb1b46f65d473163f52171aa8c",
+        "m5out/stats.txt": "f795520b669ec689790c8c3e96c59b5d08374e8d35bf6f96eb069ff459c95e7a",
+        "m5out/trace.gz": "ab96fac0b1b5fc30fb98e9e7af017ebb4de481cbd4db6e36cc1d193261f5a31c"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165623-28742160-formal-batches-v2/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165623-28742160-formal-batches-v2/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/batch-build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-165623-28742160-formal-batches-v2/X06/guest.bin 31 166"
+      ],
+      "files": {
+        "guest.elf": "61eccf69dd7d9c6c1beb783956d82c3b10e276516c9ff9759443652372bd4f83",
+        "guest.bin": "3b9903271c94d28b21002706f8bffc14760279ac4db86bb6b6a3dee4f0271b6a",
+        "command.json": "6112bb5ee1beff4825adb24f56d6434c405a8a3d35ae58ecec765743445b5ec0",
+        "symbols.txt": "c5db0fc8d4a5d1bff71052e64538eb97f642c2af4c7e7a734ef1666141a7dbed",
+        "disassembly.txt": "55c6eb485557da1a8c9e293d8a7d71eb6efb76888d3cdeafa9c4ddde3c7d6781",
+        "sections.txt": "5247f06ab9e5ee8ed2ff0d8e139c8155a3e1656be89670c605dc6299155a5e67",
+        "m5out/config.ini": "6732df00206771af36bd486a014957f3101f905733902d223326ef077304cb14",
+        "m5out/config.json": "f907f9b71f46c007747e7deb771ca3e93aa2f88338675e8829a11d1a12c0beda",
+        "m5out/stats.txt": "3b69ae25a7b11156ce43d18e30034a7810b17a5a7aafe7f40a4e1e67ab2292d4",
+        "m5out/trace.gz": "6e1d83e130da1bf46d54c30895e918243f89eb173fb77856f8c592877b236ef4"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165841-000053817-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165841-000053817-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-165841-000053817-formal/S05A/guest.bin 436 496"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "d9ac556c95ce3f45795951729528ed0d233d7a4c2098cc0ba23d925709445137",
+        "command.json": "221bcb9bb88cef8010c59f4e827a6a9144eeb0baaa6cf7125d09942c9ac975bb",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "4f84de129b75f5e687190a621b05435f5a89799ac92cfcbe404c134081366516",
+        "m5out/config.json": "c0c928b9a289e2fb8996680e153a727fbf4759ae80de52c3b04ef6f0f815a1b9",
+        "m5out/stats.txt": "f2e1fdea1fd72c8d6454ec031ad842183353282bfa82f64eccbdd8cf5a49f51f",
+        "m5out/trace.gz": "7d34912117a25d168123b4778a6bbd988de9a3238fb19bd13c874c76f65416d1"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165853-089482873-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165853-089482873-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-165853-089482873-formal/X06/guest.bin 436 496"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "19de1fb11eb7fbe1d3dc7769b77903096abc6c7dfc379ed77ac258c4d6c42b04",
+        "command.json": "7f89959bd277bba83be08b7e12f27451396ac9400450c724660f9083a7f8b89d",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "e7864e3260ebcad5cae6dfe0200b6910846e573080a5727d7b8287cc1187c264",
+        "m5out/config.json": "3f0a36e6de3520e7f0e1c47426de6cac47e57e4bd3a4dfe3f00c6f9710ec38f5",
+        "m5out/stats.txt": "1111f2d24f9a29675031c15b34007a42f30c615fcadd3c3b028f34911534b79e",
+        "m5out/trace.gz": "0906732a3b1c41601571953b3e11a3c848ee190f24943d9f9e545400c1feba1d"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165915-517034818-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165915-517034818-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-165915-517034818-formal/P/guest.bin 436 496"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "9d978604685dbedd24ba8c6c64487411caeeac2bcf6a02a5e22e6c36a001b63c",
+        "command.json": "7db1c94566333db66917ea5011f81439b40fbb09901a3d43a5f2c230d3046d9d",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "bcc2bb74233259ac9f6c40b7074ab4a5da581d8be6f8b19ff8f451f08611f1f4",
+        "m5out/config.json": "5b84b6d0e1def78b54a03b5fbf466bee529691852b9ba5a3e927ee47bab8af6f",
+        "m5out/stats.txt": "3f98f4b5facd82d39b33e57d09bc00aaca67097c23752dd821c734d673d41181",
+        "m5out/trace.gz": "6a260cece87f93c9180ba1ea0019573d9b44abfe8942e5a073ae2bc8ae9c6175"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165946-116974213-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165946-116974213-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-165946-116974213-formal/S05A/guest.bin 496 676"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "e21fb65a8039d8e91db5c8848976d46c097d25a04db1cf9932d07271574be925",
+        "command.json": "f6613d969788b4ce5a85d6612ce6886b5d507d274e4fa50d3978aaad01d0f039",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "090d504189a177301124765c14297b2ebedeba8a3e383fd61a525dc07fc2058e",
+        "m5out/config.json": "9cb53bf7167fc88fd62bdfa585e0ff603eee17859c74143f087a7dee64a13974",
+        "m5out/stats.txt": "fab6f3c16e8cacd7b66406f885c9d801110b7f50628f2a7227584ed9f15cd985",
+        "m5out/trace.gz": "b93a1af04474079939ab570428d72a6808beaf055af09b67fc4dff7293234579"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-165958-144493694-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-165958-144493694-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-165958-144493694-formal/X06/guest.bin 496 676"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "edaa0897ddba79e14eb3e023e10ec5f10b33cf5904ffbbeb0bd6d089fe60dfc2",
+        "command.json": "3aa29333f953479c59192738d2dd424a2834f6589e7c5e0c49e8c5ce8699c45c",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "7a09ffaa0de9aa9650a2a7973fb0f4e4df22e0f8083a0803a2c513661495e6c2",
+        "m5out/config.json": "35b08b4584bd9bb99db4164210028da4acbf3795c5efe0a7061fe22838ac7aad",
+        "m5out/stats.txt": "6229462c282daaf6948cc167aee0955a107b4f61c5d40c5d0c4d69ce7222bfa9",
+        "m5out/trace.gz": "90c792b96f3c262faf820813b3f18f5bbf29221fcb9250b4ca73b45fb70711a7"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-170027-705233459-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-170027-705233459-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-170027-705233459-formal/P/guest.bin 496 676"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "923fd6aa35b9bd11aebe6778802cc7d74a947ad6b7cd605cf4bd8fc3d486899e",
+        "command.json": "c65775b76e3287401ad29d7a5760cbd309f36e046209cc33a5c5ea3e015a18ff",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "e19621f8febc5bdfd3c3ce83fe8b44b6daf8315bed1424342fc26238b9f0066f",
+        "m5out/config.json": "efddbceee10e77b7edb631424cc8201c8bc3dd2e225bd0bdd531f4f3b78c28c7",
+        "m5out/stats.txt": "09aeae1cc8ba5b594c1f9ba528bc46264b31717bd9bdae63708fb7698c643fa6",
+        "m5out/trace.gz": "cacfb9b94de7b1b77ac3608be6a22563897f0663a6bed4c8bbda128b7fabd799"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-170033-815614468-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-170033-815614468-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-170033-815614468-formal/S05A/guest.bin 676 816"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "d83c83b81021f648b91fbb85bd37c58e97901a1da73d3e54e9342e5ccdb35e66",
+        "command.json": "811c3402d7074f79d1b8afee53de98ffa632c192bf019ea8249a08f1392d7d42",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "039c82a6c2c1aedf4b0f779fd1a5956989ff22f5b22f0de06b9b964bec015c74",
+        "m5out/config.json": "85a6830d25bc862d8c7886d954571009c4af42783d70049f49e003f809bce7da",
+        "m5out/stats.txt": "4b9da105591ab5f91c549e3ae0247d2a386f61e10ba6519c5cabb9831198c253",
+        "m5out/trace.gz": "8ea134758522e28fc73713dafad8766531a216bb6796066b1828f9f05a7dafd7"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-170046-919509835-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-170046-919509835-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-170046-919509835-formal/X06/guest.bin 676 816"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "7e226b92b2a362fb818cb1f53601984faa52b8d764fdcca388ea0adb68c481c5",
+        "command.json": "35daafc81c96c9caee0d872a1e30845f286c10488c34c782039f94a3ab643702",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "014647fca5f5a3e341701bb220ef34530a6543aff3311a01b25294c21e31e84c",
+        "m5out/config.json": "72cdc74baa2d748415c959978ed9a7948a6c18d7e4601a9d2eb7031a3332add8",
+        "m5out/stats.txt": "7bd7408eef813d45d3d62abae8ee8619089630eb8c4d8950ef3d7057f543275c",
+        "m5out/trace.gz": "ed1420a11d92bfa000aade5f9a94a825e8b5f4b80bf75763effa5ebe7d166f06"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-170115-726867319-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-170115-726867319-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-170115-726867319-formal/P/guest.bin 676 816"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "cb48347e2de4f5017b7029957cb7c7f4e946cee0c0a0f3a2d58aeccc93d210df",
+        "command.json": "e9f16f5259f26c0593ada6c62cddeb99f2aa6fd21553d38931ba7bde4bc5ed92",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "8c172d001bcf86cad10cc9aaf52a734c75b1ebe7d3ba4a20c20d23c767650c74",
+        "m5out/config.json": "052234229b634c87c568769b67e5bc265f3be4458410873998e6668bc5f0be9a",
+        "m5out/stats.txt": "b4cbce0ebc09a290fa11f71cb3a0f564fafc0d6e5698a32b6fba2fa8db6c6e96",
+        "m5out/trace.gz": "1a410d66ae30b0b98f04beba154b2e5d56cf831ac55a84cf4c7cf6e55a0a8d33"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-170513-708814745-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-170513-708814745-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-170513-708814745-formal/S05A/guest.bin 816 956"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "f25854ce0f6b4dc943d7d044c351f0a4b84889ec4d7477850f73338a0fa111bd",
+        "command.json": "3fc72812f0f8e0fd87f8e8f1f70f5a47f32ad9a9044f39c0a48d7d998129d746",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "9f220f4b19dd1ad60ac5bbc408a299a23bdd03d3e042f3fedfd8e828fa73594c",
+        "m5out/config.json": "5e4fd82a3f93a74d7c6b70fc0a32e1bea9800ebf0552e9aeaeb79ae130b364c1",
+        "m5out/stats.txt": "f6d32cfcd26d40aba2071d988a04b333ae53c7cfa9c900ab731e6866b570e839",
+        "m5out/trace.gz": "d1bbc284b730a703a82d8f21cabbdebf21503676aa98326909781ceea8e070d4"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-170513-712555005-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-170513-712555005-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-170513-712555005-formal/P/guest.bin 816 956"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "f0a95d044b0e863ae44615c6c58f568259a1a6316d29733a1a17eee15763e1dc",
+        "command.json": "1e27f597081fedefce9269dfa2a5911c5342479aa6763f936f59984fe30f4641",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "d44ab80004a17438cf4181953b43526a1f34d02688f85f87f71aed4e4904a749",
+        "m5out/config.json": "7ee0b014e4b2a3341af2217426369a846e181a58d2ade1936b1c7bb0f1444df6",
+        "m5out/stats.txt": "9a50a411e007cb8ef6c8e97cdaab6165c839cd1f2f247e197ef9f9fdfec221c7",
+        "m5out/trace.gz": "03f9bdb601b003229d94ac12d38e622a7c56779be65a60220b852ceba6ff89c7"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-170513-712870132-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-170513-712870132-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-170513-712870132-formal/X06/guest.bin 816 956"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "add9815c23a52cbda69799ca6b1a3585c48b6aa72ce361b85721671485c5ff3c",
+        "command.json": "941f90d15a3eaa6a76c54eb201070a0d04844e4a3e5f80444cd3338decf00609",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "2d0b22d38a4392dbfedbe87a7e993599860d301bb30da74470f15dddcd3e445b",
+        "m5out/config.json": "605376d9aec41ab226d3aca3c28f8470a8cc2312c372c16ba36c658de49f6568",
+        "m5out/stats.txt": "ba156126b5a70ce58be431d0458d324d446613f22c496c90bdfe5f33ef1bf3c8",
+        "m5out/trace.gz": "a9469c2e29dfce04137a5c0b6486ebd96c70e7be5214796db4445e781e35dabf"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-170513-953465515-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-170513-953465515-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-170513-953465515-formal/S05A/guest.bin 956 1096"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "4ed5fc7d3c4aaf39a065c2c5be349c8f48c7f253c7bf5a2ffece3dd48dbe4504",
+        "command.json": "8cfe96dd271534a43574f156190e67ea5331fe1f7f01159045fdad5356a8642a",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "0f54af0ced32b9850414b739bedee7131ea67327970bc012d4f3a2eb43012271",
+        "m5out/config.json": "faf66e5d4a894979b0e463aede8f301986ab8fc1db79a29504b8df69d8dfb1f9",
+        "m5out/stats.txt": "3b4cdbec58df5795a64da90aa72518b80aa50222b67f55b3febccca8dbe23a5c",
+        "m5out/trace.gz": "af6223a9925df6593958d853f778977fb0b0364de5811ac4ee1fc6d72b4554f3"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-170513-974918422-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-170513-974918422-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-170513-974918422-formal/P/guest.bin 956 1096"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "8d370dac796ce11714b25361f15f3df925204f1d171acdaf5163a269155b8182",
+        "command.json": "551c1e1343cae1bc46a5e32c946365b636dab05091135d03030ebe38a80a15ad",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "215437eeeccb3b75b951731f87af87b3544432955e0713389f0a4e484438b4e2",
+        "m5out/config.json": "46a25913d4bceabfacc4dee29fd11c603dcbf798f2b0094d35a0b4ad48de1802",
+        "m5out/stats.txt": "84bb9039e91c4dbb963f9e290317afe6b5c6ec90149b7aa9872fe9b39ac562aa",
+        "m5out/trace.gz": "c8a01860604fb17d28b6d5826a2cac37c99283c3ce95b8c4aaffdd29e9aa1432"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-170514-277916322-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-170514-277916322-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-170514-277916322-formal/X06/guest.bin 956 1096"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "0ae3861e0b54f080761f3674ee3c754ac54e58bf1dbbe6ca6c64acc981ba83b8",
+        "command.json": "f9ab9bdf783feb5a5d14c4bc170190fb075910b9b2ea9f0316470d6044d1664a",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "a5522bd3a10722d5249e77d7e5c950b081a6e86cdde8395b22b192d6a9efc25e",
+        "m5out/config.json": "9b049c0071248d49b2e16b8b42ed0732f0e275cf77031db856a7c64b23b85152",
+        "m5out/stats.txt": "7ff8de2ca63588604825082668344fb39edceefb172c4acefd9b83071e05121d",
+        "m5out/trace.gz": "e5aa63ae708d49c1f7f684e83a7fe0ade3f4463b1411d1d2a9e220d5c9a9bafa"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-173752-206200725-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-173752-206200725-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-173752-206200725-formal/P/guest.bin 1096 1176"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "c90617f63539601694967df57e1cec2d456e68242ba50386c1df387fb56e4778",
+        "command.json": "53a5d2cfc7886d0b73720f7db51b1a88e098b5e33a33e6ef6bec7453d5c44ff1",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "68b672786443d0e08543c04d3fa9cbcc9faf9a96541febe25c1a9347cb6b3f2a",
+        "m5out/config.json": "8d51171ecb3f1fa6de5a2ed51078f1ad582942bfa7836f95a573ad3ac6862c62",
+        "m5out/stats.txt": "5b9708958ee417ca953cf9559039792a268ccf84b97d5542c0b428260a0246ad",
+        "m5out/trace.gz": "f37c227b6d5f65253da234055d6b6e269c27049005785652a134f9c7c2f309ec"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-173840-052727101-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-173840-052727101-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-173840-052727101-formal/X06/guest.bin 1096 1176"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "aab4b04256b1550a022e84ce2caa9664b7b2ca503653a066e31ca538f2ce6cab",
+        "command.json": "2aca67099d1e17c46baedc2823c43c97ad3d6ee416f31b6c95793b2bad4c0143",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "8ebe107a14bfa5857f6ab47ee27292f8117590b3cd0fea2c866a5a30eef61d4a",
+        "m5out/config.json": "80b0293f59b818024b56c691fc8771f838e704543828d89833b3ed4c46540371",
+        "m5out/stats.txt": "fcfd5d37b795da31f9c3358381a694d525c61bf5a7f8a0c169786288ebf6009b",
+        "m5out/trace.gz": "e9c0f7c0c36fd54b6803010bca3cf6eb22ac310ea729694de9bc030f5fab5f09"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-173855-885210961-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-173855-885210961-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-173855-885210961-formal/S05A/guest.bin 1096 1176"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "b7fd17528f285998611d9c8db352b414d8654e9abb169442ed892698af2813e6",
+        "command.json": "0e9de0529a50bb23e09a13a51f932c3e5390d1f030c39eb769ee8b29325df0bb",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "619b5e3e6d772d85f9f322d0d406c1311918930a9d122fe731a474fcedbee26c",
+        "m5out/config.json": "4decaf75fce453bd428be9a40335df2506247dff3d785a85c32c83e4df9e98b3",
+        "m5out/stats.txt": "72bb0dea01c1351aa7a4147e6d0a32988751f240d378be9de70d264afd77a913",
+        "m5out/trace.gz": "01ebd4e2b3d7df990c5c810fb4977799b04841c642cc217f6a80f28eabfa72cc"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174012-253086767-formal/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174012-253086767-formal/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174012-253086767-formal/P/guest.bin 1176 1236"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "b5f1e333527499ff64d162aee724ab719903e1fc61210e8362f1f3f1c6049de5",
+        "command.json": "f7970aea14aed8ae3c9b71f0060cdb8bd7a91967ab4bbb47f2dc16159ed98a62",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "aaa705357357b397861c182df1edba7b9f886f4e7c686b59556182ab109b5db2",
+        "m5out/config.json": "6c72110f794c8c117ccf50df50f85771e84cb3caa2fd1f01b43d5f43b572e459",
+        "m5out/stats.txt": "9c377931a121f33c5af0af31b0021e95e9eeaef5564c0d24f2c95efaa5848a30",
+        "m5out/trace.gz": "1ac932c90f09491bdb7cffe39817259cd898298ca07c6ddb9ab2615b2d9ebb39"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174017-604333386-formal/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174017-604333386-formal/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174017-604333386-formal/X06/guest.bin 1176 1236"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "3ef347a61ede69c4a2952f80c76d4bcef470ef3c9e129fc77aab6e23a4c8897d",
+        "command.json": "0d1397cfe44c73b68948c538c61af88cb03e771e02e7f49b0ff4dda5fd311963",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "5458c13be0be1eb2377fbace6e4d500915e720bfc11bb384489039771227de00",
+        "m5out/config.json": "47c531bf78c43909fd2054ec70e7893177d3ce4d19b13d615ff51719217bbc35",
+        "m5out/stats.txt": "8c91d0538fd568da1d95b0e9da778ac44885fe454cef375daf79c5db8427e44e",
+        "m5out/trace.gz": "65cc0de74365480b3de664e830e960f1e5eb918b0b3d2c92fc606b9dce163bfc"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174027-787384546-formal/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174027-787384546-formal/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174027-787384546-formal/S05A/guest.bin 1176 1236"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "40d64c1f274e5b0bf9539423bb0796ec5763cf244077fa2e8a9f78020f56ab2d",
+        "command.json": "efe4ded45320378db80ebde6567362027478e1b09834f41ccb926b19a2e0d002",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "643d70b79fb07912d924af0091dc1d7a0c1f646a9eda87ef0730b6f7ac9a1b6c",
+        "m5out/config.json": "aeff0f09bfe1fa5c107a8f1fbdd607dc27fcd6472653084bfce2ab183536e061",
+        "m5out/stats.txt": "2615b73ae4a3f98865d95ee408cf52d5332c54091b0287609e4aa12b37032b27",
+        "m5out/trace.gz": "350cc4131dc25af931d5e86775754854fc04839dff5a8b53891a9244caa919c3"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174147-956119587-formal-control/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174147-956119587-formal-control/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/control-build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174147-956119587-formal-control/P/guest.bin 166 226"
+      ],
+      "files": {
+        "guest.elf": "712f101c07bf9d8fc64e404fd85e86297e0bb9273c71047bdf3cc6b51aa64da0",
+        "guest.bin": "a572daeed0c505056a369d70fa3f5cf418f31c26a2a935a5e05da3af728903d6",
+        "command.json": "05adb4c0d349e09e67904975ccf23b9c9cd750849d1a6e65d1ddf02b101f3697",
+        "symbols.txt": "2ae0db6172c1a2aae36b30c19c9ce62e2e3278f103a6f463921b934af23b4baa",
+        "disassembly.txt": "bc41e5f8c20b63c702c0151915491ecf027a1e495b7a2106725c827af64b0136",
+        "sections.txt": "5f0a85752c2054a1f6b2cd9acb7bea7fcf0e1e1092d4c5d6780dd270025349f1",
+        "m5out/config.ini": "e2d6f74d70df4ac6d9eabdc38ef3a454eb41af49b3a230e6c9bae6c154d56e70",
+        "m5out/config.json": "5b902e57b509f182dce44d3f3f14dc943e126b7a4940aa589fc9363efa7059bf",
+        "m5out/stats.txt": "a118f1d21c4c983c6a32cecb6a2fd36d3f7d44a43f951901b6aa75b20c68e751",
+        "m5out/trace.gz": "5a507bf6f53cc8361a0c2a1a72a231b0dac3c648bb32fdd9fa9d7f32bb734f77"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174157-499444731-formal-control/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174157-499444731-formal-control/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/control-build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174157-499444731-formal-control/X06/guest.bin 166 226"
+      ],
+      "files": {
+        "guest.elf": "e7ba40d7ce31aabcc4176044167ffcf3ae78fdc19bd62d24fd296016774e0956",
+        "guest.bin": "324be2047338038cfb882b08d3299f175b9156bc2ef3657702b20b9e7f70db59",
+        "command.json": "58eab964af710470f7400cbadbda0a0f2e6f5d80d6a6fb966d80b0705f301f68",
+        "symbols.txt": "54eb641df6aefbd53b9e09e23fd79bd9c148841575c46748b9ca6d700c047d46",
+        "disassembly.txt": "a02160384a7e32c307cc94ac2eceb05068ca929690895032051e531655ba03ea",
+        "sections.txt": "950572c323ff038eba5a213bd9d0fc5a26f3d7aa8fafb6ac56cae624d2ffdd51",
+        "m5out/config.ini": "5bd95babb10bc913a078c733d64c52d0b4645a959bf6215dc89a8830532a2a8c",
+        "m5out/config.json": "eda30ac2e349c5a222cb9dfc765f146c3e6bb56b42eec2ba4c8dc03f38429c5d",
+        "m5out/stats.txt": "a58974a12ccd00e9dda428de8a98ca3a2e72f8e2b018968081662d54ff76882e",
+        "m5out/trace.gz": "3b89ff7293c085df1ad1b646293a0c7579b4ce2169686e37f9183e3fd2aff759"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174202-284124606-formal-control/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174202-284124606-formal-control/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/control-build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174202-284124606-formal-control/S05A/guest.bin 166 226"
+      ],
+      "files": {
+        "guest.elf": "fef308cc70519988709e2122c83b0cd9f37340fb0f88d93576d2fc3e86ba9729",
+        "guest.bin": "5a56062906c1ab406c86e9bf23de56baf91ff8285e387b0d13050819f1d16705",
+        "command.json": "5b2dc4dd7946c9db5ac2cce7d7c4a51ed52433eb9b64699f3a3122fd702262f4",
+        "symbols.txt": "e7a6a2bf14379cb729e1960f0cad874765c1b414f34dc8a725ad9cf6cea1704a",
+        "disassembly.txt": "2f8c17d19a82fc5b4af24b3fb5ee650a5c056810a581c677e155d1892c231642",
+        "sections.txt": "824972b13ce9eb4b4bcebf361e28d11e5460d3865cd76198835b80cd2a686db1",
+        "m5out/config.ini": "3da18d28023a944999aaa592e3523a918ec420e3350028c14a5e543730572f6e",
+        "m5out/config.json": "92d8c758ed82d1d1f1baa0fc4f2eade148f792e280aef583148c1298330b1bcb",
+        "m5out/stats.txt": "3f6791418b8eefb38758d37a9964ba16fd712ce98a158d8d3a9dd3daf3602219",
+        "m5out/trace.gz": "45501afa8a145875fab5cf7313416aea0b5ca5c50442f00b22c0f0b5db95b23b"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174212-642693288-formal-repeat-43-1/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174212-642693288-formal-repeat-43-1/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174212-642693288-formal-repeat-43-1/P/guest.bin 43 44"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "6252dd5cb1b55b204845842d051eb166843ac7c621a2b1d4f8e787cff73a2495",
+        "command.json": "4824211646182530c545d63b2aa301409b736534e3eacd95ac931c39f5e602c2",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "b1680c0d2c71566216dfe68c635743361dafa67d9e277c87689dafc260e7c7ae",
+        "m5out/config.json": "2201e8b8ba703a2d487423f0df7bcb367eef3ba37b059ebc764cfa556eb68dc4",
+        "m5out/stats.txt": "0e3505b70761d0271ead904d00c6dbfc342df3bb289f81e4b28f220a6175a8e1",
+        "m5out/trace.gz": "f2ce45f35809e03f54335627766d79b99fee43cd2960ead5228265618456724a"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174222-381381373-formal-repeat-43-1/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174222-381381373-formal-repeat-43-1/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174222-381381373-formal-repeat-43-1/X06/guest.bin 43 44"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "352b28eeb072f7fc0cfd7f66110ce989651876d0f1898dbfc64e7639498f136f",
+        "command.json": "b324b26000139083909b0a07934e64e6dea1156d462f2665a1afbed326dac947",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "39154cc888853906b5d98694714d5ef65d19188b8aa2624a354ead3e880e7680",
+        "m5out/config.json": "e8a568f54b26e065515523af51df834f85da45b6fbc55ec27f0644178dedff7a",
+        "m5out/stats.txt": "dd9cea5f6d44e89eda3a7d6759e78473f61c6632980fbd1d317b87b62590956b",
+        "m5out/trace.gz": "ac185efc2d0b2326acd0afcab794d6107fb88e20e4d6aa65c88bd982fb88c291"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174226-215327306-formal-repeat-43-2/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174226-215327306-formal-repeat-43-2/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174226-215327306-formal-repeat-43-2/P/guest.bin 43 44"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "6252dd5cb1b55b204845842d051eb166843ac7c621a2b1d4f8e787cff73a2495",
+        "command.json": "b87856f36207332d08538df56d198d6224c123b9b2feb659a829047691461ff4",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "79238a72e5a42661e8a385543c2846cbbc9b2810c602468e719c1e19a34764fe",
+        "m5out/config.json": "f404851a4adb9b8dda5978502e45e3f1303fd6c2e6486d8c1207e204cf4d1af8",
+        "m5out/stats.txt": "ca634d34a3d4958f65f9046d3e2a2211316d3c7819d43fce4ff246bcc3910197",
+        "m5out/trace.gz": "f2ce45f35809e03f54335627766d79b99fee43cd2960ead5228265618456724a"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174226-420357004-formal-repeat-43-1/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174226-420357004-formal-repeat-43-1/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174226-420357004-formal-repeat-43-1/S05A/guest.bin 43 44"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "f22b11727a1e0b8d0beeb3ff06e3baf80d14777957de84d2020a2d4eb5fd1a60",
+        "command.json": "cbc68fac8f4758858e270fc79442e975f8a243354410c654d71fd5db2963e329",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "4c79063b6f6e6643376383dda2b10c6fd99d19f7f4b2145e06f6282ab9794512",
+        "m5out/config.json": "404ddd7bb264f02c7496876ba4fe37a50a7182cdfc9d2e284293e172ec991a65",
+        "m5out/stats.txt": "b3c2de3dabb5ceaa6b8acfa645c08e594d119e218be9159a7642e12c914358a3",
+        "m5out/trace.gz": "8bc182cdc6d50534f972791b12d774511a61bb4f64adc25400e53605f767298b"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174235-755394417-formal-repeat-43-2/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174235-755394417-formal-repeat-43-2/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174235-755394417-formal-repeat-43-2/X06/guest.bin 43 44"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "352b28eeb072f7fc0cfd7f66110ce989651876d0f1898dbfc64e7639498f136f",
+        "command.json": "cbab8f42916e53a543a2d557946a39e9445c78856fc3395fad72d7f44966ed16",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "80039dcfd8b161b030a701ce510ae8365b839abd08fb972e05e7e9adc5445dd6",
+        "m5out/config.json": "1584c726d3b5d271c7521affd72942eb0aa7f6f182f2ca8f7ac84f25ca5ff6ee",
+        "m5out/stats.txt": "b8106676e7230473183f7bcf1de926ebb829ebd9c7dcfb3ceae702e5c394e4b5",
+        "m5out/trace.gz": "ac185efc2d0b2326acd0afcab794d6107fb88e20e4d6aa65c88bd982fb88c291"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174239-768916710-formal-repeat-43-2/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174239-768916710-formal-repeat-43-2/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174239-768916710-formal-repeat-43-2/S05A/guest.bin 43 44"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "f22b11727a1e0b8d0beeb3ff06e3baf80d14777957de84d2020a2d4eb5fd1a60",
+        "command.json": "c2f2d475120c67f6f015fa1fca0f216a7d19bacfb0c1b44c960601e670f9e608",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "0015febdeb1eee085b61df6b43e5aa9b8f9392243ff89f936e6564d7e7dbb17b",
+        "m5out/config.json": "241c7dc81ad18fb231e3b1adeebf001f3c0b3a6753849facf94b95e09379a14b",
+        "m5out/stats.txt": "b1fbe7691d1ef6f6949376e5a53ea44fed1b03fd72ea576f3a3a563920f00854",
+        "m5out/trace.gz": "8bc182cdc6d50534f972791b12d774511a61bb4f64adc25400e53605f767298b"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174240-090702041-formal-repeat-43-3/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174240-090702041-formal-repeat-43-3/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174240-090702041-formal-repeat-43-3/P/guest.bin 43 44"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "6252dd5cb1b55b204845842d051eb166843ac7c621a2b1d4f8e787cff73a2495",
+        "command.json": "1a06f0df7799ab41724dd73178aed23fb654351bc7835d5535baf6c99de0da30",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "b59b1d91eba35fbcb00f14319a873d5186489198f56101a2bfbebb06fee190ee",
+        "m5out/config.json": "3b817f2abfb492eba687f4af12b825c562c92b0673e1130e799c2a4cc359fa21",
+        "m5out/stats.txt": "1e8e6b17f16dee045ccf077cb2600fb980689f0e54c2f69ddc19d9aebc0f68a7",
+        "m5out/trace.gz": "f2ce45f35809e03f54335627766d79b99fee43cd2960ead5228265618456724a"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174249-027403318-formal-repeat-43-3/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174249-027403318-formal-repeat-43-3/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174249-027403318-formal-repeat-43-3/X06/guest.bin 43 44"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "352b28eeb072f7fc0cfd7f66110ce989651876d0f1898dbfc64e7639498f136f",
+        "command.json": "1e46bd82c71cde93e76d6df30b5e3569b7050efaebc3a8dded2b6dfed464f6f2",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "45b7deb8c9bec997bd109e932450e3afa25f18e6f0d08e6d52c520617295182c",
+        "m5out/config.json": "9a2b9af01a34af3f86efc159ad6d31a07a5be2c29bdabf15dcfc03f82b76107f",
+        "m5out/stats.txt": "a6c5220c0f85a155c1429c86264838cbdf69860dd95d7d97d1381e52c8b14411",
+        "m5out/trace.gz": "ac185efc2d0b2326acd0afcab794d6107fb88e20e4d6aa65c88bd982fb88c291"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174253-032666610-formal-repeat-43-3/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174253-032666610-formal-repeat-43-3/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174253-032666610-formal-repeat-43-3/S05A/guest.bin 43 44"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "f22b11727a1e0b8d0beeb3ff06e3baf80d14777957de84d2020a2d4eb5fd1a60",
+        "command.json": "245c918e93ddacf955d795c22c73d27e7958131101685f92e1b97b8768a11820",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "740749b0c889403640aca8a91ef599a1b66ba288c43ad1cd7f968372f823e824",
+        "m5out/config.json": "3ae7122b173be02b4c3fbfc03a33f6cf6f197366a689603766249ff4ef814c8f",
+        "m5out/stats.txt": "57ee39beb10b44104881b66b01c0dbac7756aa01766e8a954f513696aba295ff",
+        "m5out/trace.gz": "8bc182cdc6d50534f972791b12d774511a61bb4f64adc25400e53605f767298b"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174253-984191920-formal-repeat-103-1/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174253-984191920-formal-repeat-103-1/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174253-984191920-formal-repeat-103-1/P/guest.bin 103 104"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "c8d4d6f5fe4a8d19ab0b3eb04a7729c8382f9fd48820a6a9b63176e98b21853c",
+        "command.json": "ffbe6e3ec505e65d8a35b9815ebd254138add737e13b5e021381511678080d54",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "0a3336eaacce2f284f64eda5d53abc75593ef41d535ea485613352da29c4cd2b",
+        "m5out/config.json": "cf11f27a50b37083b004971dd8356605d16ad68072cc7281ee88abd8991a3d72",
+        "m5out/stats.txt": "0626f7bf9dbc95f94e91831689e2b7167b2911529cc6c7b546a424f477fe61ce",
+        "m5out/trace.gz": "8eb2f500befe6699303cf5bed023636ec2d9bf47f1a1bca413a095671508937f"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174302-343613525-formal-repeat-103-1/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174302-343613525-formal-repeat-103-1/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174302-343613525-formal-repeat-103-1/X06/guest.bin 103 104"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "d8e63ad3bdf11f2ebe6a3c1c2aa1d80e885a19fda576f761af9fdf92898fe1c7",
+        "command.json": "4c2efa65efc6a65df405df509869d8e934431f0542e53a401661c27bd73afc4f",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "87c4272ff5c6f8ed2809038dcd43c3d3f85b33bc0adfe7441373e0f43cfa98eb",
+        "m5out/config.json": "14c1064a2946b0eb4cfd178926e86d4d175d2fc31c11c1802655d9306bcd34df",
+        "m5out/stats.txt": "1e49f6e81db3b0ec563732fd4eca334db206e8cbce93087a4d65b8c6a5e123f8",
+        "m5out/trace.gz": "9df2d81254dd2a38f6841bdafc2934e1c42045cf45b037803f84c805afa0dc7c"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174306-204658703-formal-repeat-103-1/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174306-204658703-formal-repeat-103-1/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174306-204658703-formal-repeat-103-1/S05A/guest.bin 103 104"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "d23b46a16910669e8df49709adb750977cd275731d1f7197297d9d0d715db103",
+        "command.json": "09c7bf14f0d01c55dc7ec0f0e1b218bee4e0b58f60aa8184c9e2df6933452346",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "8c4ebace64a92232de88fa4312287d1c9fcfa55c719612efc013c18636cfdbe5",
+        "m5out/config.json": "91efa929588e2b7485355632c6b927ee7c275df9d6f51b2c41c0c35419f6eebd",
+        "m5out/stats.txt": "9dec6af03b8638b5c52b24c43e9f4c93694483a5be54ec991373d272b49c65b8",
+        "m5out/trace.gz": "11c8e8cabdc6146af7610d2ef48ecc13432b06a0d15eb45fc622995863d344c2"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174307-902623649-formal-repeat-103-2/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174307-902623649-formal-repeat-103-2/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174307-902623649-formal-repeat-103-2/P/guest.bin 103 104"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "c8d4d6f5fe4a8d19ab0b3eb04a7729c8382f9fd48820a6a9b63176e98b21853c",
+        "command.json": "439c615045894e965d2fa46607c843d5e8010ac838f16718a83dbd1f6ea9326c",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "9c79b2cb73d5c7e5a5d9da9a44b51b3153358671a3f97901c1871a3527bf30e2",
+        "m5out/config.json": "fcd2d01c68d9ddcf8fb5b464d704a828c93ca590bf331b2a20a5140441b649bc",
+        "m5out/stats.txt": "5c66e4955a68917744457d4ee8c4979e9d8ae99337af174c163a76e621e0d2b3",
+        "m5out/trace.gz": "8eb2f500befe6699303cf5bed023636ec2d9bf47f1a1bca413a095671508937f"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174315-567486731-formal-repeat-103-2/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174315-567486731-formal-repeat-103-2/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174315-567486731-formal-repeat-103-2/X06/guest.bin 103 104"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "d8e63ad3bdf11f2ebe6a3c1c2aa1d80e885a19fda576f761af9fdf92898fe1c7",
+        "command.json": "136947e31765b68f73297f8ebed9f34a1043290d1c8fab066f07ba4bb67033c9",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "b5d5d92f3701409bdc3498e3df8a9745c6f553a8eebb78f0a9007e6702c8c1e1",
+        "m5out/config.json": "9a66aa0b60ee10647054b9c286a21a574faf84c2f19009135321ddd22cd2b421",
+        "m5out/stats.txt": "4cde0dc6ab517edaf8a92cd55cc101c8499f797e5f9d6a94595bfbd38d353a8c",
+        "m5out/trace.gz": "9df2d81254dd2a38f6841bdafc2934e1c42045cf45b037803f84c805afa0dc7c"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174319-362918481-formal-repeat-103-2/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174319-362918481-formal-repeat-103-2/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174319-362918481-formal-repeat-103-2/S05A/guest.bin 103 104"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "d23b46a16910669e8df49709adb750977cd275731d1f7197297d9d0d715db103",
+        "command.json": "a473460915ba1e1e8858cf0401ddd07531e67eb8ec52100440de967f7d1a7e28",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "0d678f21063a75f0555e4c62cbaa5aa6a3ac247ef92753c80766180db1f2e47c",
+        "m5out/config.json": "514a48b7ee6c52655bf1126934299e0b303e23b50345d169f7b1c2c8d7bd9740",
+        "m5out/stats.txt": "c6dbe3f0017fb875869db323530a022ce903bf841053ec6e45168a6fee24fdc6",
+        "m5out/trace.gz": "11c8e8cabdc6146af7610d2ef48ecc13432b06a0d15eb45fc622995863d344c2"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174321-813589542-formal-repeat-103-3/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174321-813589542-formal-repeat-103-3/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174321-813589542-formal-repeat-103-3/P/guest.bin 103 104"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "c8d4d6f5fe4a8d19ab0b3eb04a7729c8382f9fd48820a6a9b63176e98b21853c",
+        "command.json": "f4eff30ba1b72560b7b4da3c93d336161aaf875302933f519b9b3875b86be69b",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "7e616f1943a99a9bc1ced761cfac8eddffbbbbc6a2d596ae6ea2e8292a017c42",
+        "m5out/config.json": "540b72b20515d0146b42ff7ea09819a2f24f0f027b48d3e28f836b1f049f69e5",
+        "m5out/stats.txt": "0a46d4345787b13a2ff42836733b372870e805261797a79e7e8f6e3e84b232c6",
+        "m5out/trace.gz": "8eb2f500befe6699303cf5bed023636ec2d9bf47f1a1bca413a095671508937f"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174329-210845490-formal-repeat-103-3/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174329-210845490-formal-repeat-103-3/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174329-210845490-formal-repeat-103-3/X06/guest.bin 103 104"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "d8e63ad3bdf11f2ebe6a3c1c2aa1d80e885a19fda576f761af9fdf92898fe1c7",
+        "command.json": "dce5d86c355ba8437b12f5267338d9f56a380cf091cc265f889106d24c52b1d0",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "4c090bdf062bb1f10c68ec10ae73f42cc3a89b04bb8892b36e564b848a6ad539",
+        "m5out/config.json": "88d181019a25cfa045916fa446445b7aa26df3dfd122a7e7db6ccfb73cbd6fc3",
+        "m5out/stats.txt": "7690bebb6d1181eb2b21a554d53867aa554c762c72c9dedd6101ef605ade2105",
+        "m5out/trace.gz": "9df2d81254dd2a38f6841bdafc2934e1c42045cf45b037803f84c805afa0dc7c"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174332-683678090-formal-repeat-103-3/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174332-683678090-formal-repeat-103-3/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174332-683678090-formal-repeat-103-3/S05A/guest.bin 103 104"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "d23b46a16910669e8df49709adb750977cd275731d1f7197297d9d0d715db103",
+        "command.json": "b5bc44344c1eb97c6b5e8f462a826526368f814623abd7e77acb4d64c668f51e",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "b4e24207ebc5c54aaf724239964f9b591330fb8c34dc93761d1e409a0f3be6d2",
+        "m5out/config.json": "ce3e19dc08a3488367be77284a32a160619830c21561c48378dafa112f518162",
+        "m5out/stats.txt": "620ea22d7213f68bab0057454d84155d50df847abc501e292a92493d0058ae64",
+        "m5out/trace.gz": "11c8e8cabdc6146af7610d2ef48ecc13432b06a0d15eb45fc622995863d344c2"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174335-306874320-formal-repeat-163-1/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174335-306874320-formal-repeat-163-1/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174335-306874320-formal-repeat-163-1/P/guest.bin 163 164"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "d2fdcba9419036170e74a0d779c6d7dc140f92a78e7a113e6783806e9c917877",
+        "command.json": "90efdf13f0fa15aa8ec3d1c77c96ad909a2a1d23226df829b9ed154babd47865",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "c43bb868ba42faf4c7f7b6d728d34a6f81f47e6c6232edba67d539a383b117eb",
+        "m5out/config.json": "b8c825f1181d5616ebed1cf83a61d2db41a6b283ff41bea680c43808e3f3e79d",
+        "m5out/stats.txt": "9b89d9337f293886f476082774f1514d6c62898179f218676bfef5af76e3f531",
+        "m5out/trace.gz": "3442ed31c7bcb29e1f5c305d00675076bcf0ab5c9aa7881ab74c108c7a01c757"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174343-277065876-formal-repeat-163-1/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174343-277065876-formal-repeat-163-1/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174343-277065876-formal-repeat-163-1/X06/guest.bin 163 164"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "427d892baf01a6cb7287c3218d537d96ff0d1eb56d1773116b54a97548e9e8bc",
+        "command.json": "8b398e756b2a7e09997e44a0c762b932bed11da88baf9128cf7b293ba19d3c62",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "ee06ecdf915812d81672ccb34848782bf54b60e9a49c87524d94bdf908716bff",
+        "m5out/config.json": "e81d97831690ef3280fc8beeeec29b47e0878ac41e6fdb55629e50868d62df68",
+        "m5out/stats.txt": "ead620544ebacda7f03dcb3c683321a47d120eadef6b15f6acaee62541b3b878",
+        "m5out/trace.gz": "4dc919436f4eef5e0ea506192b955a32be712638793589e553b22658f35027a2"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174345-963707148-formal-repeat-163-1/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174345-963707148-formal-repeat-163-1/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174345-963707148-formal-repeat-163-1/S05A/guest.bin 163 164"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "0cd18d619f9e8bbb896884998c2bc47f813ea8c2f5bee4a2b02d3c3085c367a2",
+        "command.json": "a72eb727e4bc0611962dfada72c17c3bd8ee6bdedf2959de58d8a33888e92e52",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "a9da6b1a1abd7304193f5576e00e382ccd14adaf157ca2e3f5a822ae777f87d4",
+        "m5out/config.json": "bc4e91a5ffdac83d582b3ade3a45cfe3378dfd3eb454d398cdeec3281c8bd964",
+        "m5out/stats.txt": "887a682913fdf515ecf0ca37005e15f29ba0cf4e8cf30f2094f7837622f3a480",
+        "m5out/trace.gz": "4f03047872d22ba20806aaf42b4540199d046261f5ca2be527b90b117f933bcd"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174349-038739084-formal-repeat-163-2/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174349-038739084-formal-repeat-163-2/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174349-038739084-formal-repeat-163-2/P/guest.bin 163 164"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "d2fdcba9419036170e74a0d779c6d7dc140f92a78e7a113e6783806e9c917877",
+        "command.json": "fb111251294d97f9e83b271e0666c494986e3c0230b34f7d1c683a3884edb1c7",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "bbae0c7b36cab56d1260e51ba2b8278c3d88e9e11b2ab241307a75ad2fdee8ed",
+        "m5out/config.json": "a5909e4ab66a84e82138d7aadbd10d2a018aa2993b464cb13655bbf0670b9767",
+        "m5out/stats.txt": "69cde62a107a78a87d6692ea3270ef553ce8602d26e36cfc35df3091e4b9293b",
+        "m5out/trace.gz": "3442ed31c7bcb29e1f5c305d00675076bcf0ab5c9aa7881ab74c108c7a01c757"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174356-463987065-formal-repeat-163-2/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174356-463987065-formal-repeat-163-2/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174356-463987065-formal-repeat-163-2/X06/guest.bin 163 164"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "427d892baf01a6cb7287c3218d537d96ff0d1eb56d1773116b54a97548e9e8bc",
+        "command.json": "7eb9f652c92ee2762ca3ad27fbde03cc2efa595fd9ab3be2a238825b557edfe8",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "8977b4de7de7a82d6bd171bb3c662e38776d5bea5c88944cd3f049036908b441",
+        "m5out/config.json": "4f54ba5ffacbf679d8c179fda94526d9be9e98574f66d561f315ebc76499fcdf",
+        "m5out/stats.txt": "a223f3ae39ad96103cebb5ab08d9c8104b24626dbde51b7f75a6ff01f478210c",
+        "m5out/trace.gz": "4dc919436f4eef5e0ea506192b955a32be712638793589e553b22658f35027a2"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174359-269612358-formal-repeat-163-2/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174359-269612358-formal-repeat-163-2/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174359-269612358-formal-repeat-163-2/S05A/guest.bin 163 164"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "0cd18d619f9e8bbb896884998c2bc47f813ea8c2f5bee4a2b02d3c3085c367a2",
+        "command.json": "c52b431476aefb294ed9034bb4dd736c4cef29c47a7fa1209254a2abea3cc285",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "fb5e16c65afbbaeb56aa819cb4a11c3fd3e5f37b4bbabc8be0e226137869ed04",
+        "m5out/config.json": "12d5c2e548036905ddfdad9342ec2b5d259090c6af7385a80fddcb6937f96634",
+        "m5out/stats.txt": "19f2ed4e360790161a83ac626ba3094debc55d52c8e0a81e7928edeb1d4a6db3",
+        "m5out/trace.gz": "4f03047872d22ba20806aaf42b4540199d046261f5ca2be527b90b117f933bcd"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174402-964345071-formal-repeat-163-3/P",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174402-964345071-formal-repeat-163-3/P/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/P/guest.elf /work/results/ame_compare_v1/runs/20261122-174402-964345071-formal-repeat-163-3/P/guest.bin 163 164"
+      ],
+      "files": {
+        "guest.elf": "439f04aba4ae1df32ffc01dd5966c502b33d63e493aff0017289f0c0af446312",
+        "guest.bin": "d2fdcba9419036170e74a0d779c6d7dc140f92a78e7a113e6783806e9c917877",
+        "command.json": "7e1dd92fb6332c47ec01510c6513d0637b4daa8218f57ba5d18d331ffb95aa11",
+        "symbols.txt": "06f7924ec2075d6f43f00b0e0282944067677de61cd41abcb43551780417fae6",
+        "disassembly.txt": "23abb41a7e9ca01a236336fc52579906920bcf188f09d522c9090309b897e6ec",
+        "sections.txt": "db1beb8bfda2ea77aba36e57aecda34013f1f9acb7253df42eb2c8dc3c89302e",
+        "m5out/config.ini": "642d7f8eff8eb8b0487b9d706150ca5531b51dd3001a5091db612fa868dd5d7b",
+        "m5out/config.json": "778d37a9682d67caedbc1e467673f4ce8512d02d7d683e5079c1c3647368031b",
+        "m5out/stats.txt": "1b3cae19f914f098dee5df51212eacce6f762dcc1b244a11c858a417ea8606de",
+        "m5out/trace.gz": "3442ed31c7bcb29e1f5c305d00675076bcf0ab5c9aa7881ab74c108c7a01c757"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174409-824128733-formal-repeat-163-3/X06",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174409-824128733-formal-repeat-163-3/X06/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/X06/guest.elf /work/results/ame_compare_v1/runs/20261122-174409-824128733-formal-repeat-163-3/X06/guest.bin 163 164"
+      ],
+      "files": {
+        "guest.elf": "a5eb9f82c0d9537a86ea015d5c6d3576666b4c0e0b40065539360b4438a1af2d",
+        "guest.bin": "427d892baf01a6cb7287c3218d537d96ff0d1eb56d1773116b54a97548e9e8bc",
+        "command.json": "f3926c45ab3d93d86bb3b0c71a350c40960116557b9c77375c88e1dae02c32e8",
+        "symbols.txt": "95d7ebdd480adb3f45048a8dd778b22407e56f4139c792f1758098fa7ac3d2f4",
+        "disassembly.txt": "4c90fabc717eef61ca439d22868427af2ba29e8626a744e6f5e09e428fc77a67",
+        "sections.txt": "d2b1c9a0524bd9a56ea16dfc99fa8f13a5dac0f2d68e046ba63b05a15e3ab52c",
+        "m5out/config.ini": "aeb3c755672b6443bd677800e0bd9cf2c846d339b597b802d56643ab8cd06fbc",
+        "m5out/config.json": "ebeed27dfbafd1e1b96b1b2ff5f8d6e86d2b4ad85aaa8da253c0b49a5bbbdfc2",
+        "m5out/stats.txt": "8adff57699898a584528ed37d142040ef259f39a879cc5d925362ec7d27bee60",
+        "m5out/trace.gz": "4dc919436f4eef5e0ea506192b955a32be712638793589e553b22658f35027a2"
+      }
+    },
+    {
+      "directory": "results/ame_compare_v1/runs/20261122-174412-741558307-formal-repeat-163-3/S05A",
+      "status": "PASS",
+      "errors": [],
+      "command": [
+        "/work/build/AME_B11/gem5.opt",
+        "--debug-flags=ExecEnable,ExecMacro,ExecKernel,ExecUser,FmtTicksOff",
+        "--debug-file=trace.gz",
+        "-d",
+        "/work/results/ame_compare_v1/runs/20261122-174412-741558307-formal-repeat-163-3/S05A/m5out",
+        "/work/example/ame_config.py",
+        "--cmd",
+        "/work/results/ame_compare_v1/build/S05A/guest.elf /work/results/ame_compare_v1/runs/20261122-174412-741558307-formal-repeat-163-3/S05A/guest.bin 163 164"
+      ],
+      "files": {
+        "guest.elf": "eceffc84c704db00d06885a7b6e71d3beb3a6f5c588bc8a0cd02a49675487c20",
+        "guest.bin": "0cd18d619f9e8bbb896884998c2bc47f813ea8c2f5bee4a2b02d3c3085c367a2",
+        "command.json": "828465687c9bdc93d71513d7dda77bbf0eae33893cfe428c6fdd7d337b4e45df",
+        "symbols.txt": "3af2db06f278783104c25ad1e4eaf7a3cd2d39ea2ac471c849f236f1871771b4",
+        "disassembly.txt": "9a647514c35301510ae2192bfea4aa594893777808fe8f471e8103447a3a0466",
+        "sections.txt": "d03662007ee2c70f07411f93186441686585b8e4a59894c367c8af5e0c7eca34",
+        "m5out/config.ini": "073943b8cadf602cacdb47d501db059bcb7ebb766ffc8e7b4e06a9e40e5c17cd",
+        "m5out/config.json": "6f0cd2466d16c9cc4262329d58a80947df4085150a40c88330603533ce4ac19e",
+        "m5out/stats.txt": "3ce3d9ea0dc28ad3a12f021915be66cefdee6754427d0fe7e4c885c83b7926ce",
+        "m5out/trace.gz": "4f03047872d22ba20806aaf42b4540199d046261f5ca2be527b90b117f933bcd"
+      }
+    }
+  ]
+}

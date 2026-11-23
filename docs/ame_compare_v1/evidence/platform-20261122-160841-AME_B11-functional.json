@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "suite": "spec_v05a",
+  "disabled": false,
+  "chain": false,
+  "cases": 12311,
+  "executions": 24622,
+  "random_per_seed": 100,
+  "limit": 0,
+  "failed": 0,
+  "failures": [],
+  "gem5_sha256": "6ddf3e8b74544dbe52acad7265fec506f54da96fd9c0c02caf25479ef9355ef9",
+  "elf_sha256": "a3bf083471d7bb6e019528d23b13907a3aba7474a55e58a6952ed2a42c144893",
+  "inputs_sha256": "3300c57334d7806feb205a49630943d9c19255f8a893fd4be90f680d517c77c1",
+  "oracle_sha256": "f73aad68b1d52550ad35462ceb6ae0b53ec28509c33e0816b265c44b49b30741",
+  "report_sha256": "17f9457d1118288424311ab4d184e509ef722761031b56a6b2583e0e4462624b",
+  "run": "results/ame_explicit_v1/spec_v05a/20261122-160841-AME_B11"
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "op": 4,
+      "group": "P",
+      "coordinate_cases": 64,
+      "status": "PASS"
+    },
+    {
+      "op": 4,
+      "group": "X06",
+      "coordinate_cases": 64,
+      "status": "PASS"
+    },
+    {
+      "op": 4,
+      "group": "S05A",
+      "coordinate_cases": 64,
+      "status": "PASS"
+    },
+    {
+      "op": 5,
+      "group": "P",
+      "coordinate_cases": 32,
+      "status": "PASS"
+    },
+    {
+      "op": 5,
+      "group": "X06",
+      "coordinate_cases": 32,
+      "status": "PASS"
+    },
+    {
+      "op": 5,
+      "group": "S05A",
+      "coordinate_cases": 32,
+      "status": "PASS"
+    },
+    {
+      "op": 6,
+      "group": "P",
+      "coordinate_cases": 32,
+      "status": "PASS"
+    },
+    {
+      "op": 6,
+      "group": "X06",
+      "coordinate_cases": 32,
+      "status": "PASS"
+    },
+    {
+      "op": 6,
+      "group": "S05A",
+      "coordinate_cases": 32,
+      "status": "PASS"
+    },
+    {
+      "task": "C3",
+      "group": "P",
+      "status": "PASS",
+      "elements": 32
+    },
+    {
+      "task": "C3",
+      "group": "X06",
+      "status": "PASS",
+      "elements": 32
+    },
+    {
+      "task": "C3",
+      "group": "S05A",
+      "status": "PASS",
+      "elements": 32
+    }
+  ]
+}

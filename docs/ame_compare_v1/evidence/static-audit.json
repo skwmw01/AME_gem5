@@ -1,0 +1,227 @@
+{
+  "status": "PASS",
+  "encoding": [
+    {
+      "group": "P",
+      "rules": 4,
+      "mask_envelope": 70656,
+      "legal_fields": 70656,
+      "rows": [
+        {
+          "mnemonic": "madd.ew",
+          "match": "0x400002b",
+          "mask": "0xfe00707f"
+        },
+        {
+          "mnemonic": "mmax.ew",
+          "match": "0xc00002b",
+          "mask": "0xfe00707f"
+        },
+        {
+          "mnemonic": "mmulbtacc.2d",
+          "match": "0x9e00002b",
+          "mask": "0xfe007e7f"
+        },
+        {
+          "mnemonic": "mconv.ew",
+          "match": "0xa2d0002b",
+          "mask": "0xfff0707f"
+        }
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "group": "X06",
+      "rules": 10,
+      "mask_envelope": 146432,
+      "legal_fields": 146432,
+      "rows": [
+        {
+          "mnemonic": "xt06.add.i32",
+          "match": "0x2000000b",
+          "mask": "0xfe00707f",
+          "kind": "binary"
+        },
+        {
+          "mnemonic": "xt06.add.f32",
+          "match": "0x2000100b",
+          "mask": "0xfe00707f",
+          "kind": "binary"
+        },
+        {
+          "mnemonic": "xt06.max.i32",
+          "match": "0x2200000b",
+          "mask": "0xfe00707f",
+          "kind": "binary"
+        },
+        {
+          "mnemonic": "xt06.max.u32",
+          "match": "0x2200100b",
+          "mask": "0xfe00707f",
+          "kind": "binary"
+        },
+        {
+          "mnemonic": "xt06.macbt.i8.i32",
+          "match": "0x2400000b",
+          "mask": "0xfe007e7f",
+          "kind": "mac"
+        },
+        {
+          "mnemonic": "xt06.macbt.f16.f32",
+          "match": "0x2400100b",
+          "mask": "0xfe007e7f",
+          "kind": "mac"
+        },
+        {
+          "mnemonic": "xt06.macbt.bf16.f32",
+          "match": "0x2400200b",
+          "mask": "0xfe007e7f",
+          "kind": "mac"
+        },
+        {
+          "mnemonic": "xt06.cvt.f32.i32",
+          "match": "0x2600000b",
+          "mask": "0xfff0707f",
+          "kind": "cvt"
+        },
+        {
+          "mnemonic": "xt06.cvt.i32.f32",
+          "match": "0x2600100b",
+          "mask": "0xfff0707f",
+          "kind": "cvt"
+        },
+        {
+          "mnemonic": "xt06.cvtlo.f32.f16",
+          "match": "0x2600200b",
+          "mask": "0xfff0707f",
+          "kind": "cvt"
+        }
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "group": "S05A",
+      "rules": 10,
+      "mask_envelope": 146432,
+      "legal_fields": 146400,
+      "rows": [
+        {
+          "mnemonic": "sp05a.add.i32",
+          "match": "0x4000005b",
+          "mask": "0xfe00707f",
+          "kind": "binary"
+        },
+        {
+          "mnemonic": "sp05a.add.f32",
+          "match": "0x4000105b",
+          "mask": "0xfe00707f",
+          "kind": "binary"
+        },
+        {
+          "mnemonic": "sp05a.max.i32",
+          "match": "0x4200005b",
+          "mask": "0xfe00707f",
+          "kind": "binary"
+        },
+        {
+          "mnemonic": "sp05a.max.u32",
+          "match": "0x4200105b",
+          "mask": "0xfe00707f",
+          "kind": "binary"
+        },
+        {
+          "mnemonic": "sp05a.mac.i8.i32",
+          "match": "0x4400005b",
+          "mask": "0xfe007e7f",
+          "kind": "mac"
+        },
+        {
+          "mnemonic": "sp05a.mac.f16.f32",
+          "match": "0x4400105b",
+          "mask": "0xfe007e7f",
+          "kind": "mac"
+        },
+        {
+          "mnemonic": "sp05a.mac.bf16.f32",
+          "match": "0x4400205b",
+          "mask": "0xfe007e7f",
+          "kind": "mac"
+        },
+        {
+          "mnemonic": "sp05a.cvt.f32.i32",
+          "match": "0x4600005b",
+          "mask": "0xfff0707f",
+          "kind": "cvt"
+        },
+        {
+          "mnemonic": "sp05a.cvt.i32.f32",
+          "match": "0x4600105b",
+          "mask": "0xfff0707f",
+          "kind": "cvt"
+        },
+        {
+          "mnemonic": "sp05a.cvt.f32.f16",
+          "match": "0x4600205b",
+          "mask": "0xfff0707f",
+          "kind": "wide"
+        }
+      ],
+      "status": "PASS",
+      "errors": []
+    }
+  ],
+  "control_preparation": [
+    {
+      "symbol": "input_type",
+      "status": "PASS",
+      "instructions": 28
+    },
+    {
+      "symbol": "configure",
+      "status": "PASS",
+      "instructions": 20
+    },
+    {
+      "symbol": "load",
+      "status": "PASS",
+      "instructions": 10
+    },
+    {
+      "symbol": "store",
+      "status": "PASS",
+      "instructions": 17
+    },
+    {
+      "symbol": "w1_0",
+      "status": "PASS",
+      "instructions": 42
+    },
+    {
+      "symbol": "w1_1",
+      "status": "PASS",
+      "instructions": 42
+    },
+    {
+      "symbol": "w1_2",
+      "status": "PASS",
+      "instructions": 42
+    },
+    {
+      "symbol": "w1_3",
+      "status": "PASS",
+      "instructions": 42
+    },
+    {
+      "symbol": "w1_7",
+      "status": "PASS",
+      "instructions": 42
+    },
+    {
+      "symbol": "w1_8",
+      "status": "PASS",
+      "instructions": 42
+    }
+  ]
+}

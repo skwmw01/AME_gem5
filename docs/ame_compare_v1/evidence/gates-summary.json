@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "group": "P",
+      "status": "PASS",
+      "counts": {
+        "4": 256,
+        "5": 128,
+        "6": 128,
+        "9": 2048
+      },
+      "failures": [],
+      "elf_sha256": "2a6a94f6c738a58214e4d937aa792653a3612b6a038c6f6aca798b35edeacd96",
+      "report_sha256": "5d46b0f24a524bc8d494a09d6049e8dabf7c0e03973f0e93af4aa5ff461887b5",
+      "half_patterns": 65536,
+      "second_destination_consumers": 2048
+    },
+    {
+      "group": "X06",
+      "status": "PASS",
+      "counts": {
+        "4": 256,
+        "5": 128,
+        "6": 128,
+        "9": 2048
+      },
+      "failures": [],
+      "elf_sha256": "0c4202c9641133392776065cc00d7321311e4a795b63a4809e471f400350feae",
+      "report_sha256": "5d46b0f24a524bc8d494a09d6049e8dabf7c0e03973f0e93af4aa5ff461887b5",
+      "half_patterns": 65536,
+      "second_destination_consumers": 2048
+    },
+    {
+      "group": "S05A",
+      "status": "PASS",
+      "counts": {
+        "4": 256,
+        "5": 128,
+        "6": 128,
+        "9": 2048
+      },
+      "failures": [],
+      "elf_sha256": "b68180eff0f8d85e08c10df40efea43c29d9fc51963f6e6194439e9bfce65a84",
+      "report_sha256": "5d46b0f24a524bc8d494a09d6049e8dabf7c0e03973f0e93af4aa5ff461887b5",
+      "half_patterns": 65536,
+      "second_destination_consumers": 2048
+    }
+  ]
+}

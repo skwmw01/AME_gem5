@@ -1,0 +1,65 @@
+[
+  {
+    "tasks": 4,
+    "group": "P",
+    "rules": 2,
+    "mask_envelope": 65536,
+    "legal_fields": 65536
+  },
+  {
+    "tasks": 4,
+    "group": "X06",
+    "rules": 4,
+    "mask_envelope": 131072,
+    "legal_fields": 131072
+  },
+  {
+    "tasks": 4,
+    "group": "S05A",
+    "rules": 4,
+    "mask_envelope": 131072,
+    "legal_fields": 131072
+  },
+  {
+    "tasks": 7,
+    "group": "P",
+    "rules": 3,
+    "mask_envelope": 69632,
+    "legal_fields": 69632
+  },
+  {
+    "tasks": 7,
+    "group": "X06",
+    "rules": 7,
+    "mask_envelope": 143360,
+    "legal_fields": 143360
+  },
+  {
+    "tasks": 7,
+    "group": "S05A",
+    "rules": 7,
+    "mask_envelope": 143360,
+    "legal_fields": 143360
+  },
+  {
+    "tasks": 10,
+    "group": "P",
+    "rules": 4,
+    "mask_envelope": 70656,
+    "legal_fields": 70656
+  },
+  {
+    "tasks": 10,
+    "group": "X06",
+    "rules": 10,
+    "mask_envelope": 146432,
+    "legal_fields": 146432
+  },
+  {
+    "tasks": 10,
+    "group": "S05A",
+    "rules": 10,
+    "mask_envelope": 146432,
+    "legal_fields": 146400
+  }
+]

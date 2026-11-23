@@ -1,0 +1,17 @@
+{
+  "simulator_sha256": "6ddf3e8b74544dbe52acad7265fec506f54da96fd9c0c02caf25479ef9355ef9",
+  "files": {
+    "build/AME_B11/gem5.opt": "6ddf3e8b74544dbe52acad7265fec506f54da96fd9c0c02caf25479ef9355ef9",
+    "build/AME_B11/gem5.build/config": "4369d4892e02d1ee8159d9e5546b9a0a9837243d648c6d265c2c066aabab1e2b",
+    "example/ame_config.py": "8f7b55f8c97f2eb1163e8c97219826b86423badf08f68b5428bf89bc04c347a6",
+    "src/arch/riscv/insts/spec_v05a_explicit.hh": "3117a20cb7d6b506f02eee2160a129d8faa9f3e8c853b77ef40e2d3ddd4d379b",
+    "src/arch/riscv/insts/xuantie_v06_explicit.cc": "13395a6a58d260e6417b7a41a8867c73798a1e52383f4ad709bd89f568192554",
+    "src/arch/riscv/insts/xuantie_v06_explicit.hh": "5a6b470526402dab5935b38466aacbf60eb1490f9182240d88a66f3a1c59a785",
+    "src/arch/riscv/insts/spec_v05a_explicit.cc": "3f526583eb0563a4e8fc3ad3c2f020b3cba0692c131dcd61acda55834111b957",
+    "src/arch/riscv/isa/decoder/spec_v05a_explicit.isa": "3850dc29e7e3ff04b4c86e551853147b2c9de9c690855d58abd8406344110742",
+    "src/arch/riscv/isa/decoder/xuantie_v06_explicit.isa": "136bb4c9474b99d75b91c7298626454f7e7a34129c3364d14f9bedb203ad8394",
+    "src/arch/riscv/isa/formats/spec_v05a_explicit.isa": "b740615ed0920220f4116295dd16b6217c7e77a5e34afad705e1df241c66f17b",
+    "src/arch/riscv/isa/formats/xuantie_v06_explicit.isa": "08ede1e87198726bc10e2e4a62d7414c91812f9652dd799c0de619333d92d770"
+  },
+  "config": "# BATCH is not set\nM5_BUILD_CACHE=\"\"\n# USE_EFENCE is not set\nHAVE_FENV=y\nHAVE_PNG=y\nHAVE_DEPRECATED_NAMESPACE=y\nHAVE_POSIX_CLOCK=y\n# USE_POSIX_CLOCK is not set\nHAVE_HDF5=y\n\n#\n# Ruby\n#\nRUBY=y\n\n#\n# Ruby protocols\n#\nUSE_MULTIPLE_PROTOCOLS=y\nPROTOCOL=\"MI_example\"\n# RUBY_PROTOCOL_MOESI_AMD_Base is not set\n# RUBY_PROTOCOL_MESI_Two_Level is not set\n# RUBY_PROTOCOL_MESI_Three_Level is not set\n# RUBY_PROTOCOL_MESI_Three_Level_HTM is not set\nRUBY_PROTOCOL_MI_example=y\n# RUBY_PROTOCOL_MOESI_CMP_directory is not set\n# RUBY_PROTOCOL_MOESI_CMP_token is not set\n# RUBY_PROTOCOL_MOESI_hammer is not set\n# RUBY_PROTOCOL_Garnet_standalone is not set\n# RUBY_PROTOCOL_CHI is not set\n# RUBY_PROTOCOL_MSI is not set\n# end of Ruby protocols\n\n# SLICC_HTML is not set\nNUMBER_BITS_PER_SET=64\n# end of Ruby\n\nHAVE_PROTOBUF=y\nHAVE_TUNTAP=y\nBUILD_ISA=y\n\n#\n# ISA\n#\n# USE_ARM_ISA is not set\n\n#\n# Fast Model\n#\n# end of Fast Model\n\n# USE_MIPS_ISA is not set\n# USE_POWER_ISA is not set\nUSE_RISCV_ISA=y\nUSE_XUANTIE_V06_EXPLICIT=y\nUSE_SPEC_V05A_EXPLICIT=y\n# USE_SPARC_ISA is not set\n# USE_X86_ISA is not set\n# end of ISA\n\nHAVE_KVM=y\nKVM_ISA=\"x86\"\nUSE_KVM=y\nHAVE_SYSTEMC=y\nUSE_SYSTEMC=y\n# BUILD_GPU is not set\n# USE_TEST_OBJECTS is not set\n"
+}

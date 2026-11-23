@@ -1,0 +1,4052 @@
+[
+  {
+    "group": "P",
+    "case_id": 31,
+    "batch_count": 1024,
+    "cycles": 1247129,
+    "cycles_per_call": 1217.8994140625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0008651871618733908,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 32,
+    "batch_count": 1024,
+    "cycles": 3438851,
+    "cycles_per_call": 3358.2529296875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.000313767592722104,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 33,
+    "batch_count": 1024,
+    "cycles": 2327385,
+    "cycles_per_call": 2272.8369140625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0004636104469178928,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 34,
+    "batch_count": 256,
+    "cycles": 429629,
+    "cycles_per_call": 1678.23828125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.00251146919784279,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 35,
+    "batch_count": 256,
+    "cycles": 1024669,
+    "cycles_per_call": 4002.61328125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010530229762001193,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 36,
+    "batch_count": 256,
+    "cycles": 746025,
+    "cycles_per_call": 2914.16015625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0014463322274722698,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 37,
+    "batch_count": 64,
+    "cycles": 281692,
+    "cycles_per_call": 4401.4375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0038304247191968534,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 38,
+    "batch_count": 64,
+    "cycles": 429717,
+    "cycles_per_call": 6714.328125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.002510954884261037,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 39,
+    "batch_count": 64,
+    "cycles": 359261,
+    "cycles_per_call": 5613.453125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003003387509359491,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 40,
+    "batch_count": 16,
+    "cycles": 236486,
+    "cycles_per_call": 14780.375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004562637957426655,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 41,
+    "batch_count": 16,
+    "cycles": 273879,
+    "cycles_per_call": 17117.4375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003939695997137422,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 42,
+    "batch_count": 16,
+    "cycles": 255696,
+    "cycles_per_call": 15981.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004219854827607784,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 43,
+    "batch_count": 4,
+    "cycles": 225046,
+    "cycles_per_call": 56261.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0047945753312656075,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 44,
+    "batch_count": 4,
+    "cycles": 234665,
+    "cycles_per_call": 58666.25,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004598044020199007,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 45,
+    "batch_count": 4,
+    "cycles": 229738,
+    "cycles_per_call": 57434.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.00469665444985157,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 46,
+    "batch_count": 1024,
+    "cycles": 1042266,
+    "cycles_per_call": 1017.837890625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010352443618039924,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 47,
+    "batch_count": 1024,
+    "cycles": 3323570,
+    "cycles_per_call": 3245.673828125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0003246509024934032,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 48,
+    "batch_count": 1024,
+    "cycles": 2190666,
+    "cycles_per_call": 2139.322265625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0004925442764894329,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 49,
+    "batch_count": 256,
+    "cycles": 394094,
+    "cycles_per_call": 1539.4296875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0027379254695580244,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 50,
+    "batch_count": 256,
+    "cycles": 996431,
+    "cycles_per_call": 3892.30859375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010828647442723079,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 51,
+    "batch_count": 256,
+    "cycles": 711134,
+    "cycles_per_call": 2777.8671875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0015172949120700178,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 52,
+    "batch_count": 64,
+    "cycles": 272682,
+    "cycles_per_call": 4260.65625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003956990193705489,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 53,
+    "batch_count": 64,
+    "cycles": 421491,
+    "cycles_per_call": 6585.796875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.002559959761892899,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 54,
+    "batch_count": 64,
+    "cycles": 351172,
+    "cycles_per_call": 5487.0625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0030725684280067888,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 55,
+    "batch_count": 16,
+    "cycles": 234235,
+    "cycles_per_call": 14639.6875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004606484940337695,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 56,
+    "batch_count": 16,
+    "cycles": 271581,
+    "cycles_per_call": 16973.8125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003973031986773744,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 57,
+    "batch_count": 16,
+    "cycles": 254696,
+    "cycles_per_call": 15918.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004236423029808085,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 58,
+    "batch_count": 4,
+    "cycles": 224852,
+    "cycles_per_call": 56213.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.00479871204169854,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 59,
+    "batch_count": 4,
+    "cycles": 234468,
+    "cycles_per_call": 58617.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0046019072965180745,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 60,
+    "batch_count": 4,
+    "cycles": 229064,
+    "cycles_per_call": 57266.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004710473928683687,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 61,
+    "batch_count": 1024,
+    "cycles": 1129898,
+    "cycles_per_call": 1103.416015625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0009549534559756722,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 62,
+    "batch_count": 1024,
+    "cycles": 3390592,
+    "cycles_per_call": 3311.125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.000318233512023859,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 63,
+    "batch_count": 1024,
+    "cycles": 2279922,
+    "cycles_per_call": 2226.486328125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0004732618045705072,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 64,
+    "batch_count": 256,
+    "cycles": 418899,
+    "cycles_per_call": 1636.32421875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0025757998944853054,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 65,
+    "batch_count": 256,
+    "cycles": 1008396,
+    "cycles_per_call": 3939.046875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010700161444511878,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 66,
+    "batch_count": 256,
+    "cycles": 727956,
+    "cycles_per_call": 2843.578125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0014822324426201584,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 67,
+    "batch_count": 64,
+    "cycles": 278011,
+    "cycles_per_call": 4343.921875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0038811413936858615,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 68,
+    "batch_count": 64,
+    "cycles": 425678,
+    "cycles_per_call": 6651.21875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0025347798100911955,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 69,
+    "batch_count": 64,
+    "cycles": 355975,
+    "cycles_per_call": 5562.109375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003031111735374675,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 70,
+    "batch_count": 16,
+    "cycles": 235136,
+    "cycles_per_call": 14696.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0045888336962438755,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 71,
+    "batch_count": 16,
+    "cycles": 272438,
+    "cycles_per_call": 17027.375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003960534139877697,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 72,
+    "batch_count": 16,
+    "cycles": 254352,
+    "cycles_per_call": 15897.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004242152607410203,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 73,
+    "batch_count": 4,
+    "cycles": 224810,
+    "cycles_per_call": 56202.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004799608558338152,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 74,
+    "batch_count": 4,
+    "cycles": 234017,
+    "cycles_per_call": 58504.25,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004610776140194943,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 75,
+    "batch_count": 4,
+    "cycles": 229354,
+    "cycles_per_call": 57338.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004704517906816537,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 76,
+    "batch_count": 1024,
+    "cycles": 1016241,
+    "cycles_per_call": 992.4228515625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010617560204715221,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 77,
+    "batch_count": 1024,
+    "cycles": 3284696,
+    "cycles_per_call": 3207.7109375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0003284931086468885,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 78,
+    "batch_count": 1024,
+    "cycles": 2119905,
+    "cycles_per_call": 2070.2197265625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0005089850724442841,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 79,
+    "batch_count": 256,
+    "cycles": 390988,
+    "cycles_per_call": 1527.296875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0027596754887618032,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 80,
+    "batch_count": 256,
+    "cycles": 981789,
+    "cycles_per_call": 3835.11328125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010990141466241728,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 81,
+    "batch_count": 256,
+    "cycles": 692669,
+    "cycles_per_call": 2705.73828125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0015577425870076473,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 82,
+    "batch_count": 64,
+    "cycles": 270787,
+    "cycles_per_call": 4231.046875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003984681687082467,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 83,
+    "batch_count": 64,
+    "cycles": 420478,
+    "cycles_per_call": 6569.96875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0025661271219897357,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 84,
+    "batch_count": 64,
+    "cycles": 347060,
+    "cycles_per_call": 5422.8125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0031089725119575868,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 85,
+    "batch_count": 16,
+    "cycles": 233532,
+    "cycles_per_call": 14595.75,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004620351814740593,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 86,
+    "batch_count": 16,
+    "cycles": 271501,
+    "cycles_per_call": 16968.8125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003974202673286654,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 87,
+    "batch_count": 16,
+    "cycles": 252649,
+    "cycles_per_call": 15790.5625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004270747163060214,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 88,
+    "batch_count": 4,
+    "cycles": 224332,
+    "cycles_per_call": 56083.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0048098354224987965,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 89,
+    "batch_count": 4,
+    "cycles": 233704,
+    "cycles_per_call": 58426.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004616951357272447,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 90,
+    "batch_count": 4,
+    "cycles": 228606,
+    "cycles_per_call": 57151.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004719911113444091,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 91,
+    "batch_count": 1024,
+    "cycles": 1015895,
+    "cycles_per_call": 992.0849609375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010621176401104445,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 92,
+    "batch_count": 1024,
+    "cycles": 3311604,
+    "cycles_per_call": 3233.98828125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.00032582398136975314,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 93,
+    "batch_count": 1024,
+    "cycles": 2046090,
+    "cycles_per_call": 1998.134765625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0005273472818888709,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 94,
+    "batch_count": 256,
+    "cycles": 391072,
+    "cycles_per_call": 1527.625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.002759082726454464,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 95,
+    "batch_count": 256,
+    "cycles": 998551,
+    "cycles_per_call": 3900.58984375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010805657397569078,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 96,
+    "batch_count": 256,
+    "cycles": 666348,
+    "cycles_per_call": 2602.921875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0016192740129782036,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 97,
+    "batch_count": 64,
+    "cycles": 271049,
+    "cycles_per_call": 4235.140625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003980830034421821,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 98,
+    "batch_count": 64,
+    "cycles": 425860,
+    "cycles_per_call": 6654.0625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.002533696519983093,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 99,
+    "batch_count": 64,
+    "cycles": 342172,
+    "cycles_per_call": 5346.4375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003153384847386694,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 100,
+    "batch_count": 16,
+    "cycles": 233528,
+    "cycles_per_call": 14595.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004620430954746326,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 101,
+    "batch_count": 16,
+    "cycles": 273769,
+    "cycles_per_call": 17110.5625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0039412789614602095,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 102,
+    "batch_count": 16,
+    "cycles": 251811,
+    "cycles_per_call": 15738.1875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004284959751559701,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 103,
+    "batch_count": 4,
+    "cycles": 224323,
+    "cycles_per_call": 56080.75,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004810028396553184,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 104,
+    "batch_count": 4,
+    "cycles": 234318,
+    "cycles_per_call": 58579.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004604853233639754,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 105,
+    "batch_count": 4,
+    "cycles": 228537,
+    "cycles_per_call": 57134.25,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004721336151257783,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 106,
+    "batch_count": 1024,
+    "cycles": 1140603,
+    "cycles_per_call": 1113.8701171875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.000945990848700205,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 107,
+    "batch_count": 1024,
+    "cycles": 3526435,
+    "cycles_per_call": 3443.7841796875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.000305974730854248,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 108,
+    "batch_count": 1024,
+    "cycles": 2216768,
+    "cycles_per_call": 2164.8125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0004867446661084967,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 109,
+    "batch_count": 256,
+    "cycles": 412411,
+    "cycles_per_call": 1610.98046875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0026163220670641666,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 110,
+    "batch_count": 256,
+    "cycles": 1024038,
+    "cycles_per_call": 4000.1484375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010536718363966962,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 111,
+    "batch_count": 256,
+    "cycles": 708502,
+    "cycles_per_call": 2767.5859375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0015229314807862222,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 112,
+    "batch_count": 64,
+    "cycles": 276256,
+    "cycles_per_call": 4316.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003905797521139812,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 113,
+    "batch_count": 64,
+    "cycles": 432285,
+    "cycles_per_call": 6754.453125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.002496038493123749,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 114,
+    "batch_count": 64,
+    "cycles": 352057,
+    "cycles_per_call": 5500.890625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003064844613230244,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 115,
+    "batch_count": 16,
+    "cycles": 234957,
+    "cycles_per_call": 14684.8125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004592329660320825,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 116,
+    "batch_count": 16,
+    "cycles": 274420,
+    "cycles_per_call": 17151.25,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003931929159682239,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 117,
+    "batch_count": 16,
+    "cycles": 253873,
+    "cycles_per_call": 15867.0625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004250156574350167,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 118,
+    "batch_count": 4,
+    "cycles": 224778,
+    "cycles_per_call": 56194.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0048002918435078165,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 119,
+    "batch_count": 4,
+    "cycles": 234460,
+    "cycles_per_call": 58615.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004602064318007336,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 120,
+    "batch_count": 4,
+    "cycles": 229350,
+    "cycles_per_call": 57337.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004704599956398518,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 121,
+    "batch_count": 1024,
+    "cycles": 1140165,
+    "cycles_per_call": 1113.4423828125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0009463542557436863,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 122,
+    "batch_count": 1024,
+    "cycles": 3515107,
+    "cycles_per_call": 3432.7216796875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.00030696078383958157,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 123,
+    "batch_count": 1024,
+    "cycles": 2216563,
+    "cycles_per_call": 2164.6123046875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.00048678968294607464,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 124,
+    "batch_count": 256,
+    "cycles": 412106,
+    "cycles_per_call": 1609.7890625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0026182584092442236,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 125,
+    "batch_count": 256,
+    "cycles": 998624,
+    "cycles_per_call": 3900.875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010804867497676803,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 126,
+    "batch_count": 256,
+    "cycles": 708535,
+    "cycles_per_call": 2767.71484375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.001522860550290388,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 127,
+    "batch_count": 64,
+    "cycles": 276486,
+    "cycles_per_call": 4320.09375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003902548411131124,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 128,
+    "batch_count": 64,
+    "cycles": 431682,
+    "cycles_per_call": 6745.03125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0024995251133936554,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 129,
+    "batch_count": 64,
+    "cycles": 352058,
+    "cycles_per_call": 5500.90625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0030648359077197506,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 130,
+    "batch_count": 16,
+    "cycles": 234953,
+    "cycles_per_call": 14684.5625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004592407843270782,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 131,
+    "batch_count": 16,
+    "cycles": 274050,
+    "cycles_per_call": 17128.125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003937237730341179,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 132,
+    "batch_count": 16,
+    "cycles": 254011,
+    "cycles_per_call": 15875.6875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0042478475341619065,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 133,
+    "batch_count": 4,
+    "cycles": 224727,
+    "cycles_per_call": 56181.75,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004801381231449715,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 134,
+    "batch_count": 4,
+    "cycles": 234659,
+    "cycles_per_call": 58664.75,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0045981615876655065,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 135,
+    "batch_count": 4,
+    "cycles": 229108,
+    "cycles_per_call": 57277.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0047095692861008785,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 136,
+    "batch_count": 1024,
+    "cycles": 1015775,
+    "cycles_per_call": 991.9677734375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010622431148630356,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 137,
+    "batch_count": 1024,
+    "cycles": 3276863,
+    "cycles_per_call": 3200.0615234375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0003292783372389996,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 138,
+    "batch_count": 1024,
+    "cycles": 2148679,
+    "cycles_per_call": 2098.3193359375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0005021690070969187,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 139,
+    "batch_count": 256,
+    "cycles": 391094,
+    "cycles_per_call": 1527.7109375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0027589275212608734,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 140,
+    "batch_count": 256,
+    "cycles": 984648,
+    "cycles_per_call": 3846.28125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010958230758606122,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 141,
+    "batch_count": 256,
+    "cycles": 700649,
+    "cycles_per_call": 2736.91015625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0015400007707140095,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 142,
+    "batch_count": 64,
+    "cycles": 271105,
+    "cycles_per_call": 4236.015625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003980007746076243,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 143,
+    "batch_count": 64,
+    "cycles": 420308,
+    "cycles_per_call": 6567.3125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0025671650313579568,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 144,
+    "batch_count": 64,
+    "cycles": 348678,
+    "cycles_per_call": 5448.09375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0030945456839835033,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 145,
+    "batch_count": 16,
+    "cycles": 233528,
+    "cycles_per_call": 14595.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004620430954746326,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 146,
+    "batch_count": 16,
+    "cycles": 271729,
+    "cycles_per_call": 16983.0625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003970868033960306,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 147,
+    "batch_count": 16,
+    "cycles": 252703,
+    "cycles_per_call": 15793.9375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.00426983454885775,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 148,
+    "batch_count": 4,
+    "cycles": 224072,
+    "cycles_per_call": 56018.0,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004815416473276447,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 149,
+    "batch_count": 4,
+    "cycles": 234118,
+    "cycles_per_call": 58529.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004608787021929113,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 150,
+    "batch_count": 4,
+    "cycles": 229026,
+    "cycles_per_call": 57256.5,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004711255490642984,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 151,
+    "batch_count": 1024,
+    "cycles": 1016253,
+    "cycles_per_call": 992.4345703125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0010617434831680693,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 152,
+    "batch_count": 1024,
+    "cycles": 3276414,
+    "cycles_per_call": 3199.623046875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0003293234615649915,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 153,
+    "batch_count": 1024,
+    "cycles": 2148551,
+    "cycles_per_call": 2098.1943359375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0005021989238328529,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 154,
+    "batch_count": 256,
+    "cycles": 391216,
+    "cycles_per_call": 1528.1875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0027580671547175984,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 155,
+    "batch_count": 256,
+    "cycles": 984628,
+    "cycles_per_call": 3846.203125,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.001095845334481652,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 156,
+    "batch_count": 256,
+    "cycles": 700486,
+    "cycles_per_call": 2736.2734375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.001540359122095231,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 157,
+    "batch_count": 64,
+    "cycles": 271003,
+    "cycles_per_call": 4234.421875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003981505739788858,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 158,
+    "batch_count": 64,
+    "cycles": 420324,
+    "cycles_per_call": 6567.5625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.0025670673099799203,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 159,
+    "batch_count": 64,
+    "cycles": 348921,
+    "cycles_per_call": 5451.890625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003092390541125355,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 160,
+    "batch_count": 16,
+    "cycles": 233478,
+    "cycles_per_call": 14592.375,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004621420433616872,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 161,
+    "batch_count": 16,
+    "cycles": 271434,
+    "cycles_per_call": 16964.625,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.003975183654221653,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 162,
+    "batch_count": 16,
+    "cycles": 252574,
+    "cycles_per_call": 15785.875,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004272015330160666,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 163,
+    "batch_count": 4,
+    "cycles": 224379,
+    "cycles_per_call": 56094.75,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004808827920616457,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 164,
+    "batch_count": 4,
+    "cycles": 233863,
+    "cycles_per_call": 58465.75,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004613812360227997,
+    "status": "PASS"
+  },
+  {
+    "group": "P",
+    "case_id": 165,
+    "batch_count": 4,
+    "cycles": 228915,
+    "cycles_per_call": 57228.75,
+    "empty_cycles": 1079,
+    "boundary_fraction": 0.004713539960247253,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 31,
+    "batch_count": 1024,
+    "cycles": 1387862,
+    "cycles_per_call": 1355.333984375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0007630441643333415,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 32,
+    "batch_count": 1024,
+    "cycles": 2177260,
+    "cycles_per_call": 2126.23046875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00048639115218210044,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 33,
+    "batch_count": 1024,
+    "cycles": 2175425,
+    "cycles_per_call": 2124.4384765625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0004868014296057092,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 34,
+    "batch_count": 256,
+    "cycles": 489553,
+    "cycles_per_call": 1912.31640625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0021631978560033337,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 35,
+    "batch_count": 256,
+    "cycles": 705448,
+    "cycles_per_call": 2755.65625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0015011737222304124,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 36,
+    "batch_count": 256,
+    "cycles": 704379,
+    "cycles_per_call": 2751.48046875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0015034519768476913,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 37,
+    "batch_count": 64,
+    "cycles": 296702,
+    "cycles_per_call": 4635.96875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0035692378211134405,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 38,
+    "batch_count": 64,
+    "cycles": 350578,
+    "cycles_per_call": 5477.78125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.003020725772866523,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 39,
+    "batch_count": 64,
+    "cycles": 349908,
+    "cycles_per_call": 5467.3125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00302650982543983,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 40,
+    "batch_count": 16,
+    "cycles": 240233,
+    "cycles_per_call": 15014.5625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004408220352740881,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 41,
+    "batch_count": 16,
+    "cycles": 253871,
+    "cycles_per_call": 15866.9375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004171409889274474,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 42,
+    "batch_count": 16,
+    "cycles": 253463,
+    "cycles_per_call": 15841.4375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004178124617794313,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 43,
+    "batch_count": 4,
+    "cycles": 225963,
+    "cycles_per_call": 56490.75,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004686607984493036,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 44,
+    "batch_count": 4,
+    "cycles": 229381,
+    "cycles_per_call": 57345.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004616772967246633,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 45,
+    "batch_count": 4,
+    "cycles": 229229,
+    "cycles_per_call": 57307.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0046198343141574585,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 46,
+    "batch_count": 1024,
+    "cycles": 1148899,
+    "cycles_per_call": 1121.9716796875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0009217520426077488,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 47,
+    "batch_count": 1024,
+    "cycles": 2089688,
+    "cycles_per_call": 2040.7109375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0005067742170123004,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 48,
+    "batch_count": 1024,
+    "cycles": 2089450,
+    "cycles_per_call": 2040.478515625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0005068319414199909,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 49,
+    "batch_count": 256,
+    "cycles": 435006,
+    "cycles_per_call": 1699.2421875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00243444918001131,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 50,
+    "batch_count": 256,
+    "cycles": 683383,
+    "cycles_per_call": 2669.46484375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.001549643464938402,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 51,
+    "batch_count": 256,
+    "cycles": 683003,
+    "cycles_per_call": 2667.98046875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.001550505634675104,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 52,
+    "batch_count": 64,
+    "cycles": 282968,
+    "cycles_per_call": 4421.375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.003742472647083769,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 53,
+    "batch_count": 64,
+    "cycles": 345061,
+    "cycles_per_call": 5391.578125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0030690225786165343,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 54,
+    "batch_count": 64,
+    "cycles": 344679,
+    "cycles_per_call": 5385.609375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0030724239074617255,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 55,
+    "batch_count": 16,
+    "cycles": 236936,
+    "cycles_per_call": 14808.5,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004469561400546983,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 56,
+    "batch_count": 16,
+    "cycles": 252248,
+    "cycles_per_call": 15765.5,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004198249341917478,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 57,
+    "batch_count": 16,
+    "cycles": 252912,
+    "cycles_per_call": 15807.0,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004187227177832605,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 58,
+    "batch_count": 4,
+    "cycles": 225579,
+    "cycles_per_call": 56394.75,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004694585932201136,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 59,
+    "batch_count": 4,
+    "cycles": 229178,
+    "cycles_per_call": 57294.5,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00462086238644198,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 60,
+    "batch_count": 4,
+    "cycles": 228933,
+    "cycles_per_call": 57233.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004625807550680767,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 61,
+    "batch_count": 1024,
+    "cycles": 1260252,
+    "cycles_per_call": 1230.71484375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0008403081288504204,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 62,
+    "batch_count": 1024,
+    "cycles": 2169156,
+    "cycles_per_call": 2118.31640625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.000488208316967521,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 63,
+    "batch_count": 1024,
+    "cycles": 2168736,
+    "cycles_per_call": 2117.90625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0004883028639723784,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 64,
+    "batch_count": 256,
+    "cycles": 464885,
+    "cycles_per_call": 1815.95703125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0022779827269109564,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 65,
+    "batch_count": 256,
+    "cycles": 701751,
+    "cycles_per_call": 2741.21484375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0015090822813220073,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 66,
+    "batch_count": 256,
+    "cycles": 701370,
+    "cycles_per_call": 2739.7265625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0015099020488472561,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 67,
+    "batch_count": 64,
+    "cycles": 289915,
+    "cycles_per_call": 4529.921875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0036527947846782677,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 68,
+    "batch_count": 64,
+    "cycles": 349561,
+    "cycles_per_call": 5461.890625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00302951416204897,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 69,
+    "batch_count": 64,
+    "cycles": 349162,
+    "cycles_per_call": 5455.65625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.003032976097055235,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 70,
+    "batch_count": 16,
+    "cycles": 239328,
+    "cycles_per_call": 14958.0,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004424889691135178,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 71,
+    "batch_count": 16,
+    "cycles": 253163,
+    "cycles_per_call": 15822.6875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004183075725915714,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 72,
+    "batch_count": 16,
+    "cycles": 252806,
+    "cycles_per_call": 15800.375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004188982856419547,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 73,
+    "batch_count": 4,
+    "cycles": 225767,
+    "cycles_per_call": 56441.75,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004690676671081247,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 74,
+    "batch_count": 4,
+    "cycles": 229556,
+    "cycles_per_call": 57389.0,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004613253410932409,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 75,
+    "batch_count": 4,
+    "cycles": 228849,
+    "cycles_per_call": 57212.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004627505473041175,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 76,
+    "batch_count": 1024,
+    "cycles": 1127978,
+    "cycles_per_call": 1101.541015625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0009388480981012041,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 77,
+    "batch_count": 1024,
+    "cycles": 2063687,
+    "cycles_per_call": 2015.3193359375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0005131592145514315,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 78,
+    "batch_count": 1024,
+    "cycles": 2063296,
+    "cycles_per_call": 2014.9375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0005132564595676045,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 79,
+    "batch_count": 256,
+    "cycles": 431634,
+    "cycles_per_call": 1686.0703125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0024534675210942606,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 80,
+    "batch_count": 256,
+    "cycles": 679074,
+    "cycles_per_call": 2652.6328125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0015594765813445957,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 81,
+    "batch_count": 256,
+    "cycles": 678633,
+    "cycles_per_call": 2650.91015625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0015604899850139914,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 82,
+    "batch_count": 64,
+    "cycles": 285301,
+    "cycles_per_call": 4457.828125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0037118692188250306,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 83,
+    "batch_count": 64,
+    "cycles": 343788,
+    "cycles_per_call": 5371.6875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.003080386749973821,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 84,
+    "batch_count": 64,
+    "cycles": 343755,
+    "cycles_per_call": 5371.171875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.003080682462800541,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 85,
+    "batch_count": 16,
+    "cycles": 237471,
+    "cycles_per_call": 14841.9375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004459491895852546,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 86,
+    "batch_count": 16,
+    "cycles": 252319,
+    "cycles_per_call": 15769.9375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00419706799725744,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 87,
+    "batch_count": 16,
+    "cycles": 251911,
+    "cycles_per_call": 15744.4375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004203865650964031,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 88,
+    "batch_count": 4,
+    "cycles": 225192,
+    "cycles_per_call": 56298.0,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004702653735479058,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 89,
+    "batch_count": 4,
+    "cycles": 228719,
+    "cycles_per_call": 57179.75,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004630135668658922,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 90,
+    "batch_count": 4,
+    "cycles": 228617,
+    "cycles_per_call": 57154.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004632201454834942,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 91,
+    "batch_count": 1024,
+    "cycles": 1072479,
+    "cycles_per_call": 1047.3427734375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0009874319217439223,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 92,
+    "batch_count": 1024,
+    "cycles": 2659356,
+    "cycles_per_call": 2597.02734375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0003982167111135177,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 93,
+    "batch_count": 1024,
+    "cycles": 2157408,
+    "cycles_per_call": 2106.84375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.000490866817959329,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 94,
+    "batch_count": 256,
+    "cycles": 404403,
+    "cycles_per_call": 1579.69921875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.002618674935645878,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 95,
+    "batch_count": 256,
+    "cycles": 820753,
+    "cycles_per_call": 3206.06640625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0012902785612723924,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 96,
+    "batch_count": 256,
+    "cycles": 695262,
+    "cycles_per_call": 2715.8671875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0015231668061824175,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 97,
+    "batch_count": 64,
+    "cycles": 281228,
+    "cycles_per_call": 4394.1875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0037656278891148817,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 98,
+    "batch_count": 64,
+    "cycles": 381338,
+    "cycles_per_call": 5958.40625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.002777063917049966,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 99,
+    "batch_count": 64,
+    "cycles": 349933,
+    "cycles_per_call": 5467.703125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0030262936047757713,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 100,
+    "batch_count": 16,
+    "cycles": 236613,
+    "cycles_per_call": 14788.3125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004475662791139963,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 101,
+    "batch_count": 16,
+    "cycles": 261816,
+    "cycles_per_call": 16363.5,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0040448253735447795,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 102,
+    "batch_count": 16,
+    "cycles": 254186,
+    "cycles_per_call": 15886.625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004166240469577396,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 103,
+    "batch_count": 4,
+    "cycles": 225129,
+    "cycles_per_call": 56282.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004703969724024893,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 104,
+    "batch_count": 4,
+    "cycles": 231195,
+    "cycles_per_call": 57798.75,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004580548887302926,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 105,
+    "batch_count": 4,
+    "cycles": 229528,
+    "cycles_per_call": 57382.0,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004613816179289673,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 106,
+    "batch_count": 1024,
+    "cycles": 1197035,
+    "cycles_per_call": 1168.9794921875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0008846859114395152,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 107,
+    "batch_count": 1024,
+    "cycles": 2742654,
+    "cycles_per_call": 2678.373046875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00038612234718633846,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 108,
+    "batch_count": 1024,
+    "cycles": 2320982,
+    "cycles_per_call": 2266.583984375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00045627238815294563,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 109,
+    "batch_count": 256,
+    "cycles": 425304,
+    "cycles_per_call": 1661.34375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.002489983635235032,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 110,
+    "batch_count": 256,
+    "cycles": 845474,
+    "cycles_per_call": 3302.6328125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0012525518230010622,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 111,
+    "batch_count": 256,
+    "cycles": 735323,
+    "cycles_per_call": 2872.35546875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0014401834295948855,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 112,
+    "batch_count": 64,
+    "cycles": 288834,
+    "cycles_per_call": 4513.03125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0036664658592824944,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 113,
+    "batch_count": 64,
+    "cycles": 386216,
+    "cycles_per_call": 6034.625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.002741988938832156,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 114,
+    "batch_count": 64,
+    "cycles": 358521,
+    "cycles_per_call": 5601.890625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0029538018693465655,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 115,
+    "batch_count": 16,
+    "cycles": 237717,
+    "cycles_per_call": 14857.3125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0044548770176302075,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 116,
+    "batch_count": 16,
+    "cycles": 263012,
+    "cycles_per_call": 16438.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004026432254041641,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 117,
+    "batch_count": 16,
+    "cycles": 255593,
+    "cycles_per_call": 15974.5625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004143305959083386,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 118,
+    "batch_count": 4,
+    "cycles": 225198,
+    "cycles_per_call": 56299.5,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004702528441638025,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 119,
+    "batch_count": 4,
+    "cycles": 231905,
+    "cycles_per_call": 57976.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004566525085703197,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 120,
+    "batch_count": 4,
+    "cycles": 230011,
+    "cycles_per_call": 57502.75,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004604127628678629,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 121,
+    "batch_count": 1024,
+    "cycles": 1196651,
+    "cycles_per_call": 1168.6044921875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0008849698032258361,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 122,
+    "batch_count": 1024,
+    "cycles": 2742806,
+    "cycles_per_call": 2678.521484375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00038610094917394816,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 123,
+    "batch_count": 1024,
+    "cycles": 2320928,
+    "cycles_per_call": 2266.53125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0004562830040397634,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 124,
+    "batch_count": 256,
+    "cycles": 425208,
+    "cycles_per_call": 1660.96875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.002490545803465598,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 125,
+    "batch_count": 256,
+    "cycles": 845551,
+    "cycles_per_call": 3302.93359375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0012524377595201236,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 126,
+    "batch_count": 256,
+    "cycles": 735450,
+    "cycles_per_call": 2872.8515625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0014399347338364267,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 127,
+    "batch_count": 64,
+    "cycles": 288732,
+    "cycles_per_call": 4511.4375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0036677611071859024,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 128,
+    "batch_count": 64,
+    "cycles": 385967,
+    "cycles_per_call": 6030.734375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.002743757886036889,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 129,
+    "batch_count": 64,
+    "cycles": 358337,
+    "cycles_per_call": 5599.015625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00295531859673994,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 130,
+    "batch_count": 16,
+    "cycles": 237429,
+    "cycles_per_call": 14839.3125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004460280757615961,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 131,
+    "batch_count": 16,
+    "cycles": 262881,
+    "cycles_per_call": 16430.0625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004028438723224577,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 132,
+    "batch_count": 16,
+    "cycles": 255517,
+    "cycles_per_call": 15969.8125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004144538328173859,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 133,
+    "batch_count": 4,
+    "cycles": 225221,
+    "cycles_per_call": 56305.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004702048210424427,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 134,
+    "batch_count": 4,
+    "cycles": 231801,
+    "cycles_per_call": 57950.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0045685739060659794,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 135,
+    "batch_count": 4,
+    "cycles": 229438,
+    "cycles_per_call": 57359.5,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004615626007897559,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 136,
+    "batch_count": 1024,
+    "cycles": 1127747,
+    "cycles_per_call": 1101.3154296875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0009390404053391408,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 137,
+    "batch_count": 1024,
+    "cycles": 2100202,
+    "cycles_per_call": 2050.978515625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0005042372114682302,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 138,
+    "batch_count": 1024,
+    "cycles": 2099471,
+    "cycles_per_call": 2050.2646484375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0005044127782665252,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 139,
+    "batch_count": 256,
+    "cycles": 431688,
+    "cycles_per_call": 1686.28125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.002453160616000445,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 140,
+    "batch_count": 256,
+    "cycles": 687519,
+    "cycles_per_call": 2685.62109375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0015403210674904985,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 141,
+    "batch_count": 256,
+    "cycles": 687187,
+    "cycles_per_call": 2684.32421875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.001541065241338966,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 142,
+    "batch_count": 64,
+    "cycles": 284995,
+    "cycles_per_call": 4453.046875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0037158546641169144,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 143,
+    "batch_count": 64,
+    "cycles": 345874,
+    "cycles_per_call": 5404.28125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.003061808635514667,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 144,
+    "batch_count": 64,
+    "cycles": 345574,
+    "cycles_per_call": 5399.59375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0030644666554775534,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 145,
+    "batch_count": 16,
+    "cycles": 237805,
+    "cycles_per_call": 14862.8125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004453228485523854,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 146,
+    "batch_count": 16,
+    "cycles": 252423,
+    "cycles_per_call": 15776.4375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004195338776577412,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 147,
+    "batch_count": 16,
+    "cycles": 252211,
+    "cycles_per_call": 15763.1875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004198865235854107,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 148,
+    "batch_count": 4,
+    "cycles": 225490,
+    "cycles_per_call": 56372.5,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.00469643886646858,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 149,
+    "batch_count": 4,
+    "cycles": 228936,
+    "cycles_per_call": 57234.0,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004625746933640843,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 150,
+    "batch_count": 4,
+    "cycles": 228886,
+    "cycles_per_call": 57221.5,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004626757425093715,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 151,
+    "batch_count": 1024,
+    "cycles": 1127564,
+    "cycles_per_call": 1101.13671875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0009391928085678507,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 152,
+    "batch_count": 1024,
+    "cycles": 2100258,
+    "cycles_per_call": 2051.033203125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0005042237667943652,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 153,
+    "batch_count": 1024,
+    "cycles": 2099561,
+    "cycles_per_call": 2050.3525390625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0005043911560559564,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 154,
+    "batch_count": 256,
+    "cycles": 431482,
+    "cycles_per_call": 1685.4765625,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.002454331814536875,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 155,
+    "batch_count": 256,
+    "cycles": 687500,
+    "cycles_per_call": 2685.546875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0015403636363636364,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 156,
+    "batch_count": 256,
+    "cycles": 687427,
+    "cycles_per_call": 2685.26171875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0015405272123440016,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 157,
+    "batch_count": 64,
+    "cycles": 285392,
+    "cycles_per_call": 4459.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0037106856534170544,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 158,
+    "batch_count": 64,
+    "cycles": 345999,
+    "cycles_per_call": 5406.234375,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.003060702487579444,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 159,
+    "batch_count": 64,
+    "cycles": 345730,
+    "cycles_per_call": 5402.03125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0030630839094090766,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 160,
+    "batch_count": 16,
+    "cycles": 237573,
+    "cycles_per_call": 14848.3125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004457577249940018,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 161,
+    "batch_count": 16,
+    "cycles": 252397,
+    "cycles_per_call": 15774.8125,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004195770948149146,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 162,
+    "batch_count": 16,
+    "cycles": 252091,
+    "cycles_per_call": 15755.6875,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004200863973723774,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 163,
+    "batch_count": 4,
+    "cycles": 225486,
+    "cycles_per_call": 56371.5,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0046965221787605435,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 164,
+    "batch_count": 4,
+    "cycles": 229233,
+    "cycles_per_call": 57308.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.0046197537003834525,
+    "status": "PASS"
+  },
+  {
+    "group": "S05A",
+    "case_id": 165,
+    "batch_count": 4,
+    "cycles": 228929,
+    "cycles_per_call": 57232.25,
+    "empty_cycles": 1059,
+    "boundary_fraction": 0.004625888375871995,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 31,
+    "batch_count": 1024,
+    "cycles": 1330548,
+    "cycles_per_call": 1299.36328125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0006035107339231655,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 32,
+    "batch_count": 1024,
+    "cycles": 2234819,
+    "cycles_per_call": 2182.4404296875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.00035931321507468836,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 33,
+    "batch_count": 1024,
+    "cycles": 2233640,
+    "cycles_per_call": 2181.2890625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.000359502874232195,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 34,
+    "batch_count": 256,
+    "cycles": 475823,
+    "cycles_per_call": 1858.68359375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0016876023227124371,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 35,
+    "batch_count": 256,
+    "cycles": 719889,
+    "cycles_per_call": 2812.06640625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.001115449742946482,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 36,
+    "batch_count": 256,
+    "cycles": 718500,
+    "cycles_per_call": 2806.640625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0011176061238691718,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 37,
+    "batch_count": 64,
+    "cycles": 293396,
+    "cycles_per_call": 4584.3125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.002736915295368717,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 38,
+    "batch_count": 64,
+    "cycles": 354430,
+    "cycles_per_call": 5537.96875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.002265609570295968,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 39,
+    "batch_count": 64,
+    "cycles": 354063,
+    "cycles_per_call": 5532.234375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0022679579622835486,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 40,
+    "batch_count": 16,
+    "cycles": 239336,
+    "cycles_per_call": 14958.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0033551158204365413,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 41,
+    "batch_count": 16,
+    "cycles": 254947,
+    "cycles_per_call": 15934.1875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003149674246019761,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 42,
+    "batch_count": 16,
+    "cycles": 254264,
+    "cycles_per_call": 15891.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003158134851964887,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 43,
+    "batch_count": 4,
+    "cycles": 225758,
+    "cycles_per_call": 56439.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035569060675590676,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 44,
+    "batch_count": 4,
+    "cycles": 229674,
+    "cycles_per_call": 57418.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.00349625991622909,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 45,
+    "batch_count": 4,
+    "cycles": 229440,
+    "cycles_per_call": 57360.0,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0034998256624825664,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 46,
+    "batch_count": 1024,
+    "cycles": 1092922,
+    "cycles_per_call": 1067.306640625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0007347276383859049,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 47,
+    "batch_count": 1024,
+    "cycles": 2148037,
+    "cycles_per_call": 2097.6923828125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003738296872912338,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 48,
+    "batch_count": 1024,
+    "cycles": 2147811,
+    "cycles_per_call": 2097.4716796875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003738690229261327,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 49,
+    "batch_count": 256,
+    "cycles": 421072,
+    "cycles_per_call": 1644.8125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.001907037276285291,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 50,
+    "batch_count": 256,
+    "cycles": 697370,
+    "cycles_per_call": 2724.1015625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.001151469091013379,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 51,
+    "batch_count": 256,
+    "cycles": 697272,
+    "cycles_per_call": 2723.71875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0011516309273855827,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 52,
+    "batch_count": 64,
+    "cycles": 279814,
+    "cycles_per_call": 4372.09375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0028697634857441016,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 53,
+    "batch_count": 64,
+    "cycles": 348999,
+    "cycles_per_call": 5453.109375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0023008661915936723,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 54,
+    "batch_count": 64,
+    "cycles": 348688,
+    "cycles_per_call": 5448.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.002302918368283394,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 55,
+    "batch_count": 16,
+    "cycles": 235739,
+    "cycles_per_call": 14733.6875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003406309520274541,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 56,
+    "batch_count": 16,
+    "cycles": 253351,
+    "cycles_per_call": 15834.4375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0031695158100816653,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 57,
+    "batch_count": 16,
+    "cycles": 253486,
+    "cycles_per_call": 15842.875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0031678278090308733,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 58,
+    "batch_count": 4,
+    "cycles": 225366,
+    "cycles_per_call": 56341.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035630929243985338,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 59,
+    "batch_count": 4,
+    "cycles": 229630,
+    "cycles_per_call": 57407.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0034969298436615423,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 60,
+    "batch_count": 4,
+    "cycles": 228923,
+    "cycles_per_call": 57230.75,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003507729673296261,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 61,
+    "batch_count": 1024,
+    "cycles": 1202708,
+    "cycles_per_call": 1174.51953125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0006676599806436808,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 62,
+    "batch_count": 1024,
+    "cycles": 2223528,
+    "cycles_per_call": 2171.4140625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003611377954314045,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 63,
+    "batch_count": 1024,
+    "cycles": 2223182,
+    "cycles_per_call": 2171.076171875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.00036119400031126556,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 64,
+    "batch_count": 256,
+    "cycles": 451573,
+    "cycles_per_call": 1763.95703125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.001778228547765256,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 65,
+    "batch_count": 256,
+    "cycles": 716257,
+    "cycles_per_call": 2797.87890625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0011211059717391942,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 66,
+    "batch_count": 256,
+    "cycles": 715921,
+    "cycles_per_call": 2796.56640625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.00112163213538924,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 67,
+    "batch_count": 64,
+    "cycles": 286622,
+    "cycles_per_call": 4478.46875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0028015993189636525,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 68,
+    "batch_count": 64,
+    "cycles": 353086,
+    "cycles_per_call": 5516.96875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0022742334728649677,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 69,
+    "batch_count": 64,
+    "cycles": 352749,
+    "cycles_per_call": 5511.703125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.002276406169826137,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 70,
+    "batch_count": 16,
+    "cycles": 238647,
+    "cycles_per_call": 14915.4375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0033648024069022446,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 71,
+    "batch_count": 16,
+    "cycles": 254161,
+    "cycles_per_call": 15885.0625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003159414701704825,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 72,
+    "batch_count": 16,
+    "cycles": 253907,
+    "cycles_per_call": 15869.1875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003162575273623807,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 73,
+    "batch_count": 4,
+    "cycles": 225568,
+    "cycles_per_call": 56392.0,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035599021137750035,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 74,
+    "batch_count": 4,
+    "cycles": 229461,
+    "cycles_per_call": 57365.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0034995053625670593,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 75,
+    "batch_count": 4,
+    "cycles": 229054,
+    "cycles_per_call": 57263.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003505723541173697,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 76,
+    "batch_count": 1024,
+    "cycles": 1072179,
+    "cycles_per_call": 1047.0498046875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0007489421076144934,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 77,
+    "batch_count": 1024,
+    "cycles": 2118389,
+    "cycles_per_call": 2068.7392578125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003790616359884799,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 78,
+    "batch_count": 1024,
+    "cycles": 2117963,
+    "cycles_per_call": 2068.3232421875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003791378791791925,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 79,
+    "batch_count": 256,
+    "cycles": 418111,
+    "cycles_per_call": 1633.24609375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.001920542631023819,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 80,
+    "batch_count": 256,
+    "cycles": 693006,
+    "cycles_per_call": 2707.0546875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0011587201265212711,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 81,
+    "batch_count": 256,
+    "cycles": 692639,
+    "cycles_per_call": 2705.62109375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0011593340831226656,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 82,
+    "batch_count": 64,
+    "cycles": 281618,
+    "cycles_per_call": 4400.28125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0028513802384790743,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 83,
+    "batch_count": 64,
+    "cycles": 347441,
+    "cycles_per_call": 5428.765625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.00231118376933062,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 84,
+    "batch_count": 64,
+    "cycles": 347042,
+    "cycles_per_call": 5422.53125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0023138409760201937,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 85,
+    "batch_count": 16,
+    "cycles": 236692,
+    "cycles_per_call": 14793.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0033925945955080865,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 86,
+    "batch_count": 16,
+    "cycles": 253149,
+    "cycles_per_call": 15821.8125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0031720449221604666,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 87,
+    "batch_count": 16,
+    "cycles": 252676,
+    "cycles_per_call": 15792.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0031779828713451217,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 88,
+    "batch_count": 4,
+    "cycles": 225262,
+    "cycles_per_call": 56315.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035647379495875914,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 89,
+    "batch_count": 4,
+    "cycles": 229214,
+    "cycles_per_call": 57303.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035032764141806347,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 90,
+    "batch_count": 4,
+    "cycles": 228808,
+    "cycles_per_call": 57202.0,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035094926750812907,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 91,
+    "batch_count": 1024,
+    "cycles": 1015855,
+    "cycles_per_call": 992.0458984375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0007904671434407469,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 92,
+    "batch_count": 1024,
+    "cycles": 2729550,
+    "cycles_per_call": 2665.576171875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0002941876866150098,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 93,
+    "batch_count": 1024,
+    "cycles": 2216291,
+    "cycles_per_call": 2164.3466796875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003623170423017555,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 94,
+    "batch_count": 256,
+    "cycles": 391216,
+    "cycles_per_call": 1528.1875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0020525745368287595,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 95,
+    "batch_count": 256,
+    "cycles": 834511,
+    "cycles_per_call": 3259.80859375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.000962240162202775,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 96,
+    "batch_count": 256,
+    "cycles": 707553,
+    "cycles_per_call": 2763.87890625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0011348973151127902,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 97,
+    "batch_count": 64,
+    "cycles": 278251,
+    "cycles_per_call": 4347.671875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0028858836086842455,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 98,
+    "batch_count": 64,
+    "cycles": 385762,
+    "cycles_per_call": 6027.53125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0020815943509210344,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 99,
+    "batch_count": 64,
+    "cycles": 353694,
+    "cycles_per_call": 5526.46875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0022703240654350938,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 100,
+    "batch_count": 16,
+    "cycles": 236225,
+    "cycles_per_call": 14764.0625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.00339930151338766,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 101,
+    "batch_count": 16,
+    "cycles": 262949,
+    "cycles_per_call": 16434.3125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003053824125590894,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 102,
+    "batch_count": 16,
+    "cycles": 254600,
+    "cycles_per_call": 15912.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0031539670070699134,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 103,
+    "batch_count": 4,
+    "cycles": 224911,
+    "cycles_per_call": 56227.75,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035703011413403523,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 104,
+    "batch_count": 4,
+    "cycles": 231653,
+    "cycles_per_call": 57913.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0034663915425226523,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 105,
+    "batch_count": 4,
+    "cycles": 229549,
+    "cycles_per_call": 57387.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0034981637907374897,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 106,
+    "batch_count": 1024,
+    "cycles": 1140148,
+    "cycles_per_call": 1113.42578125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0007042945301838007,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 107,
+    "batch_count": 1024,
+    "cycles": 2761898,
+    "cycles_per_call": 2697.166015625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0002907420911271886,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 108,
+    "batch_count": 1024,
+    "cycles": 2363886,
+    "cycles_per_call": 2308.482421875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003396948922240751,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 109,
+    "batch_count": 256,
+    "cycles": 412499,
+    "cycles_per_call": 1611.32421875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0019466713858700263,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 110,
+    "batch_count": 256,
+    "cycles": 843990,
+    "cycles_per_call": 3296.8359375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0009514330738515859,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 111,
+    "batch_count": 256,
+    "cycles": 741504,
+    "cycles_per_call": 2896.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0010829341446573452,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 112,
+    "batch_count": 64,
+    "cycles": 285901,
+    "cycles_per_call": 4467.203125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.002808664537724597,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 113,
+    "batch_count": 64,
+    "cycles": 387099,
+    "cycles_per_call": 6048.421875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.002074404738839418,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 114,
+    "batch_count": 64,
+    "cycles": 361495,
+    "cycles_per_call": 5648.359375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0022213308621142755,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 115,
+    "batch_count": 16,
+    "cycles": 237364,
+    "cycles_per_call": 14835.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0033829898383916685,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 116,
+    "batch_count": 16,
+    "cycles": 263081,
+    "cycles_per_call": 16442.5625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0030522918796872444,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 117,
+    "batch_count": 16,
+    "cycles": 256195,
+    "cycles_per_call": 16012.1875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.00313433127110209,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 118,
+    "batch_count": 4,
+    "cycles": 225346,
+    "cycles_per_call": 56336.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035634091574733963,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 119,
+    "batch_count": 4,
+    "cycles": 232053,
+    "cycles_per_call": 58013.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003460416370398142,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 120,
+    "batch_count": 4,
+    "cycles": 229637,
+    "cycles_per_call": 57409.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0034968232471248102,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 121,
+    "batch_count": 1024,
+    "cycles": 1140176,
+    "cycles_per_call": 1113.453125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0007042772343918834,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 122,
+    "batch_count": 1024,
+    "cycles": 2761501,
+    "cycles_per_call": 2696.7783203125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0002907838889067938,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 123,
+    "batch_count": 1024,
+    "cycles": 2363808,
+    "cycles_per_call": 2308.40625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003397061013415641,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 124,
+    "batch_count": 256,
+    "cycles": 411975,
+    "cycles_per_call": 1609.27734375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.001949147399720857,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 125,
+    "batch_count": 256,
+    "cycles": 843562,
+    "cycles_per_call": 3295.1640625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0009519158046474355,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 126,
+    "batch_count": 256,
+    "cycles": 741602,
+    "cycles_per_call": 2896.8828125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0010827910388591184,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 127,
+    "batch_count": 64,
+    "cycles": 285819,
+    "cycles_per_call": 4465.921875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.002809470329124376,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 128,
+    "batch_count": 64,
+    "cycles": 386786,
+    "cycles_per_call": 6043.53125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0020760834156355193,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 129,
+    "batch_count": 64,
+    "cycles": 361154,
+    "cycles_per_call": 5643.03125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.002223428232831424,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 130,
+    "batch_count": 16,
+    "cycles": 237516,
+    "cycles_per_call": 14844.75,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0033808248707455496,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 131,
+    "batch_count": 16,
+    "cycles": 262528,
+    "cycles_per_call": 16408.0,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0030587213554363725,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 132,
+    "batch_count": 16,
+    "cycles": 256123,
+    "cycles_per_call": 16007.6875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0031352123784275524,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 133,
+    "batch_count": 4,
+    "cycles": 225352,
+    "cycles_per_call": 56338.0,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003563314281657141,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 134,
+    "batch_count": 4,
+    "cycles": 231738,
+    "cycles_per_call": 57934.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003465120092518275,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 135,
+    "batch_count": 4,
+    "cycles": 229529,
+    "cycles_per_call": 57382.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003498468603095905,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 136,
+    "batch_count": 1024,
+    "cycles": 1072438,
+    "cycles_per_call": 1047.302734375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0007487612337496434,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 137,
+    "batch_count": 1024,
+    "cycles": 2148660,
+    "cycles_per_call": 2098.30078125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003737212960635931,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 138,
+    "batch_count": 1024,
+    "cycles": 2147816,
+    "cycles_per_call": 2097.4765625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003738681525791781,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 139,
+    "batch_count": 256,
+    "cycles": 417875,
+    "cycles_per_call": 1632.32421875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0019216272808854323,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 140,
+    "batch_count": 256,
+    "cycles": 700824,
+    "cycles_per_call": 2737.59375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0011457940938095726,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 141,
+    "batch_count": 256,
+    "cycles": 700365,
+    "cycles_per_call": 2735.80078125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0011465450158131831,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 142,
+    "batch_count": 64,
+    "cycles": 281701,
+    "cycles_per_call": 4401.578125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.002850540111678695,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 143,
+    "batch_count": 64,
+    "cycles": 349232,
+    "cycles_per_call": 5456.75,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.00229933110367893,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 144,
+    "batch_count": 64,
+    "cycles": 349199,
+    "cycles_per_call": 5456.234375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.002299548395041223,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 145,
+    "batch_count": 16,
+    "cycles": 236987,
+    "cycles_per_call": 14811.6875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003388371514049294,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 146,
+    "batch_count": 16,
+    "cycles": 253426,
+    "cycles_per_call": 15839.125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003168577809695927,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 147,
+    "batch_count": 16,
+    "cycles": 253186,
+    "cycles_per_call": 15824.125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0031715813670582104,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 148,
+    "batch_count": 4,
+    "cycles": 225294,
+    "cycles_per_call": 56323.5,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035642316262306144,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 149,
+    "batch_count": 4,
+    "cycles": 229527,
+    "cycles_per_call": 57381.75,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0034984990872533516,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 150,
+    "batch_count": 4,
+    "cycles": 229141,
+    "cycles_per_call": 57285.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035043924919590996,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 151,
+    "batch_count": 1024,
+    "cycles": 1072585,
+    "cycles_per_call": 1047.4462890625,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0007486586144687834,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 152,
+    "batch_count": 1024,
+    "cycles": 2154708,
+    "cycles_per_call": 2104.20703125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.00037267230640996364,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 153,
+    "batch_count": 1024,
+    "cycles": 2153973,
+    "cycles_per_call": 2103.4892578125,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0003727994733453019,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 154,
+    "batch_count": 256,
+    "cycles": 418552,
+    "cycles_per_call": 1634.96875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0019185190848448937,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 155,
+    "batch_count": 256,
+    "cycles": 701560,
+    "cycles_per_call": 2740.46875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0011445920519984035,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 156,
+    "batch_count": 256,
+    "cycles": 701063,
+    "cycles_per_call": 2738.52734375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0011454034801437246,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 157,
+    "batch_count": 64,
+    "cycles": 281664,
+    "cycles_per_call": 4401.0,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.00285091456487162,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 158,
+    "batch_count": 64,
+    "cycles": 349639,
+    "cycles_per_call": 5463.109375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0022966545494066738,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 159,
+    "batch_count": 64,
+    "cycles": 349339,
+    "cycles_per_call": 5458.421875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0022986268352517183,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 160,
+    "batch_count": 16,
+    "cycles": 236787,
+    "cycles_per_call": 14799.1875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003391233471432131,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 161,
+    "batch_count": 16,
+    "cycles": 253278,
+    "cycles_per_call": 15829.875,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0031704293306169507,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 162,
+    "batch_count": 16,
+    "cycles": 252870,
+    "cycles_per_call": 15804.375,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0031755447463123346,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 163,
+    "batch_count": 4,
+    "cycles": 225344,
+    "cycles_per_call": 56336.0,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003563440783868219,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 164,
+    "batch_count": 4,
+    "cycles": 229177,
+    "cycles_per_call": 57294.25,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.003503842008578522,
+    "status": "PASS"
+  },
+  {
+    "group": "X06",
+    "case_id": 165,
+    "batch_count": 4,
+    "cycles": 228875,
+    "cycles_per_call": 57218.75,
+    "empty_cycles": 803,
+    "boundary_fraction": 0.0035084653194975422,
+    "status": "PASS"
+  }
+]
