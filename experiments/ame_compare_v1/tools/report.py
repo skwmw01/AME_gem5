@@ -209,8 +209,9 @@ def figures(flat,pairs,batches):
  finish(fig,'w5_equal_work_widening')
 
 
-def report():
- result,flat,pairs,batches=collect();figures(flat,pairs,batches)
+def report(render_figures=True):
+ result,flat,pairs,batches=collect()
+ if render_figures:figures(flat,pairs,batches)
  evidence=DOC/'evidence';evidence.mkdir(exist_ok=True)
  names=['acceptance.json','frozen.json','static-audit.json','layout-checks.json','artifact-audit.json','records.csv','paired.csv','repeat.csv','selected-records.json','batch-records.json','input-reference-index.json']
  for n in names:
@@ -252,9 +253,9 @@ def report():
         'B11 SHA256：`6ddf3e8b74544dbe52acad7265fec506f54da96fd9c0c02caf25479ef9355ef9`。',
         '平台为单核 RiscvMinorCPU / 1GHz / 无 I、D cache / DDR3；矩阵 FU opLat=issueLat=16，向量延迟6。',
         '实验新增来宾程序、链接脚本、发码、参考、统计及报告工具；src、example、CPU/FU 和既有测试源码保持冻结内容。',
-        '', '## 2. 工作负载与正确性','',
-        '| 检查 | 状态 | 实际完成 / 要求 |','|---|---|---|']
- for c in result['checks']:lines.append(f"| {c['name']} | {c['status']} | {c.get('completed',c.get('records',c.get('runs','—')))} / {c.get('expected','—')} |")
+        '', '## 2. 工作负载与正确性','']
+ from acceptance_view import table
+ lines += table(result,flat)
  lines += ['', '完整预声明配置为1,236个：W1主集合135（45个任务/R组合×三种ROI/状态）、控制60、W2 30、W3运行时240、固定入口180、W4 GEMM420、组合算子80、W5 60，以及31个校准/门槛配置。',
            '三组在每个配对中使用同一逻辑输入、非零/零 C0、相同有效工作量和独立参考。W3/W4/W5使用固定种子0…9。',
            'MAC专项逐位置验证：每组I8 256、FP16 128、BF16 128个探针；每组全部65,536种半精度扩宽及2,048次第二目标立即消费。',
@@ -262,7 +263,7 @@ def report():
            '主性能数据没有将NaN、Inf、越界转换混入等语义集合；特殊半精度由独立正确性专项覆盖。',
           ]
  from dimensions import section
- lines += section(flat)
+ lines += ['']+section(flat)
  lines += [
            '', '## 4. 测量方法与结果边界','',
            '- 测量入口固定在0x80010000，计算/类型/搬运/布局/W1函数分区放置；输入、输出、scratch分别固定于0x81000000、0x81800000、0x82000000。',
@@ -295,5 +296,5 @@ if __name__=='__main__':
   result,*_=collect()
   print('Collected',result['selected_records'],'main records; archive/audit and final report still required.')
   raise SystemExit(0)
- status=report()
+ status=report(render_figures='--no-figures' not in sys.argv[1:])
  raise SystemExit(0 if status=='PASS' else 1)

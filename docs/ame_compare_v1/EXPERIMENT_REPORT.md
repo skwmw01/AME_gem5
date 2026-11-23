@@ -13,54 +13,57 @@ B11 SHA256：`6ddf3e8b74544dbe52acad7265fec506f54da96fd9c0c02caf25479ef9355ef9`�
 
 ## 2. 工作负载与正确性
 
-| 检查 | 状态 | 实际完成 / 要求 |
-|---|---|---|
-| P W1-W5 declared population | PASS | 1236 / 1236 |
-| P retired/category/compute count closure | PASS | 1236 / — |
-| P rdinstret boundary calibration | PASS | 1236 / — |
-| P frozen main/control guest ELF identity | PASS | 1236 / — |
-| X06 W1-W5 declared population | PASS | 1236 / 1236 |
-| X06 retired/category/compute count closure | PASS | 1236 / — |
-| X06 rdinstret boundary calibration | PASS | 1236 / — |
-| X06 frozen main/control guest ELF identity | PASS | 1236 / — |
-| S05A W1-W5 declared population | PASS | 1236 / 1236 |
-| S05A retired/category/compute count closure | PASS | 1236 / — |
-| S05A rdinstret boundary calibration | PASS | 1236 / — |
-| S05A frozen main/control guest ELF identity | PASS | 1236 / — |
-| cross-group outputs | PASS | — / — |
-| paired logical inputs and useful/padded work agree | PASS | — / — |
-| encoding and identical control preparation | PASS | — / — |
-| host layout reversibility | PASS | — / — |
-| saved ELF/report/config/trace artifact integrity | PASS | — / — |
-| MAC coordinates, all half patterns, second target | PASS | — / — |
-| M/Acc register boundaries | PASS | — / — |
-| callable API linked size and correctness | PASS | — / — |
-| matched fixed/runtime API measurements | PASS | — / — |
-| short-call batched measurements | PASS | 405 / 405 |
-| W1 batch boundary fraction below 1 percent | PASS | — / — |
-| matched API full population and trace closure | PASS | 1080 / 1080 |
-| final guest compact/full trace equivalence | PASS | — / — |
-| logical input and reference archive integrity | PASS | 5193 / 5193 |
-| determinism P case 43 | PASS | 3 / — |
-| determinism P case 103 | PASS | 3 / — |
-| determinism P case 163 | PASS | 3 / — |
-| determinism X06 case 43 | PASS | 3 / — |
-| determinism X06 case 103 | PASS | 3 / — |
-| determinism X06 case 163 | PASS | 3 / — |
-| determinism S05A case 43 | PASS | 3 / — |
-| determinism S05A case 103 | PASS | 3 / — |
-| determinism S05A case 163 | PASS | 3 / — |
-| platform full xuantie_v06 | PASS | — / — |
-| platform full spec_v05a | PASS | — / — |
-| platform frozen old ELF regression | PASS | — / — |
-| frozen simulator and integration files unchanged | PASS | — / — |
-| no simulator/platform source edits | PASS | — / — |
+表中“实际结果”列从已有记录提取数量或观测值，“验收要求”列说明通过条件。记录数、三组配对数、执行次数和文件数使用不同单位，不相加作为新的用例总数。条件检查直接列条件；没有数据时应写未取得记录，不能以横线代替。
+
+| 检查 | 状态 | 实际结果 | 验收要求 |
+|---|---|---|---|
+| P W1—W5预声明配置 | PASS | 1236 条记录；非PASS 0 条 | 每组1,236条记录齐全，数值/标志/trap/计数检查均通过 |
+| P 退休/分类/计算计数闭合 | PASS | 1236 条；不闭合 0 条 | 每组1,236条；分类计数之和=退休数，计算条数符合预期，无未知PC |
+| P rdinstret边界校准 | PASS | 1236 条；观测差值集合 [9] | 每组1,236条，退休数−rdinstret差值均为9条 |
+| P 主/控制程序ELF身份 | PASS | 1236 条；ELF哈希不匹配 0 条 | 每组1,236条记录的ELF哈希均匹配相应冻结主/控制构建 |
+| X06 W1—W5预声明配置 | PASS | 1236 条记录；非PASS 0 条 | 每组1,236条记录齐全，数值/标志/trap/计数检查均通过 |
+| X06 退休/分类/计算计数闭合 | PASS | 1236 条；不闭合 0 条 | 每组1,236条；分类计数之和=退休数，计算条数符合预期，无未知PC |
+| X06 rdinstret边界校准 | PASS | 1236 条；观测差值集合 [9] | 每组1,236条，退休数−rdinstret差值均为9条 |
+| X06 主/控制程序ELF身份 | PASS | 1236 条；ELF哈希不匹配 0 条 | 每组1,236条记录的ELF哈希均匹配相应冻结主/控制构建 |
+| S05A W1—W5预声明配置 | PASS | 1236 条记录；非PASS 0 条 | 每组1,236条记录齐全，数值/标志/trap/计数检查均通过 |
+| S05A 退休/分类/计算计数闭合 | PASS | 1236 条；不闭合 0 条 | 每组1,236条；分类计数之和=退休数，计算条数符合预期，无未知PC |
+| S05A rdinstret边界校准 | PASS | 1236 条；观测差值集合 [9] | 每组1,236条，退休数−rdinstret差值均为9条 |
+| S05A 主/控制程序ELF身份 | PASS | 1236 条；ELF哈希不匹配 0 条 | 每组1,236条记录的ELF哈希均匹配相应冻结主/控制构建 |
+| 三组输出一致性 | PASS | 1236 个配对，输出不一致 0 个 | 1,236个配对均输出一致 |
+| 三组输入及有效/填充工作量 | PASS | 1236 个配对；不一致 0 个 | 1,236个配对的逻辑输入、有效及填充工作量一致 |
+| 编码与同准备控制审计 | PASS | 3/3 组编码审计；10/10 个外围函数通过 | 3组编码规则通过核算；10个外围函数的机器码和地址在三组间一致 |
+| 宿主打包/解包可逆性 | PASS | 12/12 项通过；MAC坐标 384 个，C3元素 96 个 | 12项均通过：三组×3种MAC布局及C3；合计384个坐标、96个C3元素 |
+| 运行产物完整性 | PASS | 81/81 个目录通过，关联 5220 条计时记录 | 81个目录的必需文件齐全，ELF/报告/配置哈希符合各自清单；关联5,220条计时记录 |
+| MAC坐标、半精度全集及第二目标 | PASS | P：MAC探针512、半精度位模式65536、第二目标消费2048、失败0；X06：MAC探针512、半精度位模式65536、第二目标消费2048、失败0；S05A：MAC探针512、半精度位模式65536、第二目标消费2048、失败0 | 每组512个MAC探针、65,536种半精度位模式、2,048次第二目标消费；数值与标志符合参考 |
+| M/Acc寄存器边界 | PASS | P：4/4 项通过；X06：4/4 项通过；S05A：4/4 项通过 | 每组4项均符合对应契约：M30/M31转换、Acc3合法、Acc4非法；X06单目标允许M31 |
+| 可调用API代码大小与正确性 | PASS | 27 组链接大小；108 次输出核对；失败API 0 | 27组类型增长链接记录齐全；完整类型API共108次输出核对均通过 |
+| 固定/运行时API配对计时 | PASS | 1080 条记录，汇总状态PASS | 1,080条计时记录，数值、标志及轨迹检查均通过 |
+| 短调用批量测量 | PASS | 405/405 条记录 | 405条均通过数值及轨迹核验 |
+| W1批量测量边界占比 | PASS | P最大0.4815%；X06最大0.3570%；S05A最大0.4704% | 405条批量记录中，每条空ROI周期/批量ROI周期均小于1% |
+| 匹配API完整集合与计数闭合 | PASS | 1080/1080 条记录 | 1,080条唯一配置记录，数值及最终trace计数均通过 |
+| 最终ELF两种trace格式等价性 | PASS | mini：101条、4459周期；text：101条、4459周期；输出哈希种类1 | 同一最终ELF下两格式的simInsts、simOps、ticks、周期与输出哈希一致 |
+| 逻辑输入与参考归档 | PASS | 5193/5193 条索引记录 | 5,193条索引；所指输入文件和参考文件均存在且哈希一致 |
+| P 用例43独立重复 | PASS | 3 次；(周期、指令数、输出哈希)组合数 1 | 3次全新启动；周期、退休指令数和输出哈希完全一致 |
+| P 用例103独立重复 | PASS | 3 次；(周期、指令数、输出哈希)组合数 1 | 3次全新启动；周期、退休指令数和输出哈希完全一致 |
+| P 用例163独立重复 | PASS | 3 次；(周期、指令数、输出哈希)组合数 1 | 3次全新启动；周期、退休指令数和输出哈希完全一致 |
+| X06 用例43独立重复 | PASS | 3 次；(周期、指令数、输出哈希)组合数 1 | 3次全新启动；周期、退休指令数和输出哈希完全一致 |
+| X06 用例103独立重复 | PASS | 3 次；(周期、指令数、输出哈希)组合数 1 | 3次全新启动；周期、退休指令数和输出哈希完全一致 |
+| X06 用例163独立重复 | PASS | 3 次；(周期、指令数、输出哈希)组合数 1 | 3次全新启动；周期、退休指令数和输出哈希完全一致 |
+| S05A 用例43独立重复 | PASS | 3 次；(周期、指令数、输出哈希)组合数 1 | 3次全新启动；周期、退休指令数和输出哈希完全一致 |
+| S05A 用例103独立重复 | PASS | 3 次；(周期、指令数、输出哈希)组合数 1 | 3次全新启动；周期、退休指令数和输出哈希完全一致 |
+| S05A 用例163独立重复 | PASS | 3 次；(周期、指令数、输出哈希)组合数 1 | 3次全新启动；周期、退休指令数和输出哈希完全一致 |
+| 原平台 xuantie_v06 全量功能回归 | PASS | 14359 个用例、28718 次执行；失败0 | 完整suite、无limit截断、random_per_seed=100；失败0 |
+| 原平台 spec_v05a 全量功能回归 | PASS | 12311 个用例、24622 次执行；失败0 | 完整suite、无limit截断、random_per_seed=100；失败0 |
+| 原平台冻结ELF回归 | PASS | 65 条回归记录，汇总状态PASS | 13个冻结ELF×5个配置=65条，均通过原回归判据 |
+| 冻结模拟器与集成文件哈希 | PASS | 11/11 个文件哈希一致 | 冻结清单中所有文件SHA256一致，包含同一B11二进制 |
+| 模拟器/平台/既有测试源码改动 | PASS | 相对冻结提交的改动文件数：0 | src、example、build_opts、tests下相对冻结提交的改动文件数为0 |
 
 完整预声明配置为1,236个：W1主集合135（45个任务/R组合×三种ROI/状态）、控制60、W2 30、W3运行时240、固定入口180、W4 GEMM420、组合算子80、W5 60，以及31个校准/门槛配置。
 三组在每个配对中使用同一逻辑输入、非零/零 C0、相同有效工作量和独立参考。W3/W4/W5使用固定种子0…9。
 MAC专项逐位置验证：每组I8 256、FP16 128、BF16 128个探针；每组全部65,536种半精度扩宽及2,048次第二目标立即消费。
 数值主集合使用有界整数/有限二进制数：MAC操作数绝对值不超过3，所有累加中间值小于2²⁴，因此FP32逐k FMA严格精确；参考用任意精度整数计算并断言此界限。加法/转换参考复用独立的精确有理数IEEE标量原语。
 主性能数据没有将NaN、Inf、越界转换混入等语义集合；特殊半精度由独立正确性专项覆盖。
+
 ## 3. 按D1—D5组织实验结果
 
 D1—D5是评价维度，W1—W5是工作负载；二者不一一对应。同一个W实验可以同时产生指令数、代码大小和周期数据，但这些指标回答不同问题。正确性PASS和测量校准是各维度结果的使用门槛，不是性能优势。
