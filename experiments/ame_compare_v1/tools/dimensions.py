@@ -1,8 +1,12 @@
 """Explain the planned D1-D5 dimensions and map each measured artifact to them."""
 import json
 from build import OUT,GROUPS
+from figure_notes import blocks
 
 def section(flat):
+ notes=blocks(flat)
+ def figure(ident,title,filename):
+  return [f'![{title}](figures/{filename}.png)']+notes[ident]
  lines=['## 3. 按D1—D5组织实验结果','',
   'D1—D5是评价维度，W1—W5是工作负载；二者不一一对应。同一个W实验可以同时产生指令数、代码大小和周期数据，但这些指标回答不同问题。正确性PASS和测量校准是各维度结果的使用门槛，不是性能优势。','',
   '| 评价维度 | 要回答的问题 | 对应实验与指标 | 本报告中的结果及原始证据 |',
@@ -30,39 +34,31 @@ def section(flat):
   '支持类型按固定顺序从4→7→10增长的规则数和机器字数见 [encoding-growth.json](evidence/encoding-growth.json)。','',
   '### 3.2 D2：动态指令开销','',
   '退休指令是处理器最终提交的架构指令。此处纵轴统计整个ROI内的计算、配置、搬运、访存、分派/循环和测量边界指令；它既不是计算指令条数，也不是源代码行数。其用途是判断“是否为了同一任务多执行了指令”，再用分类计数定位额外成本。指令数不等于周期，运行快慢在D4单独报告。','',
-  '**图D2-1：W1 A1（16元素I32加法）的总退休指令数随R变化。** 横轴R为一次调用内计算次数，纵轴为该调用ROI的退休指令总数；三种测量条件分别绘图。','',
-  '![图D2-1：W1总退休指令数](figures/w1_retired_instructions.png)','',
+  *figure('D2-1','W1总退休指令数','w1_retired_instructions'),
   '| 条件 | 初始状态与测量范围 | 对照目的 |','|---|---|---|',
   '| resident/hot | 类型和输入已在寄存器中；计入计算、循环和边界 | 观察移出初始配置/装载后，计算与控制序列的指令量 |',
   '| packed_call/cold | 输入已打包在内存；计入配置、装载、计算、存储和调用 | 观察一次完整冷调用的指令成本 |',
   '| packed_call/hot | 类型已匹配，输入已打包在内存；仍计入装载、计算、存储和调用 | 观察复用类型后还需要多少指令 |','',
-  '三种条件用于区分配置复用、寄存器驻留和完整调用的影响；冷/热指软件类型状态，与cache无关。',
-  '左图三条线完全重合，绿色最后绘制覆盖另外两条。A1在resident/hot下三组均为I(R)=3R+32：R条计算、2R条循环控制以及32条其余固定指令。中图冷调用P需要更多指令，右图复用类型后差距缩小。该结论限于此处A1及当前软件序列；九任务完整结果见CSV。','',
+  '三种条件用于区分配置复用、寄存器驻留和完整调用的影响；冷/热指软件类型状态，与cache无关。','',
+
   '| A1、R=1 | P退休指令 | X06退休指令 | S05A退休指令 |','|---|---:|---:|---:|']
  for roi,state in [('resident','hot'),('packed_call','cold'),('packed_call','hot')]:
   rows=[next(r for r in flat if r['label']=='W1' and r['group']==g and r['task']=='A1' and r['R']==1 and r['roi']==roi and r['state']==state) for g in GROUPS]
   lines.append('| '+roi+'/'+state+' | '+' | '.join(str(r['retired_insts']) for r in rows)+' |')
- lines += ['', '**图D2-2：W2 I32/FP32 add的指令分类。** 固定1024次计算和复用寄存器策略，比较G=1与256；柱内区分compute、type_setup、init_move、memory、layout、dispatch_loop、other。它回答类型切换频率改变时，增加的是哪类指令。对应数值表见§4.1。','',
-  '![图D2-2：W2分类指令数](figures/w2_instruction_categories.png)','',
-  '**图D2-3：W3运行时多类型入口的分派/调用/循环指令占比。** 两个子图对应批长1和16，各点是相应类型族所有序列与种子的占比均值。dispatch_loop包含调用、返回及循环，不是纯类型分派；占比降低也不自动等于总周期同比降低。','',
-  '![图D2-3：W3分派调用循环占比](figures/w3_dispatch_fraction.png)','',
+ lines += ['', *figure('D2-2','W2分类指令数','w2_instruction_categories'),
+  *figure('D2-3','W3分派调用循环占比','w3_dispatch_fraction'),
   'W5另提供等量扩宽的计算条数：每32个FP16元素P/S05A各1条、X06为2条，见§4.3。分类总和与同一ROI的总退休计数闭合；类型隐式读取不另计一条架构指令。逐例计数、每元素/每MAC计数及指令减少率见 [records.csv](evidence/records.csv) 和 [paired.csv](evidence/paired.csv)。','',
   '### 3.3 D3：静态代码大小','',
-  '**图D3-1：W3可调用API的代码大小随支持类型数增长。** 横轴是该类型族支持的类型数，纵轴为编译链接后的text+必要rodata字节；完整集合包含固定入口、运行时入口及可达支持主体，共享函数只计一次。它衡量提供接口需要多少程序字节，与D1的ISA编码空间、D2的运行次数不同。','',
-  '![图D3-1：W3可调用代码大小](figures/w3_callable_code_size.png)','',
-  '§4.2给出完整API与section GC后的单入口text/rodata表；§4.4给出主实验镜像section清单，启动/测量/运行时与内核分列。三组均禁用压缩、relaxation、LTO/ICF。实际大小来自 [api-summary.json](evidence/api-summary.json) 和 [image-size.json](evidence/image-size.json)。',
-  '结果没有“P所有API都更小”的统一结论：完整MAC API的P为320B、显式组为288B，而仅保留运行时可达入口时P为172B、显式组为288B；必须同时说明保留哪些入口。','',
+  *figure('D3-1','W3可调用代码大小','w3_callable_code_size'),
+  '§4.2给出完整API与section GC后的单入口text/rodata表；§4.4给出主实验镜像section清单，启动/测量/运行时与内核分列。三组均禁用压缩、relaxation、LTO/ICF。实际大小来自 [api-summary.json](evidence/api-summary.json) 和 [image-size.json](evidence/image-size.json)。','',
+
   '### 3.4 D4：执行性能','',
   '本维度使用目标周期、每有效元素/MAC周期和配对加速比P周期/显式组周期。宿主运行时长和退休指令数都不能代替这些指标。§4按同一ROI/状态分别聚合，不生成跨任务总冠军分数。','',
-  '**图D4-1：W1 A1的配置复用与周期。** 横轴R与图D2-1相同，但纵轴改为每调用目标周期。实线为单调用原始ROI，虚线为区间内重复完整调用后的每调用均值；冷调用每次都保留配置、装载和初始化。三子图的测量范围同D2-1。它与D2-1配合判断：周期差是否伴随额外指令；同指令数的剩余差异需考虑依赖、无cache取指和访存历史。','',
-  '![图D4-1：W1配置复用周期](figures/w1_configuration_amortization.png)','',
-  '**图D4-2：W2类型切换周期。** 每例完成1024次计算，横轴为同类型批长G，纵轴为整个任务周期；六个子图为三种类型对×两种寄存器策略。与D2-2的分类计数共同解释频繁切换的成本。FP16/BF16切换持续使用同一个FP32 Acc。','',
-  '![图D4-2：W2类型切换周期](figures/w2_type_switching.png)','',
+  *figure('D4-1','W1配置复用周期','w1_configuration_amortization'),
+  *figure('D4-2','W2类型切换周期','w2_type_switching'),
   '**W3匹配API计时表（§4.2）**：相同输入、各128次独立冷调用，对比固定/运行时入口，报告额外周期/调用；同表额外指令/调用归D2。混合序列W3-runtime的配对加速比见§4聚合表。MAC三类型保留各自逻辑累加器，不能将整数/浮点位模式直接视为同一个数值。','',
-  '**图D4-3：W4 GEMM每有效MAC周期。** 三种类型×已打包/端到端构成六个子图，取非零C0、16/32/128方阵和十个种子的均值。GEMM类型选择在ROI外，内层为固定类型装载—MAC循环。零C0、尾块(13,19,11)、两种组合算子的结果同样保留在CSV和§4聚合表。端到端计入来宾打包和结果整理。','',
-  '![图D4-3：W4 GEMM成本](figures/w4_gemm_cost.png)','',
-  '**图D4-4：W5等量FP16扩宽的每元素周期。** 横轴N=32/256/4096，两个子图区分已打包/端到端；各组均输出N个FP32。X06必须重排两份输入、每32元素执行两条转换；P/S05A各执行一条，故该结果包含当前原语能力和布局差异，不能全部归因于类型配置机制。','',
-  '![图D4-4：W5等量扩宽成本](figures/w5_equal_work_widening.png)','',
+  *figure('D4-3','W4 GEMM成本','w4_gemm_cost'),
+  *figure('D4-4','W5等量扩宽成本','w5_equal_work_widening'),
   '逐例cycles、cycles_per_element、cycles_per_MAC、有效吞吐见records.csv；配对加速比见paired.csv；匹配API差值见 [api-paired.json](evidence/api-paired.json)。短区间边界占比见 [boundary-fractions.json](evidence/boundary-fractions.json)，W1长批次最大值三组均低于1%。','',
   '### 3.5 D5：软件支持与扩展性（本轮部分覆盖）','',
   '本轮软件支持证据包括W3固定/运行时API、配置表与共享主体、各组独立发码接口，以及W4/W5布局和正确性维护。详见§4.5工程记录表；API源代码与来宾pack函数是实际可审查产物。D3代码大小和D4运行成本帮助量化这些接口的成本，但不能单独证明完整工具生态更成熟。',
