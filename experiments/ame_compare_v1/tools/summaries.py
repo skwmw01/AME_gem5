@@ -39,12 +39,15 @@ def summarise(pairs,flat,batches,api_rows):
   if not runtime:continue
   api_pairs.append(dict(group=key[0],family=key[1],op=key[2],repeat=key[3],seed=key[4],known_cycles_per_call=known['cycles']/128,runtime_cycles_per_call=runtime['cycles']/128,extra_cycles_per_call=(runtime['cycles']-known['cycles'])/128,known_insts_per_call=known['retired_insts']/128,runtime_insts_per_call=runtime['retired_insts']/128,outputs_match=known['output_sha256']==runtime['output_sha256'],status='PASS' if known['status']==runtime['status']=='PASS' and known['output_sha256']==runtime['output_sha256'] else 'FAIL'))
  save(OUT/'api-paired.json',api_pairs)
- # Growth uses the fixed insertion order A1,A2,M1,M2,G1,G2,G3,C1,C2,C3.
+ save(OUT/'encoding-growth.json',encoding_growth())
+ return aggregate,fractions,api_pairs
+
+def encoding_growth():
+ """Fixed insertion order A1,A2,M1,M2,G1,G2,G3,C1,C2,C3."""
  growth=[]
  for count,pcount in ((4,2),(7,3),(10,4)):
   for g in ('P','X06','S05A'):
    rules=pcount if g=='P' else count
    words=(65536+(4096 if count>=7 else 0)+(1024 if count==10 else 0)) if g=='P' else 131072+(12288 if count>=7 else 0)+(3072 if count==10 else 0)
    growth.append(dict(tasks=count,group=g,rules=rules,mask_envelope=words,legal_fields=words-(32 if g=='S05A' and count==10 else 0)))
- save(OUT/'encoding-growth.json',growth)
- return aggregate,fractions,api_pairs
+ return growth

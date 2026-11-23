@@ -10,6 +10,11 @@ def blocks(flat):
   return [statistics.mean(r[key]/(r[denominator] if denominator else 1) for r in rows(group=g,**filters)) for g in GROUPS]
  def fmt(values,digits=3):return ' / '.join(f'{v:.{digits}f}' for v in values)
  api=json.loads(sorted(OUT.glob('api/*/summary.json'))[-1].read_text())['results']
+ encoding={r['group']:r for r in json.loads((OUT/'static-audit.json').read_text())['encoding']}
+ from summaries import encoding_growth
+ growth=encoding_growth()
+ def enc_values(key):return ' / '.join(f'{encoding[g][key]:,}' for g in GROUPS)
+ def growth_values(group,key):return '→'.join(f'{r[key]:,}' for r in growth if r['group']==group)
  def sizes(family):
   return ' / '.join(str(next(r for r in api if r['group']==g and r['family']==family and r['types']==(3 if family==2 else 2))['text_bytes']+next(r for r in api if r['group']==g and r['family']==family and r['types']==(3 if family==2 else 2))['rodata_bytes']) for g in GROUPS)
  a1=dict(label='W1',task='A1')
@@ -25,6 +30,16 @@ def blocks(flat):
  def caption(ident,title,axes,purpose,analysis,conclusion):
   return ['',f'**图{ident}　{title}**','',f'**坐标与数据：** {axes}','',f'**作图目的：** {purpose}','',f'**观察与分析：** {analysis}','',f'**结论：** {conclusion}','']
  return {
+  'D1-1':caption('D1-1','相同十种类型任务的译码规则与机器字空间',
+   '三个子图横轴均为P、X06、S05A三组，逻辑类型任务均为10种。左图纵轴是计算译码规则数，单位为条规则；中图纵轴是按match/mask匹配集合并集得到的32位机器字数量；右图纵轴是进一步施加静态寄存器字段限制后的机器字数量。三图纵轴均为从0开始的线性刻度，柱顶标实际数值。数据来自static-audit.json的rules、mask_envelope、legal_fields，是静态核算结果，不是指令执行次数或程序字节数，也不跨随机种子取均值。',
+   '在完成相同十种逻辑类型任务的范围内，分别比较规则复用程度和编码分配量，并区分mask匹配空间与静态合法字段空间。',
+   f'按P / X06 / S05A顺序，规则数为{enc_values("rules")}，mask包络为{enc_values("mask_envelope")}个机器字，静态字段限制后为{enc_values("legal_fields")}个。P的4条规则比各显式组10条少{(1-encoding["P"]["rules"]/encoding["X06"]["rules"])*100:.0f}%；机器字mask包络少{(1-encoding["P"]["mask_envelope"]/encoding["X06"]["mask_envelope"])*100:.2f}%，两种比例不同，因为二元、MAC、转换规则的可变寄存器字段数量不同。S05A全量扩宽禁止rd=31，排除32种源/目标组合，因此右图比中图少32个；该差异只占S05A包络的0.022%左右，柱高难以肉眼区分，应看数值标签。',
+   '在本研究子集及当前编码设计下，多态P通过类型状态复用规则，分配的计算编码空间较少；显式组按类型分别编码，需要更多规则。该结论不包含类型配置/访存/搬运的支持编码，也不表示P的所有机器字在任意描述符状态下均可执行；不能据此推出执行更快、硬件译码面积更小或完整原生ISA的编码空间排名。'),
+  'D1-2':caption('D1-2','共同类型任务集合从4种扩展到7种和10种时的编码分配',
+   '横轴是共同逻辑类型任务数量4、7、10，每个位置按P、X06、S05A绘制三根分组柱。左图纵轴为计算译码规则数，右图纵轴为按mask匹配的32位机器字数量，均采用从0开始的线性刻度。按固定顺序先加入A1/A2/M1/M2，再加入G1/G2/G3，最后加入C1/C2/C3；数据来自encoding-growth.json，与主表采用同一静态计数口径。右图未扣S05A在10任务时的32个非法字段组合，其区别见图D1-1右图。',
+   '观察同一语义子集逐步增加时，计算规则和机器字分配量如何增长，解释规则数量增长与机器字空间增长并不成正比。',
+   f'P规则数为{growth_values("P","rules")}，X06/S05A均为{growth_values("X06","rules")}；P的mask包络为{growth_values("P","mask_envelope")}，X06/S05A均为{growth_values("X06","mask_envelope")}。从4到10任务，P增加2条规则和5,120个机器字，各显式组增加6条规则和15,360个机器字。不同类型共享P的同一计算规则，而显式组分别分配类型编码；两者机器字增长都相对平缓，因为先加入的二元规则每条覆盖2¹⁵种寄存器组合，MAC每条2¹²种、转换每条2¹⁰种。',
+   '在固定加入顺序和当前十种任务内，P的计算规则与机器字增量均较少；增加类型数量不能简单按规则条数同比估计编码空间。这里是对已有任务子集的静态核算，不是W6新增指令的开发实验，也不足以判断未来是否需要更长指令或是否会耗尽编码空间。'),
   'D2-1':caption('D2-1','W1固定类型加法的退休指令数与配置复用',
    '横轴是一次调用内的计算次数R=1、4、16、64、256，纵轴是该单调用ROI提交的架构指令总数，单位为条；两轴均为对数坐标。左、中、右分别是resident/hot、packed_call/cold、packed_call/hot；每种颜色对应P、X06、S05A中的一组。本图只展示A1（每条计算完成16元素I32加法），每点是一条正式测量记录，数据来自records.csv的retired_insts，未按计算次数归一化。',
    '区分初始配置、内存装载/存储与寄存器驻留三种条件，判断相同计算任务是否需要额外架构指令，以及一次配置被多次计算复用后相对开销如何变化。',

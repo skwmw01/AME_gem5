@@ -130,6 +130,8 @@ def figures(flat,pairs,batches):
  figdir=DOC/'figures';figdir.mkdir(parents=True,exist_ok=True)
  def finish(fig,name):
   fig.tight_layout();fig.savefig(figdir/(name+'.png'),dpi=180);fig.savefig(figdir/(name+'.pdf'));plt.close(fig)
+ from encoding_figures import render
+ render(figdir)
  fig,axs=plt.subplots(1,3,figsize=(12,3.5))
  for ax,(roi,state,title) in zip(axs,[('resident','hot','Resident, A1'),('packed_call','cold','Cold packed call, A1'),('packed_call','hot','Hot packed call, A1')]):
   for g in GROUPS:

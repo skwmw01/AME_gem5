@@ -30,8 +30,9 @@ def section(flat):
   '| 组别 | 计算规则 | mask包络 | 静态合法字段 |','|---|---:|---:|---:|']
  for r in json.loads((OUT/'static-audit.json').read_text())['encoding']:
   lines.append(f"| {r['group']} | {r['rules']} | {r['mask_envelope']:,} | {r['legal_fields']:,} |")
- lines += ['', 'P用4条计算规则覆盖本轮十种类型任务，X06/S05A各用10条。P的运行合法性还依赖描述符；S05A全量扩宽排除rd=31。该结果只描述本研究子集，不是完整原生ISA的空间占用，也不是程序代码大小。',
-  '支持类型按固定顺序从4→7→10增长的规则数和机器字数见 [encoding-growth.json](evidence/encoding-growth.json)。','',
+ lines += ['', *figure('D1-1','译码规则与机器字空间比较','d1_encoding_space'),
+  *figure('D1-2','支持类型增长时的编码分配','d1_encoding_growth'),
+  '两图的静态核算数据分别见 [static-audit.json](evidence/static-audit.json) 和 [encoding-growth.json](evidence/encoding-growth.json)。','',
   '### 3.2 D2：动态指令开销','',
   '退休指令是处理器最终提交的架构指令。此处纵轴统计整个ROI内的计算、配置、搬运、访存、分派/循环和测量边界指令；它既不是计算指令条数，也不是源代码行数。其用途是判断“是否为了同一任务多执行了指令”，再用分类计数定位额外成本。指令数不等于周期，运行快慢在D4单独报告。','',
   *figure('D2-1','W1总退休指令数','w1_retired_instructions'),
