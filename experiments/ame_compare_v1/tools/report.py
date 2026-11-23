@@ -260,37 +260,10 @@ def report():
            'MAC专项逐位置验证：每组I8 256、FP16 128、BF16 128个探针；每组全部65,536种半精度扩宽及2,048次第二目标立即消费。',
            '数值主集合使用有界整数/有限二进制数：MAC操作数绝对值不超过3，所有累加中间值小于2²⁴，因此FP32逐k FMA严格精确；参考用任意精度整数计算并断言此界限。加法/转换参考复用独立的精确有理数IEEE标量原语。',
            '主性能数据没有将NaN、Inf、越界转换混入等语义集合；特殊半精度由独立正确性专项覆盖。',
-           '', '## 3. 五维结果','', '### 3.1 编码空间','',
-           '| 组别 | 计算规则 | mask包络 | 静态合法字段 |','|---|---:|---:|---:|']
- static=json.loads((OUT/'static-audit.json').read_text())
- for r in static['encoding']:lines.append(f"| {r['group']} | {r['rules']} | {r['mask_envelope']:,} | {r['legal_fields']:,} |")
- lines += ['', 'P的运行合法性还依赖描述符。以上只对应本研究计算子集，不代表两份完整原生ISA。',
-           '', '### 3.2 配置复用与动态指令','',
-           '下图实线为单调用原始ROI，虚线为同样调用在区间内批量重复后的每调用均值。所有冷调用均保留自身配置和数据准备，不对短区间盲减固定周期。',
-           '', '![W1](figures/w1_configuration_amortization.png)','',
-           '| A1 / R=1 | P周期 | X06周期 | S05A周期 | P退休指令 | X06退休指令 | S05A退休指令 |','|---|---:|---:|---:|---:|---:|---:|']
- for roi,state in [('resident','hot'),('packed_call','cold'),('packed_call','hot')]:
-  rows=[next((r for r in flat if r['label']=='W1' and r['group']==g and r['task']=='A1' and r['R']==1 and r['roi']==roi and r['state']==state),None) for g in GROUPS]
-  if all(rows):lines.append('| '+roi+'/'+state+' | '+' | '.join(str(r['cycles']) for r in rows)+' | '+' | '.join(str(r['retired_insts']) for r in rows)+' |')
- lines += ['', '完整分类计数见 [records.csv](evidence/records.csv)，类别互斥且总和与同一ROI的退休指令数闭合。原始m5统计与rdinstret差值的校准偏移为9条边界指令。',
-           '', '![W1 instructions](figures/w1_retired_instructions.png)','',
-           '![W2](figures/w2_type_switching.png)','',
-           '![W2 categories](figures/w2_instruction_categories.png)','',
-           'W2每例1024次计算，仅改变同类型批长G，区分复用/专属寄存器。FP16/BF16切换持续使用同一个FP32 Acc。',
-           '', '### 3.3 可调用代码与运行时类型入口','',
-           '独立编译并链接固定类型API与运行时API，计入实际text及必要rodata；禁用压缩、relaxation，未启用LTO/ICF。P共享计算主体，显式组按类型分派。所有完整类型API均实际运行核对输出。',
-           '', '![W3 code](figures/w3_callable_code_size.png)','',
-           '![W3 dispatch](figures/w3_dispatch_fraction.png)','',
-           '混合W3采用同类型批次，成组/交替/随机的是批次类型。MAC三类型分别保留逻辑累加器状态，切换I32/FP32时执行真实保存/恢复；不是跨整数位模式和浮点位模式直接共用同一数值。',
-           '另有严格匹配输入、各128次冷调用的固定/运行时API配对计时，见 [api-perf-records.json](evidence/api-perf-records.json)。不将固定单类型短调用直接与混合持久状态总Q比较后归因于分派。',
-           '', '### 3.4 完整算子与布局成本','',
-           'GEMM覆盖三种输入类型、16/32/128方阵、零/非零C0及(13,19,11)尾块，区分已打包调用与从常规行序输入开始的端到端调用。打包与结果整理均由来宾执行。',
-           '', '![W4](figures/w4_gemm_cost.png)','',
-           'GEMM内层使用固定类型的手写装载—MAC循环，类型选择在测量入口外完成；W2/W3仅在同类型批次入口分派。GEMM图使用非零C0、十个种子的每有效MAC周期均值；原始零C0、尾块和组合算子数据同样保留在CSV。有效MAC和填充后的实际MAC分别记录。',
-           '', '### 3.5 等量扩宽与软件支持','',
-           '每32个半精度元素，P/S05A执行一次转换，X06以两个正确重排的输入执行两次转换。不能把这项差异解释为纯类型配置机制差异。',
-           '', '![W5](figures/w5_equal_work_widening.png)','',
-           '软件支持实证包含原始发码接口、固定/运行时API、共享计算主体、打包规则和正确性维护。当前工具链仍通过.word发出实验指令；没有LLVM后端、硬件面积或功耗实验。W6工程扩展未执行，开发时间/扩展净改动没有虚填。',
+          ]
+ from dimensions import section
+ lines += section(flat)
+ lines += [
            '', '## 4. 测量方法与结果边界','',
            '- 测量入口固定在0x80010000，计算/类型/搬运/布局/W1函数分区放置；输入、输出、scratch分别固定于0x81000000、0x81800000、0x82000000。',
            '- 每ROI以m5 reset/dump建立边界，结束前fence；保留标记自身指令。结果存储以该模型的fence和已提交指令为可见性边界，不宣称DRAM单元已经完成物理写入。',
