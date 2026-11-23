@@ -168,16 +168,8 @@ def figures(flat,pairs,batches):
    vals=np.array([r['insts_'+cat] for r in rows]);ax.bar(range(len(rows)),vals,bottom=bottom,label=cat);bottom+=vals
   ax.set(xticks=range(len(rows)),xticklabels=[r['group'] for r in rows],ylabel='retired instructions',title='W2 I32/F32 add, reuse, G='+str(G))
  axs[-1].legend(fontsize=7);finish(fig,'w2_instruction_categories')
- fig,axs=plt.subplots(1,2,figsize=(11,3.5))
- for ax,G in zip(axs,(1,16)):
-  for g in GROUPS:
-   values=[]
-   for f in range(4):
-    rows=[r for r in flat if r['label']=='W3-runtime' and r['group']==g and r['task']=='family'+str(f) and r['G']==G]
-    values.append(sum(r['insts_dispatch_loop']/r['retired_insts'] for r in rows)/len(rows) if rows else 0)
-   ax.plot(range(4),values,'-o',label=g,color=colors[g])
-  ax.set(xticks=range(4),xticklabels=['add','max','MAC','convert'],ylabel='dispatch + call + loop instruction fraction',title='W3 batch length '+str(G));ax.legend()
- finish(fig,'w3_dispatch_fraction')
+ from dispatch_figure import render as render_dispatch
+ render_dispatch(flat,figdir)
  api=sorted(OUT.glob('api/*/summary.json'))
  if api:
   data=json.loads(api[-1].read_text())['results'];fig,axs=plt.subplots(1,4,figsize=(13,3.5))
