@@ -18,7 +18,7 @@
     "experiments/ame_compare_v1/tools/figure_notes.py": "b8cdfacefad208e0d47dae0a3003fe3c77d7d3083fe6da820bd4bd02ac4b3696",
     "experiments/ame_compare_v1/tools/size_entries.py": "47f6fd1cb098373eda2fa25df6c1a5556e671087f5400c0171cbec8914eb999d",
     "experiments/ame_compare_v1/tools/acceptance_view.py": "b1ef901eaaa9da75c06c70127623a1d30a1301bb86345df43f6825ac98ca59b4",
-    "experiments/ame_compare_v1/tools/dimensions.py": "c3419303a84389078343c7c71627a64aeb41ce0a87d75c48d4a2426b013978b3",
+    "experiments/ame_compare_v1/tools/dimensions.py": "59ef7b9bde2d2815df7ded9dd90945f794c48875d11429e53e08ab4c4e5b3820",
     "experiments/ame_compare_v1/tools/dispatch_figure.py": "59de55d90e22cd96a3686c2e7dfcafe722a3343434010aeecca458c152efba0b",
     "experiments/ame_compare_v1/tools/materialize.py": "a37798694b07c015a58574e01153baaed84d901c45638cdca7dc2cc609e5f7f1",
     "experiments/ame_compare_v1/tools/calibration.py": "e8cf7b2e02b2e16b5545e6fa8579fa34d649ee0650ead2f84d0982edbb9e3dad",
